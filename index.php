@@ -84,7 +84,7 @@
             <div class="col-xl-10 col-lg-12">
                 <div class="feature-txt-area text-center mb-70">
                     <h2 class="feature-title mt--16 mb-30">Welcome<span class="feature-sub-title-2 d-block mt-1">to
-                            Our Kidba</span></h2>
+                            Darul Madinah</span></h2>
                     <p class="mb--8">Pellentesque ut nisi egestas, finibus mauris eu, placerat ante. Lorem ipsum
                         dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend, purus nec pretium
                         commodo, sapien quam ullamcorper mauris, consequat lacinia urna enim eget justo.
