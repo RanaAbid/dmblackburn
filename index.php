@@ -84,12 +84,8 @@
             <div class="col-xl-10 col-lg-12">
                 <div class="feature-txt-area text-center mb-70">
                     <h2 class="feature-title mt--16 mb-30">Welcome<span class="feature-sub-title-2 d-block mt-1">to
-                            Darul Madinah</span></h2>
-                    <p class="mb--8">Pellentesque ut nisi egestas, finibus mauris eu, placerat ante. Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend, purus nec pretium
-                        commodo, sapien quam ullamcorper mauris, consequat lacinia urna enim eget justo.
-                        Pellentesque aliquam tempus nisl, at pellentesque dui hendrerit quis. Maecenas nisi neque,
-                        sodales sit amet rutrum quis, tempor ac urna.</p>
+                            Dar-ul-Madinah Blackburn</span></h2>
+                    <p class="mb--8">Darul Madinah is more than just a school; it’s a nurturing community where learners, educators, and families join hands to shape the future generation of faithful and knowledgeable leaders. As an OFSTED-regulated institution, we seamlessly blend the Early Years Foundation Stage (EYFS) curriculum with essential Islamic teachings, laying a solid foundation for your child’s holistic development.</p>
                 </div>
             </div>
         </div>
