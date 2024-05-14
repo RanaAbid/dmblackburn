@@ -1,8 +1,6 @@
 <?php
 ob_start();
 session_start();
-//error_reporting(E_ALL ^ E_NOTICE);
-//ini_set('max_execution_time', 300); //300 seconds = 5 minutes
 
 //local path
 $app_path = "http://" . $_SERVER['HTTP_HOST'] . "/projects/dmblackburn/";
@@ -46,9 +44,9 @@ include($root_path . "includes/main.php");
         <div id="loading-center">
             <div id="loading-center-absolute">
                 <div class="loading-content">
-                    <img class="loading-logo-text" src="<?= $app_path ?>assets/images/logo/logo.png" alt="Kidba">
+                    <img class="loading-logo-text" src="<?= $app_path ?>assets/images/logo/logo.png" alt="logo">
                     <div class="loading-stroke">
-                        <img class="loading-logo-icon" src="<?= $app_path ?>assets/images/logo/logo.png" alt="Pen">
+                        <img class="loading-logo-icon" src="<?= $app_path ?>assets/images/logo/logo.png" alt="preloader">
                     </div>
                 </div>
             </div>

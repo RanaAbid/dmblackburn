@@ -10,7 +10,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="banner-txt">
-                                        <h3 class="banner-subtitle-2 mt--9 mb-10" data-animation="fadeInUp" data-delay=".3s">A New Approach to</h3>
+                                        <!-- <h3 class="banner-subtitle-2 mt--9 mb-10" data-animation="fadeInUp" data-delay=".3s">A New Approach to</h3>
                                         <h1 class="banner-title-2 mb-20" data-animation="fadeInUp" data-delay=".5s">
                                             Kids Education</h1>
                                         <p class="banner-paragraph-2 mb-11" data-animation="fadeInUp" data-delay=".7s">We provide best solutions for a Clean Environment If
@@ -18,7 +18,7 @@
                                         <div class="banner-btn btn-box sm-padd-btn pt-35">
                                             <a href="contact.html" class="def-btn btn-2" data-animation="fadeInUp" data-delay=".8s">admission now</a>
                                             <a href="class.html" class="def-btn btn-3" data-animation="fadeInUp" data-delay=".9s">Our Classes</a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -33,7 +33,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="banner-txt">
-                                        <h3 class="banner-subtitle-2 mt--9 mb-10" data-animation="fadeInUp" data-delay=".3s">A New Approach to</h3>
+                                        <!-- <h3 class="banner-subtitle-2 mt--9 mb-10" data-animation="fadeInUp" data-delay=".3s">A New Approach to</h3>
                                         <h1 class="banner-title-2 mb-20" data-animation="fadeInUp" data-delay=".5s">
                                             Child Education</h1>
                                         <p class="banner-paragraph-2 mb-11" data-animation="fadeInUp" data-delay=".7s">We provide best solutions for a Clean Environment If
@@ -41,7 +41,7 @@
                                         <div class="banner-btn btn-box sm-padd-btn pt-35">
                                             <a href="contact.html" class="def-btn btn-2" data-animation="fadeInUp" data-delay=".8s">admission now</a>
                                             <a href="class.html" class="def-btn btn-3" data-animation="fadeInUp" data-delay=".9s">Our Classes</a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -55,7 +55,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-12">
-                                    <div class="banner-txt">
+                                    <!-- <div class="banner-txt">
                                         <h3 class="banner-subtitle-2 mt--9 mb-10" data-animation="fadeInUp" data-delay=".3s">A New Approach to</h3>
                                         <h1 class="banner-title-2 mb-20" data-animation="fadeInUp" data-delay=".5s">
                                             Youth Education</h1>
@@ -65,7 +65,7 @@
                                             <a href="contact.html" class="def-btn btn-2" data-animation="fadeInUp" data-delay=".8s">admission now</a>
                                             <a href="class.html" class="def-btn btn-3" data-animation="fadeInUp" data-delay=".9s">Our Classes</a>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>

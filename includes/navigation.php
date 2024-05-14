@@ -33,7 +33,7 @@
                         <div class="row align-items-center">
                             <div class="col-lg-12 col-6">
                                 <div class="logo">
-                                    <a href="index.html">
+                                    <a href="<?= $app_path ?>">
                                         <img src="assets/images/logo/logo.png" alt="KIDBA">
                                     </a>
                                 </div>
@@ -50,44 +50,26 @@
                         <div class="container-fluid p-0">
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav m-auto p-10">
-                                    <li class="nav-item dropdown">
-                                        <a href="index.html" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <li class="nav-item">
+                                        <a href="<?= $app_path ?>">
                                             Home
                                         </a>
-                                        <ul class="dropdown-menu" aria-labelledby="homeDropdown">
-                                            <li><a href="index.html">Home 01</a></li>
-                                            <li><a href="index-2.html">Home 02</a></li>
-                                        </ul>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a href="course.html" id="classDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Courses
+                                            About
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="classDropdown">
-                                            <li><a href="class.html">Course 01</a></li>
-                                            <li><a href="class-2.html">Course 02</a></li>
-                                            <li><a href="course.html">Course Default</a></li>
-                                            <li><a href="course-list.html">Course List</a></li>
-                                            <li><a href="course-sidebar.html">Course Sidebar</a></li>
-                                            <li><a href="class-details.html">Course Details</a></li>
+                                            <li><a href="javascript:void(0)">About Us</a></li>
+                                            <li><a href="javascript:void(0)">Ethos and Values</a></li>
+                                            <li><a href="javascript:void(0)">Our Staff</a></li>
+                                            <li><a href="javascript:void(0)">Gallery</a></li>
                                         </ul>
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Pages
+                                    <li class="nav-item">
+                                        <a href="javascript:void(0)">
+                                            Admissions
                                         </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="staff.html">Teacher</a></li>
-                                            <li><a href="staff-details.html">Teacher Details</a></li>
-                                            <li><a href="shop.html">Products</a></li>
-                                            <li><a href="shop-details.html">Product Details</a></li>
-                                            <li><a href="checkout.html">Checkout</a></li>
-                                            <li><a href="cart.html">Cart</a></li>
-                                            <li><a href="signin.html">Sign In</a></li>
-                                            <li><a href="signup.html">Sign Up</a></li>
-                                            <li><a href="error.html">Error</a></li>
-                                        </ul>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a href="blog.html" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
