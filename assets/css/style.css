@@ -1961,15 +1961,15 @@ textarea:focus::placeholder {
 }
 
 .bg-gradient-2 {
-  background: linear-gradient(145deg, #01cbad, #47a1f2);
+  background: linear-gradient(145deg, #1ac8ae, #4ab83df5);
 }
 
 .bg-gradient-3 {
-  background: linear-gradient(145deg, #ff4f58, #ffb400);
+  background: linear-gradient(145deg, #36d071bf, #ffb400);
 }
 
 .bg-gradient-4 {
-  background: linear-gradient(145deg, #e85aca, #fc4e65);
+  background: linear-gradient(145deg, #1ca324, #ff9b1587);
 }
 
 .color-1 {
