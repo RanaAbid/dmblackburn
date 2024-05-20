@@ -2539,19 +2539,24 @@ textarea:focus::placeholder {
   align-items: center;
   background-size: cover;
 }
-@media only screen and (min-width: 1361px) and (max-width: 1600px) {
+@media only screen and (min-width: 1441px) and (max-width: 1600px) {
   .kitba-slide-height {
-    height: 560px;
+    height: 525px;
   }
 }
-@media only screen and (min-width: 993px) and (max-width: 1360px) {
+@media only screen and (min-width: 1361px) and (max-width: 1440px) {
+  .kitba-slide-height {
+    height: 515px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1360px) {
   .kitba-slide-height {
     height: 495px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .kitba-slide-height {
-    height: 450px;
+    height: 410px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2561,10 +2566,14 @@ textarea:focus::placeholder {
 }
 @media (max-width: 767px) {
   .kitba-slide-height {
-    height: 450px;
+    height: 230px;
   }
 }
-
+@media (max-width: 600px) {
+  .kitba-slide-height {
+    height: 160px;
+  }
+}
 .bg_cover {
   background-size: cover;
 }
