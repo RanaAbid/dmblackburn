@@ -3,7 +3,7 @@
 <div class="kitba-banner-area">
     <div class="slider-active swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide bg_cover" data-background="<?= $app_path ?>assets/images/background/banner.jpg">
+            <div class="swiper-slide bg_cover" data-background="<?= $app_path ?>assets/images/background/banner-first.jpg">
                 <div class="banner-2">
                     <div class="single-banner-slide kitba-slide-height">
                         <div class="container">
@@ -26,7 +26,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide bg_cover" data-background="<?= $app_path ?>assets/images/background/12.jpg">
+            <div class="swiper-slide bg_cover" data-background="<?= $app_path ?>assets/images/background/banner-first.jpg">
                 <div class="banner-2">
                     <div class="single-banner-slide kitba-slide-height">
                         <div class="container">
@@ -49,7 +49,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide bg_cover" data-background="<?= $app_path ?>assets/images/background/Banner2.jpg">
+            <div class="swiper-slide bg_cover" data-background="<?= $app_path ?>assets/images/background/banner-first.jpg">
                 <div class="banner-2">
                     <div class="single-banner-slide kitba-slide-height">
                         <div class="container">
