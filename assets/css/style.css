@@ -3926,7 +3926,7 @@ p.app-download-txt {
 }
 
 .footer-info {
-  background: #5C2CCE;
+  background: #10844e;
 }
 
 .footer-info-2 {
@@ -3934,7 +3934,7 @@ p.app-download-txt {
 }
 
 .footer-single-info.border-l {
-  border-left: 1px solid #804BFF;
+  border-left: 1px solid #ececec;
 }
 
 .footer-info-icon-wrap {
@@ -3972,7 +3972,7 @@ p.app-download-txt {
   left: 0;
   width: 90px;
   height: 1px;
-  background: linear-gradient(to left, transparent, #804BFF);
+  background: linear-gradient(to left, transparent, #ececec);
 }
 
 .footer-follow-dialogue {

@@ -3,7 +3,7 @@
 <div class="kitba-banner-area">
     <div class="slider-active swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide bg_cover" data-background="assets/images/slider/slider-3.jpg">
+            <div class="swiper-slide bg_cover" data-background="<?= $app_path ?>assets/images/background/banner.jpg">
                 <div class="banner-2">
                     <div class="single-banner-slide kitba-slide-height">
                         <div class="container">
@@ -26,7 +26,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide bg_cover" data-background="assets/images/slider/slider-1.jpg">
+            <div class="swiper-slide bg_cover" data-background="<?= $app_path ?>assets/images/background/12.jpg">
                 <div class="banner-2">
                     <div class="single-banner-slide kitba-slide-height">
                         <div class="container">
@@ -49,7 +49,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide bg_cover" data-background="assets/images/slider/slider-2.jpg">
+            <div class="swiper-slide bg_cover" data-background="<?= $app_path ?>assets/images/background/Banner2.jpg">
                 <div class="banner-2">
                     <div class="single-banner-slide kitba-slide-height">
                         <div class="container">
@@ -77,517 +77,95 @@
 </div>
 <!-- banner end -->
 
-<!-- feature begin -->
-<div class="feature p-120">
+<div class="feature pt-120 pb-50">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-10 col-lg-12">
-                <div class="feature-txt-area text-center mb-70">
-                    <h2 class="feature-title mt--16 mb-30">Welcome<span class="feature-sub-title-2 d-block mt-1">to
-                            Dar-ul-Madinah Blackburn</span></h2>
-                    <p class="mb--8">Darul Madinah is more than just a school; it’s a nurturing community where learners, educators, and families join hands to shape the future generation of faithful and knowledgeable leaders. As an OFSTED-regulated institution, we seamlessly blend the Early Years Foundation Stage (EYFS) curriculum with essential Islamic teachings, laying a solid foundation for your child’s holistic development.</p>
+        <div class="row align-items-center">
+            <div class="col-xl-8 col-lg-8">
+                <div class="part-txt mb-70">
+                    <div class="section-heading mb-70">
+                        <h2 class="section-title mt--8 mb-25">Welcome to Our Kidba</h2>
+                        <p class="heading-sub-txt mt--1 mb--8">Here is what you can expect from a house cleaning from a Handy professional.<br> Download the app to share further cleaning!</p>
+                    </div>
+                    <div class="row r-gap-40 has-gradient-service mb-30 mb-lg-0">
+                        <div class="col-xl-6 col-md-6">
+                            <div class="feature-box d-flex">
+                                <div class="feature-part-icon mr-30">
+                                    <img src="assets/images/feat-icon-1.png" class="filter-shadow-1" alt="Icon">
+                                </div>
+                                <div class="feature-txt">
+                                    <h3 class="feature-sub-title mt--7 mb--8"><a href="class-details.html">Active Learning</a></h3>
+                                    <div class="divider mt-10 mb-20 bg-gradient-1 rounded-pill"></div>
+                                    <p class="mt--6 mb--8">Since have been visonary relable sofware engnern partne.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                            <div class="feature-box d-flex">
+                                <div class="feature-part-icon mr-30">
+                                    <img src="assets/images/feat-icon-2.png" class="filter-shadow-2" alt="Icon">
+                                </div>
+                                <div class="feature-txt">
+                                    <h3 class="feature-sub-title mt--7 mb--8"><a href="">Parents Day</a></h3>
+                                    <div class="divider mt-10 mb-20 bg-gradient-2 rounded-pill"></div>
+                                    <p class="mt--6 mb--8">Since have been visonary relable sofware engnern partne.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                            <div class="feature-box d-flex">
+                                <div class="feature-part-icon mr-30">
+                                    <img src="assets/images/feat-icon-3.png" class="filter-shadow-3" alt="Icon">
+                                </div>
+                                <div class="feature-txt">
+                                    <h3 class="feature-sub-title mt--7 mb--8"><a href="class-details.html">Expert Teachers</a></h3>
+                                    <div class="divider mt-10 mb-20 bg-gradient-3 rounded-pill"></div>
+                                    <p class="mt--6 mb--8">Since have been visonary relable sofware engnern partne.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                            <div class="feature-box d-flex">
+                                <div class="feature-part-icon mr-30">
+                                    <img src="assets/images/feat-icon-4.png" class="filter-shadow-4" alt="Icon">
+                                </div>
+                                <div class="feature-txt">
+                                    <h3 class="feature-sub-title mt--7 mb--8"><a href="class-details.html">Music Lessons</a></h3>
+                                    <div class="divider mt-10 mb-20 bg-gradient-4 rounded-pill"></div>
+                                    <p class="mt--6 mb--8">Since have been visonary relable sofware engnern partne.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row r-gap-30 justify-content-between align-items-center">
-            <div class="col-xl-7 col-lg-7 col-md-6">
-                <div class="feature-img-2 spacetopbottomxs">
-                    <img src="assets/images/about/about-1.jpg" alt="Image">
-                </div>
-            </div>
-            <div class="col-xl-5 col-lg-5 col-md-6">
-                <div class="kidba-features-wrapper pl-60">
-                    <div class="feature-box d-flex mb-40">
-                        <div class="feature-part-icon mr-30">
-                            <img src="assets/images/feat-icon-5.png" class="filter-shadow-2" alt="Icon">
-                        </div>
-                        <div class="feature-txt">
-                            <h3 class="feature-sub-title prnt-clr mt--7 mb--8"><a href="staff-details.html">Parents
-                                    Day</a></h3>
-                            <div class="divider bg-gradient-2 rounded-pill rounded-pill-space"></div>
-                            <p class="mt--6 mb--8">Since have been visonary relable sofware engnern partne.</p>
-                        </div>
-                    </div>
-                    <div class="feature-box d-flex mb-40">
-                        <div class="feature-part-icon mr-30">
-                            <img src="assets/images/feat-icon-6.png" class="filter-shadow-4" alt="Icon">
-                        </div>
-                        <div class="feature-txt">
-                            <h3 class="feature-sub-title msc-clr mt--7 mb--8"><a href="class-details.html">Music
-                                    Lessons</a></h3>
-                            <div class="divider bg-gradient-4 rounded-pill rounded-pill-space"></div>
-                            <p class="mt--6 mb--8">Since have been visonary relable sofware engnern partne.</p>
-                        </div>
-                    </div>
-                    <div class="feature-box d-flex">
-                        <div class="feature-part-icon mr-30">
-                            <img src="assets/images/feat-icon-7.png" class="filter-shadow-1" alt="Icon">
-                        </div>
-                        <div class="feature-txt">
-                            <h3 class="feature-sub-title lrn-clr mt--7 mb--8"><a href="class-details.html">Active
-                                    Learning</a></h3>
-                            <div class="divider bg-gradient-1 rounded-pill rounded-pill-space"></div>
-                            <p class="mt--6 mb--8">Since have been visonary relable sofware engnern partne.</p>
-                        </div>
-                    </div>
+            <div class="col-xl-4 col-lg-4">
+                <div class="feature-img p-relative ml-30 mb-70">
+                    <img src="assets/images/feature-img.jpg" alt="image">
+                    <a href="#" data-video-id="6stlCkUDG_s" class="video-btn bg-gradient-1 p-absolute bottom-0 right-0 text-center text-white"><i class="icofont-play"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- feature end -->
-
-<!-- call to action begin -->
-<div class="cta p-120">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-10 col-lg-8 col-md-10 col-sm-11">
-                <div class="text-center">
-                    <h2 class="cta-title text-center mt--14 mb-50">Are You Learning English? <br> Here Are Our Top
-                        <span class="d-xl-block d-inlin-block">English Tips.</span>
-                    </h2>
-                    <a href="signup.html" class="def-btn btn-4 mt--1">admission now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- call to action end -->
-
-<!-- class begin -->
-<div class="class pt-120 pb-80">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-7 col-lg-8 col-md-10">
-                <div class="section-heading text-center mb-70">
-                    <h2 class="section-title mt--8 mb-25">Our Popular Classes</h2>
-                    <p class="heading-sub-txt mt--1 mb--8">Here is what you can expect from a house cleaning from a
-                        Handy professional. Download the app to share further cleaning details and instructions!</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="popular-class-buttons mb-40 text-center" id="filters">
-                    <button class="class-filter-btn active" data-filter="*">See all</button>
-                    <button class="class-filter-btn" data-filter=".trending">Trending</button>
-                    <button class="class-filter-btn" data-filter=".popularity">Popularity</button>
-                    <button class="class-filter-btn" data-filter=".featured">Featured</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="row popular-classes-wrapper">
-            <div class="col-xl-6 col-lg-12 col-md-12 popular-class-item trending featured">
-                <div class="class-card class-card-2 mb-40">
-                    <div class="part-img" data-background="assets/images/class-img-4.jpg">
-                        <div class="kb-class-fee-wrap-1 p-rel fix">
-                            <span class="class-fee">$320.00</span>
-                            <span class="kb-class-tooltip-1">Tution Fee</span>
-                        </div>
-                    </div>
-                    <div class="popular-class-txt">
-                        <a href="#" class="class-catname">Writing</a>
-                        <h3 class="class-title mt--7 mb-6"><a href="class-details.html">Imagination Class</a></h3>
-                        <span class="class-time mb-20">Time : 08:00am - 10:00am</span>
-                        <p class="mt--8 mb--8">Draticaly novate fuly rarched an plications awesome theme education
-                        </p>
-                        <div class="class-info mt-30 d-flex justify-content-between">
-                            <div class="box kitba-box-2 text-center">
-                                <span class="single-info d-block fz-14 mt--4 mb-10">Class : </span>
-                                <span class="amount d-block fz-18 color-3 fw-bold mt--8 mb--8">30 - 40</span>
-                            </div>
-                            <div class="box kitba-box-2 text-center">
-                                <span class="single-info d-block fz-14 mt--4 mb-10">Years : </span>
-                                <span class="amount d-block fz-18 color-1 fw-bold mt--8 mb--8">06 - 09</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-6 col-lg-12 col-md-12 popular-class-item popularity featured">
-                <div class="class-card class-card-2 mb-40">
-                    <div class="part-img" data-background="assets/images/class-img-5.jpg">
-                        <div class="kb-class-fee-wrap-1 p-rel fix">
-                            <span class="class-fee">$443.00</span>
-                            <span class="kb-class-tooltip-1">Tution Fee</span>
-                        </div>
-                    </div>
-                    <div class="popular-class-txt">
-                        <a href="#" class="class-catname">Painting</a>
-                        <h3 class="class-title mt--7 mb-6"><a href="class-details.html">Child education</a></h3>
-                        <span class="class-time mb-20">Time : 04:00am - 03:00pm</span>
-                        <p class="mt--8 mb--8">Draticaly novate fuly rarched an plications awesome theme education
-                        </p>
-                        <div class="class-info mt-30 d-flex justify-content-between">
-                            <div class="box kitba-box-2 text-center">
-                                <span class="single-info d-block fz-14 mt--4 mb-10">Class : </span>
-                                <span class="amount d-block fz-18 color-3 fw-bold mt--8 mb--8">22 - 43</span>
-                            </div>
-                            <div class="box kitba-box-2 text-center">
-                                <span class="single-info d-block fz-14 mt--4 mb-10">Years : </span>
-                                <span class="amount d-block fz-18 color-1 fw-bold mt--8 mb--8">11 - 23</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-6 col-lg-12 col-md-12 popular-class-item trending featured">
-                <div class="class-card class-card-2 mb-40">
-                    <div class="part-img" data-background="assets/images/class-img-6.jpg">
-                        <div class="kb-class-fee-wrap-1 p-rel fix">
-                            <span class="class-fee">$443.00</span>
-                            <span class="kb-class-tooltip-1">Tution Fee</span>
-                        </div>
-                    </div>
-                    <div class="popular-class-txt">
-                        <a href="#" class="class-catname">Playing</a>
-                        <h3 class="class-title mt--7 mb-6"><a href="class-details.html">Children Learning</a></h3>
-                        <span class="class-time mb-20">Time : 04:00am - 03:00pm</span>
-                        <p class="mt--8 mb--8">Draticaly novate fuly rarched an plications awesome theme education
-                        </p>
-                        <div class="class-info mt-30 d-flex justify-content-between">
-                            <div class="box kitba-box-2 text-center">
-                                <span class="single-info d-block fz-14 mt--4 mb-10">Class : </span>
-                                <span class="amount d-block fz-18 color-3 fw-bold mt--8 mb--8">22 - 43</span>
-                            </div>
-                            <div class="box kitba-box-2 text-center">
-                                <span class="single-info d-block fz-14 mt--4 mb-10">Years : </span>
-                                <span class="amount d-block fz-18 color-1 fw-bold mt--8 mb--8">11 - 23</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-6 col-lg-12 col-md-12 popular-class-item trending popularity">
-                <div class="class-card class-card-2 mb-40">
-                    <div class="part-img" data-background="assets/images/class-img-7.jpg">
-                        <div class="kb-class-fee-wrap-1 p-rel fix">
-                            <span class="class-fee">$443.00</span>
-                            <span class="kb-class-tooltip-1">Tution Fee</span>
-                        </div>
-                    </div>
-                    <div class="popular-class-txt">
-                        <a href="#" class="class-catname">Reading</a>
-                        <h3 class="class-title mt--7 mb-6"><a href="class-details.html">Kids Learning</a></h3>
-                        <span class="class-time mb-20">Time : 04:00am - 03:00pm</span>
-                        <p class="mt--8 mb--8">Draticaly novate fuly rarched an plications awesome theme education
-                        </p>
-                        <div class="class-info mt-30 d-flex justify-content-between">
-                            <div class="box kitba-box-2 text-center">
-                                <span class="single-info d-block fz-14 mt--4 mb-10">Class : </span>
-                                <span class="amount d-block fz-18 color-3 fw-bold mt--8 mb--8">22 - 43</span>
-                            </div>
-                            <div class="box kitba-box-2 text-center">
-                                <span class="single-info d-block fz-14 mt--4 mb-10">Years : </span>
-                                <span class="amount d-block fz-18 color-1 fw-bold mt--8 mb--8">11 - 23</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-6 col-lg-12 col-md-12 popular-class-item trending popularity">
-                <div class="class-card class-card-2 mb-40">
-                    <div class="part-img" data-background="assets/images/class-img-8.jpg">
-                        <div class="kb-class-fee-wrap-1 p-rel fix">
-                            <span class="class-fee">$443.00</span>
-                            <span class="kb-class-tooltip-1">Tution Fee</span>
-                        </div>
-                    </div>
-                    <div class="popular-class-txt">
-                        <a href="#" class="class-catname">Writing</a>
-                        <h3 class="class-title mt--7 mb-6"><a href="class-details.html">Writing Practise</a></h3>
-                        <span class="class-time mb-20">Time : 04:00am - 03:00pm</span>
-                        <p class="mt--8 mb--8">Draticaly novate fuly rarched an plications awesome theme education
-                        </p>
-                        <div class="class-info mt-30 d-flex justify-content-between">
-                            <div class="box kitba-box-2 text-center">
-                                <span class="single-info d-block fz-14 mt--4 mb-10">Class : </span>
-                                <span class="amount d-block fz-18 color-3 fw-bold mt--8 mb--8">22 - 43</span>
-                            </div>
-                            <div class="box kitba-box-2 text-center">
-                                <span class="single-info d-block fz-14 mt--4 mb-10">Years : </span>
-                                <span class="amount d-block fz-18 color-1 fw-bold mt--8 mb--8">11 - 23</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-6 col-lg-12 col-md-12 popular-class-item trending popularity">
-                <div class="class-card class-card-2 mb-40">
-                    <div class="part-img" data-background="assets/images/class-img-7.jpg">
-                        <div class="kb-class-fee-wrap-1 p-rel fix">
-                            <span class="class-fee">$443.00</span>
-                            <span class="kb-class-tooltip-1">Tution Fee</span>
-                        </div>
-                    </div>
-                    <div class="popular-class-txt">
-                        <a href="#" class="class-catname">Painting</a>
-                        <h3 class="class-title mt--7 mb-6"><a href="class-details.html">Painting Class</a></h3>
-                        <span class="class-time mb-20">Time : 04:00am - 03:00pm</span>
-                        <p class="mt--8 mb--8">Draticaly novate fuly rarched an plications awesome theme education
-                        </p>
-                        <div class="class-info mt-30 d-flex justify-content-between">
-                            <div class="box kitba-box-2 text-center">
-                                <span class="single-info d-block fz-14 mt--4 mb-10">Class : </span>
-                                <span class="amount d-block fz-18 color-3 fw-bold mt--8 mb--8">22 - 43</span>
-                            </div>
-                            <div class="box kitba-box-2 text-center">
-                                <span class="single-info d-block fz-14 mt--4 mb-10">Years : </span>
-                                <span class="amount d-block fz-18 color-1 fw-bold mt--8 mb--8">11 - 23</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-6 col-lg-12 col-md-12 popular-class-item trending popularity">
-                <div class="class-card class-card-2 mb-40">
-                    <div class="part-img" data-background="assets/images/class-img-10.jpg">
-                        <div class="kb-class-fee-wrap-1 p-rel fix">
-                            <span class="class-fee">$443.00</span>
-                            <span class="kb-class-tooltip-1">Tution Fee</span>
-                        </div>
-                    </div>
-                    <div class="popular-class-txt">
-                        <a href="#" class="class-catname">Enjoy</a>
-                        <h3 class="class-title mt--7 mb-6"><a href="class-details.html">Group Studying</a></h3>
-                        <span class="class-time mb-20">Time : 04:00am - 03:00pm</span>
-                        <p class="mt--8 mb--8">Draticaly novate fuly rarched an plications awesome theme education
-                        </p>
-                        <div class="class-info mt-30 d-flex justify-content-between">
-                            <div class="box kitba-box-2 text-center">
-                                <span class="single-info d-block fz-14 mt--4 mb-10">Class : </span>
-                                <span class="amount d-block fz-18 color-3 fw-bold mt--8 mb--8">22 - 43</span>
-                            </div>
-                            <div class="box kitba-box-2 text-center">
-                                <span class="single-info d-block fz-14 mt--4 mb-10">Years : </span>
-                                <span class="amount d-block fz-18 color-1 fw-bold mt--8 mb--8">11 - 23</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-6 col-lg-12 col-md-12 popular-class-item trending popularity">
-                <div class="class-card class-card-2 mb-40">
-                    <div class="part-img" data-background="assets/images/class-img-11.jpg">
-                        <div class="kb-class-fee-wrap-1 p-rel fix">
-                            <span class="class-fee">$443.00</span>
-                            <span class="kb-class-tooltip-1">Tution Fee</span>
-                        </div>
-                    </div>
-                    <div class="popular-class-txt">
-                        <a href="#" class="class-catname">Reading</a>
-                        <h3 class="class-title mt--7 mb-6"><a href="class-details.html">Globe Intro</a></h3>
-                        <span class="class-time mb-20">Time : 04:00am - 03:00pm</span>
-                        <p class="mt--8 mb--8">Draticaly novate fuly rarched an plications awesome theme education
-                        </p>
-                        <div class="class-info mt-30 d-flex justify-content-between">
-                            <div class="box kitba-box-2 text-center">
-                                <span class="single-info d-block fz-14 mt--4 mb-10">Class : </span>
-                                <span class="amount d-block fz-18 color-3 fw-bold mt--8 mb--8">22 - 43</span>
-                            </div>
-                            <div class="box kitba-box-2 text-center">
-                                <span class="single-info d-block fz-14 mt--4 mb-10">Years : </span>
-                                <span class="amount d-block fz-18 color-1 fw-bold mt--8 mb--8">11 - 23</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-6 col-lg-12 col-md-12 popular-class-item trending popularity">
-                <div class="class-card class-card-2 mb-40">
-                    <div class="part-img" data-background="assets/images/class-img-12.jpg">
-                        <div class="kb-class-fee-wrap-1 p-rel fix">
-                            <span class="class-fee">$443.00</span>
-                            <span class="kb-class-tooltip-1">Tution Fee</span>
-                        </div>
-                    </div>
-                    <div class="popular-class-txt">
-                        <a href="#" class="class-catname">Playing</a>
-                        <h3 class="class-title mt--7 mb-6"><a href="class-details.html">Playing Together</a></h3>
-                        <span class="class-time mb-20">Time : 04:00am - 03:00pm</span>
-                        <p class="mt--8 mb--8">Draticaly novate fuly rarched an plications awesome theme education
-                        </p>
-                        <div class="class-info mt-30 d-flex justify-content-between">
-                            <div class="box kitba-box-2 text-center">
-                                <span class="single-info d-block fz-14 mt--4 mb-10">Class : </span>
-                                <span class="amount d-block fz-18 color-3 fw-bold mt--8 mb--8">22 - 43</span>
-                            </div>
-                            <div class="box kitba-box-2 text-center">
-                                <span class="single-info d-block fz-14 mt--4 mb-10">Years : </span>
-                                <span class="amount d-block fz-18 color-1 fw-bold mt--8 mb--8">11 - 23</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-6 col-lg-12 col-md-12 popular-class-item trending popularity">
-                <div class="class-card class-card-2 mb-40">
-                    <div class="part-img" data-background="assets/images/class-img-13.jpg">
-                        <div class="kb-class-fee-wrap-1 p-rel fix">
-                            <span class="class-fee">$443.00</span>
-                            <span class="kb-class-tooltip-1">Tution Fee</span>
-                        </div>
-                    </div>
-                    <div class="popular-class-txt">
-                        <a href="#" class="class-catname">Writing</a>
-                        <h3 class="class-title mt--7 mb-6"><a href="class-details.html">Awesome Writing</a></h3>
-                        <span class="class-time mb-20">Time : 04:00am - 03:00pm</span>
-                        <p class="mt--8 mb--8">Draticaly novate fuly rarched an plications awesome theme education
-                        </p>
-                        <div class="class-info mt-30 d-flex justify-content-between">
-                            <div class="box kitba-box-2 text-center">
-                                <span class="single-info d-block fz-14 mt--4 mb-10">Class : </span>
-                                <span class="amount d-block fz-18 color-3 fw-bold mt--8 mb--8">22 - 43</span>
-                            </div>
-                            <div class="box kitba-box-2 text-center">
-                                <span class="single-info d-block fz-14 mt--4 mb-10">Years : </span>
-                                <span class="amount d-block fz-18 color-1 fw-bold mt--8 mb--8">11 - 23</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <div id="see-load-more" class="popular-class-btn text-center pt-30 mb-40">
-                    <button class="def-btn">See More Classes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- class end -->
-
-<!-- app download begin -->
-<div class="app-download-2 p-120">
-    <div class="container">
-        <div class="row justify-content-between align-items-center">
-            <div class="col-xl-5 col-lg-6 col-sm-8">
-                <h2 class="section-title mt--8 mb-25 text-white cd-headline rotate-1">
-                    Join Our <br>
-                    <span class="cd-words-wrapper">
-                        <b class="is-visible">Android App</b>
-                        <b>IOS App</b>
-                        <b>Mobile App</b>
-                    </span>
-                </h2>
-                <p class="app-download-txt text-white mt--2 mb-50">Nam vestibulum at est a mollis. Phasellus sit
-                    amet tincidunt diam. Maecenas ultricies volutpat ornare. Sed quis enim nisi. Donec in dui
-                    placerat tellus dictum mollis.</p>
-                <div class="btn-box mt--8">
-                    <a href="#" class="def-btn">
-                        <img src="assets/images/appstore-2.png" class="filter-shadow-3" alt="App Store">
-                    </a>
-                    <a href="#" class="def-btn btn-3">
-                        <img src="assets/images/playstore-2.png" class="filter-shadow-2" alt="Play Store">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- app download end -->
-
-<!-- staff begin -->
-<div class="our-staff pt-115 pb-80">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-7 col-lg-8 col-md-10">
-                <div class="section-heading text-center mb-70">
-                    <h2 class="section-title mt--8 mb-25">Meet Our Staffs</h2>
-                    <p class="heading-sub-txt mt--1 mb--8">Here is what you can expect from a house cleaning from a
-                        Handy professional. Download the app to share further cleaning details and instructions!</p>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                <div class="staff-card mb-40">
-                    <div class="staff-card-img w_100 mb-25">
-                        <a href="staff-details.html"><img src="assets/images/staff-1.jpg" alt="Staff"></a>
-                        <div class="kb-staff-card-social-share-1-1">
-                            <a href="#" class="staff-social-btn bg-3"><i class="icofont-plus"></i></a>
-                            <a href="https://www.facebook.com/" class="staff-social-btn"><i class="icofont-facebook"></i></a>
-                            <a href="https://www.twitter.com/" class="staff-social-btn bg-1"><i class="icofont-twitter"></i></a>
-                            <a href="https://www.pinterest.com/" class="staff-social-btn bg-2"><i class="icofont-pinterest"></i></a>
-                        </div>
-                    </div>
-                    <div class="part-txt d-flex align-items-center justify-content-center">
-                        <div class="text-center">
-                            <h3 class="staff-name"><a href="staff-details.html">Broklyn Doel</a></h3>
-                            <p class="staff-position mb-0">Sains Teacher</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                <div class="staff-card mb-40">
-                    <div class="staff-card-img w_100 mb-25">
-                        <a href="staff-details.html"><img src="assets/images/staff-2.jpg" alt="Staff"></a>
-                        <div class="kb-staff-card-social-share-1-1">
-                            <a href="#" class="staff-social-btn bg-3"><i class="icofont-plus"></i></a>
-                            <a href="https://www.facebook.com/" class="staff-social-btn"><i class="icofont-facebook"></i></a>
-                            <a href="https://www.twitter.com/" class="staff-social-btn bg-1"><i class="icofont-twitter"></i></a>
-                            <a href="https://www.pinterest.com/" class="staff-social-btn bg-2"><i class="icofont-pinterest"></i></a>
-                        </div>
-                    </div>
-                    <div class="part-txt d-flex align-items-center justify-content-center">
-                        <div class="text-center">
-                            <h3 class="staff-name"><a href="staff-details.html">Alex Jhonson</a></h3>
-                            <p class="staff-position mb-0">Art Teacher</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                <div class="staff-card mb-40">
-                    <div class="staff-card-img w_100 mb-25">
-                        <a href="staff-details.html"><img src="assets/images/staff-3.jpg" alt="Staff"></a>
-                        <div class="kb-staff-card-social-share-1-1">
-                            <a href="#" class="staff-social-btn bg-3"><i class="icofont-plus"></i></a>
-                            <a href="https://www.facebook.com/" class="staff-social-btn"><i class="icofont-facebook"></i></a>
-                            <a href="https://www.twitter.com/" class="staff-social-btn bg-1"><i class="icofont-twitter"></i></a>
-                            <a href="https://www.pinterest.com/" class="staff-social-btn bg-2"><i class="icofont-pinterest"></i></a>
-                        </div>
-                    </div>
-                    <div class="part-txt d-flex align-items-center justify-content-center">
-                        <div class="text-center">
-                            <h3 class="staff-name"><a href="staff-details.html">Janaton Doe</a></h3>
-                            <p class="staff-position mb-0">English Teacher</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                <div class="staff-card mb-40">
-                    <div class="staff-card-img w_100 mb-25">
-                        <a href="staff-details.html"><img src="assets/images/staff-4.jpg" alt="Staff"></a>
-                        <div class="kb-staff-card-social-share-1-1">
-                            <a href="#" class="staff-social-btn bg-3"><i class="icofont-plus"></i></a>
-                            <a href="https://www.facebook.com/" class="staff-social-btn"><i class="icofont-facebook"></i></a>
-                            <a href="https://www.twitter.com/" class="staff-social-btn bg-1"><i class="icofont-twitter"></i></a>
-                            <a href="https://www.pinterest.com/" class="staff-social-btn bg-2"><i class="icofont-pinterest"></i></a>
-                        </div>
-                    </div>
-                    <div class="part-txt d-flex align-items-center justify-content-center">
-                        <div class="text-center">
-                            <h3 class="staff-name"><a href="staff-details.html">Robot Jhonson</a></h3>
-                            <p class="staff-position mb-0">Math Teacher</p>
-                        </div>
+<div class="about pt-120 pb-120">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-xl-6 col-lg-7 col-md-8 col-sm-12">
+                    <h2 class="about-title mt--8 mb-25">About Kindergarten School</h2>
+                    <p class="fw-bolds mt--1 mb-16">Enthusastcay deminate competitive oportunities through transparent and Compelngly seize andvirschemas through intermandated.</p>
+                    <p class="mb-35">Enthusastcay deminate competitive oportunities through transparent and action Compelngly seize andvirschemas through intermandated creative adiea sources Enthusiasticay plagiarize clientcentered and relationships.</p>
+                    <span class="about-list d-block  mb-15"><span class="mr-15"><i class="icofont-check-alt"></i></span>Donec facilisis aliquet ultrices. Cras ut ultricies.</span>
+                    <span class="about-list d-block"><span class="mr-15"><i class="icofont-check-alt"></i></span>Fusce euismod at massa eget blandit quisque.</span>
+                    <div class="btn-box pt-50">
+                        <a href="about.html" class="def-btn btn-2">Admission Now</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- staff end -->
 
 <!-- counter begin -->
-<div class="counter-2 pb-80">
+<div class="counter-2 pb-80 pt-120">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
@@ -602,7 +180,7 @@
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                <div class="counter-box-2 mb-40 bg-gradient-3 h-0 p-50p d-flex flex-column justify-content-center align-items-center mt-120">
+                <div class="counter-box-2 mb-40 bg-gradient-3 h-0 p-50p d-flex flex-column justify-content-center align-items-center">
                     <div class="counter-icon mb-25">
                         <img src="assets/images/counter-icon-6.png" class="filter-shadow-3" alt="Icon">
                     </div>
@@ -624,7 +202,7 @@
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                <div class="counter-box-2 mb-40 bg-gradient-4 h-0 p-50p d-flex flex-column justify-content-center align-items-center mt-120">
+                <div class="counter-box-2 mb-40 bg-gradient-4 h-0 p-50p d-flex flex-column justify-content-center align-items-center">
                     <div class="counter-icon mb-25">
                         <img src="assets/images/counter-icon-8.png" class="filter-shadow-4" alt="Icon">
                     </div>
@@ -918,9 +496,104 @@
     </div>
 </div>
 <!-- gallery end -->
-
+<div class="testimonial pt-120 pb-120">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-4 col-lg-5 col-md-6">
+                    <div class="clients slick-initialized slick-slider">
+                        <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 1236px;"><div class="single-client slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 412px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" tabindex="0">
+                            <img src="assets/images/testimonial-img-1.jpg" alt="Client">
+                        </div><div class="single-client slick-slide" data-slick-index="1" aria-hidden="true" style="width: 412px; position: relative; left: -412px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1">
+                            <img src="assets/images/testimonial-img-2.jpg" alt="Client">
+                        </div><div class="single-client slick-slide" data-slick-index="2" aria-hidden="true" style="width: 412px; position: relative; left: -824px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1">
+                            <img src="assets/images/testimonial-img-3.jpg" alt="Client">
+                        </div></div></div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-7 col-md-6">
+                    <div class="client-feedback pr-70 pl-30 slick-initialized slick-slider slick-dotted slick-vertical">
+                        <div class="slick-list draggable" style="height: 294.797px;"><div class="slick-track" style="opacity: 1; height: 2064px; transform: translate3d(0px, -294px, 0px);"><div class="single-feedback slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 754px;" tabindex="-1">
+                            <div class="feedback-title-area">
+                                <div class="quote-icon mb-30">
+                                    <img src="assets/images/quote.png" alt="“">
+                                </div>
+                                <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
+                            </div>
+                            <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
+                            <div class="divider bg-white rounded-pill mb-20"></div>
+                            <h4 class="client-name mt--2 mb--2">Benjamee</h4>
+                        </div><div class="single-feedback slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 754px;" tabindex="0" role="tabpanel" id="slick-slide10" aria-describedby="slick-slide-control10">
+                            <div class="feedback-title-area">
+                                <div class="quote-icon mb-30">
+                                    <img src="assets/images/quote.png" alt="“">
+                                </div>
+                                <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
+                            </div>
+                            <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
+                            <div class="divider bg-white rounded-pill mb-20"></div>
+                            <h4 class="client-name mt--2 mb--2">Charlotte</h4>
+                        </div><div class="single-feedback slick-slide" data-slick-index="1" aria-hidden="true" style="width: 754px;" tabindex="-1" role="tabpanel" id="slick-slide11" aria-describedby="slick-slide-control11">
+                            <div class="feedback-title-area">
+                                <div class="quote-icon mb-30">
+                                    <img src="assets/images/quote.png" alt="“">
+                                </div>
+                                <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
+                            </div>
+                            <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
+                            <div class="divider bg-white rounded-pill mb-20"></div>
+                            <h4 class="client-name mt--2 mb--2">Amelia</h4>
+                        </div><div class="single-feedback slick-slide" data-slick-index="2" aria-hidden="true" style="width: 754px;" tabindex="-1" role="tabpanel" id="slick-slide12" aria-describedby="slick-slide-control12">
+                            <div class="feedback-title-area">
+                                <div class="quote-icon mb-30">
+                                    <img src="assets/images/quote.png" alt="“">
+                                </div>
+                                <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
+                            </div>
+                            <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
+                            <div class="divider bg-white rounded-pill mb-20"></div>
+                            <h4 class="client-name mt--2 mb--2">Benjamee</h4>
+                        </div><div class="single-feedback slick-slide slick-cloned" data-slick-index="3" id="" aria-hidden="true" style="width: 754px;" tabindex="-1">
+                            <div class="feedback-title-area">
+                                <div class="quote-icon mb-30">
+                                    <img src="assets/images/quote.png" alt="“">
+                                </div>
+                                <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
+                            </div>
+                            <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
+                            <div class="divider bg-white rounded-pill mb-20"></div>
+                            <h4 class="client-name mt--2 mb--2">Charlotte</h4>
+                        </div><div class="single-feedback slick-slide slick-cloned" data-slick-index="4" id="" aria-hidden="true" style="width: 754px;" tabindex="-1">
+                            <div class="feedback-title-area">
+                                <div class="quote-icon mb-30">
+                                    <img src="assets/images/quote.png" alt="“">
+                                </div>
+                                <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
+                            </div>
+                            <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
+                            <div class="divider bg-white rounded-pill mb-20"></div>
+                            <h4 class="client-name mt--2 mb--2">Amelia</h4>
+                        </div><div class="single-feedback slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" style="width: 754px;" tabindex="-1">
+                            <div class="feedback-title-area">
+                                <div class="quote-icon mb-30">
+                                    <img src="assets/images/quote.png" alt="“">
+                                </div>
+                                <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
+                            </div>
+                            <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
+                            <div class="divider bg-white rounded-pill mb-20"></div>
+                            <h4 class="client-name mt--2 mb--2">Benjamee</h4>
+                        </div></div></div>
+                        
+                        
+                    <ul class="slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control10" aria-controls="slick-slide10" aria-label="1 of 3" tabindex="0" aria-selected="true">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control11" aria-controls="slick-slide11" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control12" aria-controls="slick-slide12" aria-label="3 of 3" tabindex="-1">3</button></li></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
 <!-- blog begin -->
-<div class="latest-news pb-80">
+<div class="latest-news pb-80 pt-120">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-7 col-lg-8 col-md-10">
@@ -996,161 +669,5 @@
     </div>
 </div>
 <!-- blog end -->
-
-<!-- testimonial begin -->
-<div class="testimonial pt-120 pb-120">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-xl-4 col-lg-5 col-md-6">
-                <div class="clients">
-                    <div class="single-client">
-                        <img src="assets/images/testimonial-img-1.jpg" alt="Client">
-                    </div>
-                    <div class="single-client">
-                        <img src="assets/images/testimonial-img-2.jpg" alt="Client">
-                    </div>
-                    <div class="single-client">
-                        <img src="assets/images/testimonial-img-3.jpg" alt="Client">
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-8 col-lg-7 col-md-6">
-                <div class="client-feedback pr-70 pl-30">
-                    <div class="single-feedback">
-                        <div class="feedback-title-area">
-                            <div class="quote-icon mb-30">
-                                <img src="assets/images/quote.png" alt="“">
-                            </div>
-                            <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
-                        </div>
-                        <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu
-                            volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
-                        <div class="divider bg-white rounded-pill mb-20"></div>
-                        <h4 class="client-name mt--2 mb--2">Charlotte</h4>
-                    </div>
-                    <div class="single-feedback">
-                        <div class="feedback-title-area">
-                            <div class="quote-icon mb-30">
-                                <img src="assets/images/quote.png" alt="“">
-                            </div>
-                            <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
-                        </div>
-                        <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu
-                            volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
-                        <div class="divider bg-white rounded-pill mb-20"></div>
-                        <h4 class="client-name mt--2 mb--2">Amelia</h4>
-                    </div>
-                    <div class="single-feedback">
-                        <div class="feedback-title-area">
-                            <div class="quote-icon mb-30">
-                                <img src="assets/images/quote.png" alt="“">
-                            </div>
-                            <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
-                        </div>
-                        <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu
-                            volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
-                        <div class="divider bg-white rounded-pill mb-20"></div>
-                        <h4 class="client-name mt--2 mb--2">Benjamee</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- testimonial end -->
-
-<!-- partner begin -->
-<div class="partner pt-120">
-    <div class="container">
-        <div class="partner-slider">
-            <div class="single-partner">
-                <img src="assets/images/partner-logo-1.jpg" class=" px-10" alt="Partner">
-            </div>
-            <div class="single-partner">
-                <img src="assets/images/partner-logo-2.jpg" class=" px-10" alt="Partner">
-            </div>
-            <div class="single-partner">
-                <img src="assets/images/partner-logo-3.jpg" class=" px-10" alt="Partner">
-            </div>
-            <div class="single-partner">
-                <img src="assets/images/partner-logo-4.jpg" class=" px-10" alt="Partner">
-            </div>
-            <div class="single-partner">
-                <img src="assets/images/partner-logo-5.jpg" class=" px-10" alt="Partner">
-            </div>
-            <div class="single-partner">
-                <img src="assets/images/partner-logo-1.jpg" class=" px-10" alt="Partner">
-            </div>
-            <div class="single-partner">
-                <img src="assets/images/partner-logo-2.jpg" class=" px-10" alt="Partner">
-            </div>
-            <div class="single-partner">
-                <img src="assets/images/partner-logo-3.jpg" class=" px-10" alt="Partner">
-            </div>
-            <div class="single-partner">
-                <img src="assets/images/partner-logo-4.jpg" class=" px-10" alt="Partner">
-            </div>
-            <div class="single-partner">
-                <img src="assets/images/partner-logo-5.jpg" class=" px-10" alt="Partner">
-            </div>
-        </div>
-    </div>
-</div>
-<!-- partner end -->
-
-<!-- contact begin -->
-<div class="contact p-120">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-xl-4 col-lg-5 col-md-12">
-                <div class="contact-info kitba-contact">
-                    <p class="contact-info-txt mt--6 mb-20"><span class="contact-info-sub-txt fw-bold color-9">ADDRESS</span>121 King Street, Melbourne
-                        Victoria 3000, Australia.</p>
-                    <p class="contact-info-txt mt--6 mb-20"><span class="contact-info-sub-txt fw-bold color-9">PHONE</span><a href="tel:+880178567890">+880178 56 78 90</a></p>
-                    <p class="contact-info-txt mt--6 mb-20"><span class="contact-info-sub-txt fw-bold color-9">EMAIL</span><a href="mailto:admin@gmail.com">admin@gmail.com</a></p>
-                    <p class="contact-info-txt mt--6 mb--8">
-                        <span class="contact-info-sub-txt fw-bold color-9 tt-uppercase">SOCIAL</span>
-                        <a class="contact-social mr-20" href="https://www.instagram.com/"><i class="icofont-instagram"></i></a>
-                        <a class="contact-social mr-20" href="https://web.skype.com/"><i class="icofont-skype"></i></a>
-                        <a class="contact-social mr-20" href="https://www.behance.net/"><i class="icofont-behance"></i></a>
-                        <a class="contact-social" href="https://twitter.com/"><i class="icofont-twitter"></i></a>
-                    </p>
-                </div>
-            </div>
-            <div class="col-xl-8 col-lg-7 col-md-12">
-                <div class="pl-30 contact-wrapp">
-                    <div class="section-heading mb-50">
-                        <h2 class="section-title mt--9 mb-25">Contact Us</h2>
-                        <p class="heading-sub-txt mt--1 mb--8">Etiam tristique venenatis metus, eget maximus elit
-                            mattis et. Suspendisse felis odio,<br> Please Enter Your Comments *</p>
-                    </div>
-                    <form>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <input type="text" class="def-form px-25 mb-20" placeholder="Your Name">
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="email" class="def-form px-25 mb-20" placeholder="Your Email">
-                            </div>
-                            <div class="col-sm-6 col-md-12">
-                                <input type="tel" class="def-form px-25 mb-20" placeholder="Phone Number">
-                            </div>
-                            <div class="col-sm-6 col-md-12">
-                                <input type="text" class="def-form px-25 mb-20" id="datepicker" placeholder="When You Want To Start">
-                            </div>
-                            <div class="col-12">
-                                <textarea class="def-textarea px-25 p-20 mb-20" placeholder="Leave a Message"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button class="def-btn">Submit Now</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- contact end -->
 
 <?php include("includes/footer.php"); ?>
