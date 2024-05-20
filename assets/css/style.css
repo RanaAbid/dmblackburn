@@ -2539,9 +2539,14 @@ textarea:focus::placeholder {
   align-items: center;
   background-size: cover;
 }
-@media only screen and (min-width: 999px) and (max-width: 1600px) {
+@media only screen and (min-width: 1361px) and (max-width: 1600px) {
   .kitba-slide-height {
     height: 560px;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1360px) {
+  .kitba-slide-height {
+    height: 495px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
