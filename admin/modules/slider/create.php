@@ -8,20 +8,24 @@ if ($id > 0) {
 }
 ?>
 <!-- Page-content -->
-<div class="page-content">
-    <div class="container-fluid">
-        <!-- start page title -->
-        <div class="row">
-            <div class="col-12">
-                <div class="page-title-box d-flex align-items-center justify-content-between">
-                    <h4 class="mb-0"><?php echo $page_title; ?></h4>
-                    <div class="page-title-right">
-                        <a href="index.php" class="btn btn-primary waves-effect waves-light">Back</a>
-                    </div>
-
+<div class="main-container container-fluid">
+    <div class="inner-body">
+        <div class="page-header">
+            <div>
+                <h2 class="main-content-title tx-24 mg-b-5">Hero Sliders</h2>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.php">Hero Sliders</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Create</li>
+                </ol>
+            </div>
+            <div class="d-flex">
+                <div class="justify-content-center">
+                    <a href="index.php" class="btn btn-primary waves-effect waves-light">Back</a>
                 </div>
+
             </div>
         </div>
+
         <!-- end page title -->
         <div class="row">
             <div class="col-lg-12">

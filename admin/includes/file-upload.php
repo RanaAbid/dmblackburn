@@ -38,7 +38,7 @@ function upload_file($_control_name, $_upload_file_name, $_path_to_save, $attach
 	if (!is_dir($_path_to_save)) {
 		mkdir($_path_to_save, 0755, true);
 	}
-
+	$_upload_file_name = $_upload_file_name.".".$_type;
 	$target_path = $_path_to_save . $_upload_file_name;
 	if (file_exists($target_path)) {
 		unlink($target_path);

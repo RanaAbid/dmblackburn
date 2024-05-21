@@ -35,10 +35,10 @@ if(
 
 function valid_user($link,$row){
 	
-	$_SESSION['mktb_user_id']=$row["user_id"];
-	$_SESSION['mktb_user_name']=$row["user_name"];
-	$_SESSION['mktb_user_displayname']=$row["first_name"];
-	$_SESSION['mktb_role_id']=$row["user_role"];
+	$_SESSION['dm_user_id']=$row["user_id"];
+	$_SESSION['dm_user_name']=$row["user_name"];
+	$_SESSION['dm_user_displayname']=$row["first_name"];
+	$_SESSION['dm_role_id']=$row["user_role"];
 	
 	$role_id = $row["user_role"]; 
 	$user_id = $row["user_id"];
@@ -48,10 +48,10 @@ function valid_user($link,$row){
 }
 
 function invalid_user($resp){
-	session_unset('mktb_user_id');
-	session_unset('mktb_user_name');
-	session_unset('mktb_user_displayname');
-	session_unset('mktb_role_id');
+	session_unset('dm_user_id');
+	session_unset('dm_user_name');
+	session_unset('dm_user_displayname');
+	session_unset('dm_role_id');
 	
 	// resets the session data for the rest of the runtime
 	$_SESSION = array();

@@ -30,7 +30,7 @@
                             <i class="angle fe fe-chevron-right"></i>
                         </a>
                         <ul class="nav-sub">
-                            <li class="nav-sub-item"> <a class="nav-sub-link" href="<?=$app_path?>modules/slider">Slider</a></li>
+                            <li class="nav-sub-item"> <a class="nav-sub-link" href="<?=$app_path?>modules/slider/index.php">Slider</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">

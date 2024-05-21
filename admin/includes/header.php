@@ -63,8 +63,7 @@ $current_year  = date("Y", strtotime($today));
     <link href="<?=$app_path?>assets/plugins/select2/css/select2.min.css" rel="stylesheet">
 
     <!-- Sweet Alert css-->
-    <!-- <link href="<?=$app_path?>assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet"> -->
-    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css" rel="stylesheet">
+    <link href="<?= $app_path ?>assets/plugins/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
 
     <!-- Mutipleselect css-->
     <link rel="stylesheet" href="<?=$app_path?>assets/plugins/multipleselect/multiple-select.css">
@@ -81,10 +80,8 @@ $current_year  = date("Y", strtotime($today));
     <!-- InternalFileupload css-->
 	<link href="<?=$app_path?>assets/plugins/fileuploads/css/fileupload.css" rel="stylesheet" type="text/css"/>
 
-    <!-- DATA TABLE CSS -->
-    <link href="<?=$app_path?>assets/plugins/datatable/css/dataTables.bootstrap5.css" rel="stylesheet" />
-    <link href="<?=$app_path?>assets/plugins/datatable/css/buttons.bootstrap5.min.css" rel="stylesheet">
-    <link href="<?=$app_path?>assets/plugins/datatable/css/responsive.bootstrap5.css" rel="stylesheet" />
+    <!-- datatable css -->
+    <link rel="stylesheet" type="text/css" href="<?= $app_path ?>assets/plugins/DataTables/datatables.min.css">
 </head>
 
 <body class="ltr main-body leftmenu">

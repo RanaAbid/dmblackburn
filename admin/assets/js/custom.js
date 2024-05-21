@@ -482,7 +482,109 @@ $(function () {
 			$(".fc-header-toolbar ").removeClass("fc-toolbar-ltr");
 
 		}
+		tinymce.init({
+			selector: '.tiny-mce',
+			height: 300,
+			plugins: [
+				'advlist', 'autolink', 'link', 'image', 'lists', 'charmap', 'preview', 'anchor', 'pagebreak',
+				'searchreplace', 'wordcount', 'visualblocks', 'visualchars', 'code', 'fullscreen', 'insertdatetime',
+				'media', 'table', 'emoticons', 'template', 'help'
+			],
+			toolbar: 'undo redo | styles | bold italic | alignleft aligncenter alignright alignjustify | ' +
+				'bullist numlist outdent indent | link image | print preview media fullscreen | ' +
+				'forecolor backcolor emoticons | help',
+			menu: {
+				favs: {
+					title: 'My Favorites',
+					items: 'code visualaid | searchreplace | emoticons'
+				}
+			},
+			menubar: 'favs file edit view insert format tools table help',
+		});
 	});
 
 })()
+function JSconfirm(url, typ = '', text = '') {
+	let title, img;
+	if (typ != '' && text != '') {
+		text = text;
+		title = 'Warning!';
+		img = "https://cdn.lordicon.com/tdrtiskw.json";
+	} else {
+		text = "Are you sure to delete the selected record?";
+		title = 'Confirmation!';
+		img = "https://cdn.lordicon.com/gsqxdxog.json";
+	}
+
+	Swal.fire({
+		html: '<div class="mt-3"><lord-icon src="' + img + '" trigger="loop" colors="primary:#f7b84b,secondary:#f06548" style="width:100px;height:100px"></lord-icon><div class="mt-4 pt-2 fs-15 mx-5"><h4>' + title + '</h4><p class="text-muted mx-4 mb-0">' + text + '</p></div></div>',
+		showCancelButton: true,
+		customClass: {
+			confirmButton: 'btn btn-primary w-xs me-2 mt-2',
+			cancelButton: 'btn btn-danger w-xs mt-2'
+		},
+		confirmButtonText: 'Yes',
+		buttonsStyling: false,
+		showCloseButton: true
+	}).then(function (result) {
+		/* Read more about isConfirmed, isDenied below */
+		if (result.value) {
+			window.location = url;
+		} else if (result.dismiss === Swal.DismissReason.cancel) {
+			// swal.fire('Cancelled','','error')
+		}
+	});
+}
+
+function JSajaxconfirm(id, optional = '', typ = '', text = '',) {
+	if (typ != '' && text != '') {
+		text = text;
+		title = 'Warning!';
+		img = "https://cdn.lordicon.com/tdrtiskw.json";
+
+	} else {
+		text = "Are you sure to delete selected record ?";
+		title = 'Confirmation!';
+		img = "https://cdn.lordicon.com/gsqxdxog.json";
+
+	}
+	Swal.fire({
+		html: '<div class="mt-3"><lord-icon src="' + img + '" trigger="loop" colors="primary:#f7b84b,secondary:#f06548" style="width:100px;height:100px"></lord-icon><div class="mt-4 pt-2 fs-15 mx-5"><h4>' + title + '</h4><p class="text-muted mx-4 mb-0">' + text + '</p></div></div>',
+		showCancelButton: !0,
+		confirmButtonClass: 'btn btn-primary w-xs me-2 mt-2',
+		cancelButtonClass: 'btn btn-danger w-xs mt-2',
+		confirmButtonText: 'Yes',
+		buttonsStyling: !1,
+		showCloseButton: !0
+	}).then(function (result) {
+		/* Read more about isConfirmed, isDenied below */
+		if (result.value) {
+			// window.location = url;
+			deleteData(id, optional);
+		} else if (result.dismiss === Swal.DismissReason.cancel) {
+			// swal.fire('Cancelled','','error')
+		}
+	})
+}
+function showToast(toastType, toastMsg) {
+	if (toastType !== "" && toastMsg !== "") {
+		Toastify({
+			newWindow: true,
+			text: toastMsg,
+			gravity: "top",
+			position: "center",
+			className: "bg-" + toastType,
+			stopOnFocus: true,
+			offset: {
+				x: 50,
+				y: 10
+			},
+			duration: 3000,
+			close: "close" == "close",
+			style: {
+				background: toastType == 'danger' ? '#dc3545' : toastType == 'success' ? '#198754' : '',
+			}
+		}).showToast();
+	}
+}
 

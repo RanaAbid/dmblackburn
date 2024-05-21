@@ -1,25 +1,27 @@
 <?php
-$page_title = "Slider Images";
+$page_title = "Home Page Slider";
 include "../../includes/header.php";
 $storeFolder = '../../assets/uploads/hero-section';
 ?>
 <!-- Page Content-->
-<div class="page-content">
-    <div class="container-fluid">
-        <!-- start page title -->
-        <div class="row">
-            <div class="col-12">
-                <div class="page-title-box d-flex align-items-center justify-content-between">
-                    <h4 class="mb-0">Hero Sliders</h4>
-
-                    <div class="page-title-right">
-                        <a href="create.php" class="btn btn-primary waves-effect waves-light">Add New</a>
-                    </div>
-
+<div class="main-container container-fluid">
+    <div class="inner-body">
+        <div class="page-header">
+            <div>
+                <h2 class="main-content-title tx-24 mg-b-5">Hero Sliders</h2>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Hero Sliders</a></li>
+                    <li class="breadcrumb-item" aria-current="page">Index</li>
+                </ol>
+            </div>
+            <div class="d-flex">
+                <div class="justify-content-center">
+                    <a href="create.php" class="btn btn-primary waves-effect waves-light">Add New</a>
                 </div>
+
             </div>
         </div>
-        <!-- end page title -->
+
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
@@ -39,7 +41,7 @@ $storeFolder = '../../assets/uploads/hero-section';
                                 </thead>
                                 <tbody>
                                     <?php
-                                    $rows = fetch_data($link, "SELECT * FROM tbl_media where media_type='hero-image' GROUP BY media_name ORDER by id DESC");
+                                    $rows = fetch_data($link, "SELECT * FROM tbl_media where media_type='hero-image' ORDER by id DESC");
                                     foreach ($rows as $key => $row) {
                                         if ($row['media_status'] == '1') {
                                             $status = '<span class="badge bg-success">Active</span>';
@@ -50,7 +52,7 @@ $storeFolder = '../../assets/uploads/hero-section';
                                         <tr>
                                             <td class="text-center align-middle"><?= $key + 1; ?></td>
                                             <td>
-                                                <img src="<?= $storeFolder; ?>/<?= $row['media_name']; ?>" style="max-width:100px;" />
+                                                <img class="wd-20p" src="<?= $storeFolder; ?>/<?= $row['media_name']; ?>" />
                                             </td>
                                             <td class="text-center align-middle"><a onclick="JSconfirm('change_status.php?change_status=1&id=<?= $row['id']; ?>&status=<?= $row['media_status'] ?>','warning','Are you sure to change the status of selected record ?')"><?= $status ?></a></td>
                                             <td class="text-end text-center align-middle">
