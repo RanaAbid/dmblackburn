@@ -78,6 +78,9 @@ $current_year  = date("Y", strtotime($today));
     <!-- Internal Datetimepicker-slider css -->
     <link href="<?=$app_path?>assets/plugins/amazeui-datetimepicker/css/amazeui.datetimepicker.css" rel="stylesheet">
 
+    <!-- InternalFileupload css-->
+	<link href="<?=$app_path?>assets/plugins/fileuploads/css/fileupload.css" rel="stylesheet" type="text/css"/>
+
     <!-- DATA TABLE CSS -->
     <link href="<?=$app_path?>assets/plugins/datatable/css/dataTables.bootstrap5.css" rel="stylesheet" />
     <link href="<?=$app_path?>assets/plugins/datatable/css/buttons.bootstrap5.min.css" rel="stylesheet">

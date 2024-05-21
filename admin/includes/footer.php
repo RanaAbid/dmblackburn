@@ -85,6 +85,8 @@
 <script src="<?= $app_path ?>assets/plugins/datatable/js/buttons.colVis.min.js"></script>
 <script src="<?= $app_path ?>assets/plugins/datatable/dataTables.responsive.min.js"></script>
 <script src="<?= $app_path ?>assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
+<script src="<?= $app_path ?>assets/plugins/fileuploads/js/fileupload.js"></script>
+        <script src="<?= $app_path ?>assets/plugins/fileuploads/js/file-upload.js"></script>
 
 
 <!--Bootstrap-datepicker js-->
