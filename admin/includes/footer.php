@@ -6,7 +6,7 @@
   <div class="container">
     <div class="row row-sm">
       <div class="col-md-12">
-        <span>Copyright © <?= $current_year ?> Maktaba Tul Madina All rights reserved.</span>
+        <span>Copyright © <?= $current_year ?> DMblackburn All rights reserved.</span>
       </div>
     </div>
   </div>

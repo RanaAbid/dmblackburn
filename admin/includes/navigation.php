@@ -12,7 +12,7 @@
                         alt="logo">
                     <img src="<?=$app_path?>assets/img/brand/icon.png" class="header-brand-img icon-logo theme-logo"
                         alt="logo"> -->
-                    MTM
+                    DMblackburn
                 </a>
             </div>
             <div class="main-sidebar-body main-body-1">

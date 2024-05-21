@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <meta name="description" content="DMblackburn -  CMS">
-    <meta name="author" content="Vintage Tech">
+    <meta name="author" content="Dawateislami">
     <meta name="keywords" content="">
 
     <!-- Favicon -->
@@ -65,7 +65,7 @@
                                             <p class="mb-4 text-muted tx-13 ms-0 text-start">Signin to create, discover and connect with the global community</p>
                                             <div class="form-group text-start">
                                                 <label>User Name</label>
-                                                <input class="form-control" placeholder="Enter your username" type="text" name="username"  id="username" value="aazaz.raza">
+                                                <input class="form-control" placeholder="Enter your username" type="text" name="username" id="username" value="aazaz.raza">
                                             </div>
                                             <div class="form-group text-start">
                                                 <label>Password</label>
