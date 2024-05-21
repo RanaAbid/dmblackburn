@@ -22,7 +22,7 @@ include($root_path . "includes/main.php");
     <title>Slough - Dar-ul-Madina</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="<?= $app_path ?>assets/images/logo/favicon.ico">
-
+    
     <link rel="stylesheet" href="<?= $app_path ?>assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= $app_path ?>assets/css/animate.min.css">
     <link rel="stylesheet" href="<?= $app_path ?>assets/css/icofont.min.css">
@@ -34,8 +34,10 @@ include($root_path . "includes/main.php");
     <link rel="stylesheet" href="<?= $app_path ?>assets/css/animate-headline.css">
     <link rel="stylesheet" href="<?= $app_path ?>assets/css/swiper-bundle.css">
     <link rel="stylesheet" href="<?= $app_path ?>assets/css/slick.css">
+    <link rel="stylesheet" href="<?= $app_path ?>assets/css/custom.css">
     <link rel="stylesheet" href="<?= $app_path ?>assets/css/style.css">
     <link rel="stylesheet" href="<?= $app_path ?>assets/css/admin.css">
+    
 </head>
 
 <body class="dark_mode">

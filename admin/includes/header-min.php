@@ -3,8 +3,8 @@ ob_start();
 session_start();
 
 //local path
-$app_path = "http://" . $_SERVER['HTTP_HOST'] . "/projects/dmblackburn/";
-$web_dir = "projects/dmblackburn/";
+$app_path = "http://" . $_SERVER['HTTP_HOST'] . "/projects/dmblackburn/admin/";
+$web_dir = "projects/dmblackburn/admin/";
 
 //live path
 // $web_dir="admin/";

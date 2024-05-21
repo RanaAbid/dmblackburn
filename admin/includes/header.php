@@ -5,8 +5,8 @@ session_start();
 //ini_set('max_execution_time', 300); //300 seconds = 5 minutes
 
 //local path
-$app_path = "http://" . $_SERVER['HTTP_HOST'] . "/projects/dmblackburn/";
-$web_dir = "projects/dmblackburn/";
+$app_path = "http://" . $_SERVER['HTTP_HOST'] . "/projects/dmblackburn/admin/";
+$web_dir = "projects/dmblackburn/admin/";
 
 
 //live path
