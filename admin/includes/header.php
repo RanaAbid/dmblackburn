@@ -23,7 +23,7 @@ include_once($root_path . "includes/file-upload.php");
 //include($root_path . "includes/secure.php");
 
 //set global variables
-$user_id = $_SESSION['mktb_user_id'];
+$user_id = $_SESSION['dm_user_id'];
 
 $today         = date('m/d/Y h:i:s A', time());
 $current_month = date("m y", strtotime($today));

