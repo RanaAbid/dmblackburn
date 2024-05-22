@@ -45,8 +45,8 @@
         <div class="row">
           <div class="col-xl-4 col-lg-3 col-sm-6">
             <div class="footer-card mb-50">
-              <h4 class="footer-card-title mt--2 pb-20 mb-30">About Kidba</h4>
-              <p class="footer-card-txt text-white mt--6 mb-30 pr-30">Monotne deplos copertve chanva andng crorate Qhanin Unique Qnderwhe Premum Convere With Uheng Mutmed Cover</p>
+              <h4 class="footer-card-title mt--2 pb-20 mb-30">About Darul Madinah Blackburn</h4>
+              <p class="footer-card-txt text-white mt--6 mb-30 pr-30">Darul Madinah is more than just a school; it’s a nurturing community where learners, educators, and families join hands to shape the future generation of faithful and knowledgeable leaders. As an OFSTED-regulated institution.</p>
               <span class="footer-follow-dialogue d-block mb-23">Follow us :</span>
               <div class="footer-socials">
                 <a href="#" target="_blank" class="footer-social"><i class="icofont-twitter"></i></a>

@@ -10,15 +10,6 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="banner-txt">
-                                        <!-- <h3 class="banner-subtitle-2 mt--9 mb-10" data-animation="fadeInUp" data-delay=".3s">A New Approach to</h3>
-                                        <h1 class="banner-title-2 mb-20" data-animation="fadeInUp" data-delay=".5s">
-                                            Kids Education</h1>
-                                        <p class="banner-paragraph-2 mb-11" data-animation="fadeInUp" data-delay=".7s">We provide best solutions for a Clean Environment If
-                                            you need<br> any help in cleaning or maintenance.</p>
-                                        <div class="banner-btn btn-box sm-padd-btn pt-35">
-                                            <a href="contact.html" class="def-btn btn-2" data-animation="fadeInUp" data-delay=".8s">admission now</a>
-                                            <a href="class.html" class="def-btn btn-3" data-animation="fadeInUp" data-delay=".9s">Our Classes</a>
-                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -33,15 +24,6 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="banner-txt">
-                                        <!-- <h3 class="banner-subtitle-2 mt--9 mb-10" data-animation="fadeInUp" data-delay=".3s">A New Approach to</h3>
-                                        <h1 class="banner-title-2 mb-20" data-animation="fadeInUp" data-delay=".5s">
-                                            Child Education</h1>
-                                        <p class="banner-paragraph-2 mb-11" data-animation="fadeInUp" data-delay=".7s">We provide best solutions for a Clean Environment If
-                                            you need<br> any help in cleaning or maintenance.</p>
-                                        <div class="banner-btn btn-box sm-padd-btn pt-35">
-                                            <a href="contact.html" class="def-btn btn-2" data-animation="fadeInUp" data-delay=".8s">admission now</a>
-                                            <a href="class.html" class="def-btn btn-3" data-animation="fadeInUp" data-delay=".9s">Our Classes</a>
-                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -55,17 +37,6 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-12">
-                                    <!-- <div class="banner-txt">
-                                        <h3 class="banner-subtitle-2 mt--9 mb-10" data-animation="fadeInUp" data-delay=".3s">A New Approach to</h3>
-                                        <h1 class="banner-title-2 mb-20" data-animation="fadeInUp" data-delay=".5s">
-                                            Youth Education</h1>
-                                        <p class="banner-paragraph-2 mb-11" data-animation="fadeInUp" data-delay=".7s">We provide best solutions for a Clean Environment If
-                                            you need<br> any help in cleaning or maintenance.</p>
-                                        <div class="banner-btn btn-box sm-padd-btn pt-35">
-                                            <a href="contact.html" class="def-btn btn-2" data-animation="fadeInUp" data-delay=".8s">admission now</a>
-                                            <a href="class.html" class="def-btn btn-3" data-animation="fadeInUp" data-delay=".9s">Our Classes</a>
-                                        </div>
-                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -129,7 +100,7 @@
                                     <img src="assets/images/feat-icon-4.png" class="filter-shadow-4" alt="Icon">
                                 </div>
                                 <div class="feature-txt">
-                                    <h3 class="feature-sub-title mt--7 mb--8"><a href="class-details.html">Music Lessons</a></h3>
+                                    <h3 class="feature-sub-title mt--7 mb--8"><a href="class-details.html">Islamic Lessons</a></h3>
                                     <div class="divider mt-10 mb-20 bg-gradient-4 rounded-pill"></div>
                                     <p class="mt--6 mb--8">Since have been visonary relable sofware engnern partne.</p>
                                 </div>
@@ -147,21 +118,21 @@
     </div>
 </div>
 <div class="about pt-120 pb-120">
-        <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-xl-6 col-lg-7 col-md-8 col-sm-12">
-                    <h2 class="about-title mt--8 mb-25">About Admission</h2>
-                    <p class="fw-bolds mt--1 mb-16">Enthusastcay deminate competitive oportunities through transparent and Compelngly seize andvirschemas through intermandated.</p>
-                    <p class="mb-35">Enthusastcay deminate competitive oportunities through transparent and action Compelngly seize andvirschemas through intermandated creative adiea sources Enthusiasticay plagiarize clientcentered and relationships.</p>
-                    <span class="about-list d-block  mb-15"><span class="mr-15"><i class="icofont-check-alt"></i></span>Donec facilisis aliquet ultrices. Cras ut ultricies.</span>
-                    <span class="about-list d-block"><span class="mr-15"><i class="icofont-check-alt"></i></span>Fusce euismod at massa eget blandit quisque.</span>
-                    <div class="btn-box pt-50">
-                        <button class="def-btn">Admission Now</button>
-                    </div>
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-xl-6 col-lg-7 col-md-8 col-sm-12">
+                <h2 class="about-title mt--8 mb-25">About Admission</h2>
+                <p class="fw-bolds mt--1 mb-16">Enthusastcay deminate competitive oportunities through transparent and Compelngly seize andvirschemas through intermandated.</p>
+                <p class="mb-35">Enthusastcay deminate competitive oportunities through transparent and action Compelngly seize andvirschemas through intermandated creative adiea sources Enthusiasticay plagiarize clientcentered and relationships.</p>
+                <span class="about-list d-block  mb-15"><span class="mr-15"><i class="icofont-check-alt"></i></span>Donec facilisis aliquet ultrices. Cras ut ultricies.</span>
+                <span class="about-list d-block"><span class="mr-15"><i class="icofont-check-alt"></i></span>Fusce euismod at massa eget blandit quisque.</span>
+                <div class="btn-box pt-50">
+                    <button class="def-btn">Admission Now</button>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 <!-- counter begin -->
 <div class="counter-2 pb-80 pt-120">
@@ -484,101 +455,122 @@
 </div>
 <!-- gallery end -->
 <div class="testimonial pt-120 pb-120">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-4 col-lg-5 col-md-6">
-                    <div class="clients slick-initialized slick-slider">
-                        <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 1236px;"><div class="single-client slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 412px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" tabindex="0">
-                            <img src="assets/images/testimonial-img-1.jpg" alt="Client">
-                        </div><div class="single-client slick-slide" data-slick-index="1" aria-hidden="true" style="width: 412px; position: relative; left: -412px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1">
-                            <img src="assets/images/testimonial-img-2.jpg" alt="Client">
-                        </div><div class="single-client slick-slide" data-slick-index="2" aria-hidden="true" style="width: 412px; position: relative; left: -824px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1">
-                            <img src="assets/images/testimonial-img-3.jpg" alt="Client">
-                        </div></div></div>
-                        
-                        
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-4 col-lg-5 col-md-6">
+                <div class="clients slick-initialized slick-slider">
+                    <div class="slick-list draggable">
+                        <div class="slick-track" style="opacity: 1; width: 1236px;">
+                            <div class="single-client slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 412px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" tabindex="0">
+                                <img src="assets/images/testimonial-img-1.jpg" alt="Client">
+                            </div>
+                            <div class="single-client slick-slide" data-slick-index="1" aria-hidden="true" style="width: 412px; position: relative; left: -412px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1">
+                                <img src="assets/images/testimonial-img-2.jpg" alt="Client">
+                            </div>
+                            <div class="single-client slick-slide" data-slick-index="2" aria-hidden="true" style="width: 412px; position: relative; left: -824px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1">
+                                <img src="assets/images/testimonial-img-3.jpg" alt="Client">
+                            </div>
+                        </div>
                     </div>
+
+
                 </div>
-                <div class="col-xl-8 col-lg-7 col-md-6">
-                    <div class="client-feedback pr-70 pl-30 slick-initialized slick-slider slick-dotted slick-vertical">
-                        <div class="slick-list draggable" style="height: 294.797px;"><div class="slick-track" style="opacity: 1; height: 2064px; transform: translate3d(0px, -294px, 0px);"><div class="single-feedback slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 754px;" tabindex="-1">
-                            <div class="feedback-title-area">
-                                <div class="quote-icon mb-30">
-                                    <img src="assets/images/quote.png" alt="“">
+            </div>
+            <div class="col-xl-8 col-lg-7 col-md-6">
+                <div class="client-feedback pr-70 pl-30 slick-initialized slick-slider slick-dotted slick-vertical">
+                    <div class="slick-list draggable" style="height: 294.797px;">
+                        <div class="slick-track" style="opacity: 1; height: 2064px; transform: translate3d(0px, -294px, 0px);">
+                            <div class="single-feedback slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 754px;" tabindex="-1">
+                                <div class="feedback-title-area">
+                                    <div class="quote-icon mb-30">
+                                        <img src="assets/images/quote.png" alt="“">
+                                    </div>
+                                    <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
                                 </div>
-                                <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
+                                <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
+                                <div class="divider bg-white rounded-pill mb-20"></div>
+                                <h4 class="client-name mt--2 mb--2">Benjamee</h4>
                             </div>
-                            <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
-                            <div class="divider bg-white rounded-pill mb-20"></div>
-                            <h4 class="client-name mt--2 mb--2">Benjamee</h4>
-                        </div><div class="single-feedback slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 754px;" tabindex="0" role="tabpanel" id="slick-slide10" aria-describedby="slick-slide-control10">
-                            <div class="feedback-title-area">
-                                <div class="quote-icon mb-30">
-                                    <img src="assets/images/quote.png" alt="“">
+                            <div class="single-feedback slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 754px;" tabindex="0" role="tabpanel" id="slick-slide10" aria-describedby="slick-slide-control10">
+                                <div class="feedback-title-area">
+                                    <div class="quote-icon mb-30">
+                                        <img src="assets/images/quote.png" alt="“">
+                                    </div>
+                                    <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
                                 </div>
-                                <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
+                                <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
+                                <div class="divider bg-white rounded-pill mb-20"></div>
+                                <h4 class="client-name mt--2 mb--2">Charlotte</h4>
                             </div>
-                            <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
-                            <div class="divider bg-white rounded-pill mb-20"></div>
-                            <h4 class="client-name mt--2 mb--2">Charlotte</h4>
-                        </div><div class="single-feedback slick-slide" data-slick-index="1" aria-hidden="true" style="width: 754px;" tabindex="-1" role="tabpanel" id="slick-slide11" aria-describedby="slick-slide-control11">
-                            <div class="feedback-title-area">
-                                <div class="quote-icon mb-30">
-                                    <img src="assets/images/quote.png" alt="“">
+                            <div class="single-feedback slick-slide" data-slick-index="1" aria-hidden="true" style="width: 754px;" tabindex="-1" role="tabpanel" id="slick-slide11" aria-describedby="slick-slide-control11">
+                                <div class="feedback-title-area">
+                                    <div class="quote-icon mb-30">
+                                        <img src="assets/images/quote.png" alt="“">
+                                    </div>
+                                    <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
                                 </div>
-                                <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
+                                <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
+                                <div class="divider bg-white rounded-pill mb-20"></div>
+                                <h4 class="client-name mt--2 mb--2">Amelia</h4>
                             </div>
-                            <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
-                            <div class="divider bg-white rounded-pill mb-20"></div>
-                            <h4 class="client-name mt--2 mb--2">Amelia</h4>
-                        </div><div class="single-feedback slick-slide" data-slick-index="2" aria-hidden="true" style="width: 754px;" tabindex="-1" role="tabpanel" id="slick-slide12" aria-describedby="slick-slide-control12">
-                            <div class="feedback-title-area">
-                                <div class="quote-icon mb-30">
-                                    <img src="assets/images/quote.png" alt="“">
+                            <div class="single-feedback slick-slide" data-slick-index="2" aria-hidden="true" style="width: 754px;" tabindex="-1" role="tabpanel" id="slick-slide12" aria-describedby="slick-slide-control12">
+                                <div class="feedback-title-area">
+                                    <div class="quote-icon mb-30">
+                                        <img src="assets/images/quote.png" alt="“">
+                                    </div>
+                                    <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
                                 </div>
-                                <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
+                                <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
+                                <div class="divider bg-white rounded-pill mb-20"></div>
+                                <h4 class="client-name mt--2 mb--2">Benjamee</h4>
                             </div>
-                            <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
-                            <div class="divider bg-white rounded-pill mb-20"></div>
-                            <h4 class="client-name mt--2 mb--2">Benjamee</h4>
-                        </div><div class="single-feedback slick-slide slick-cloned" data-slick-index="3" id="" aria-hidden="true" style="width: 754px;" tabindex="-1">
-                            <div class="feedback-title-area">
-                                <div class="quote-icon mb-30">
-                                    <img src="assets/images/quote.png" alt="“">
+                            <div class="single-feedback slick-slide slick-cloned" data-slick-index="3" id="" aria-hidden="true" style="width: 754px;" tabindex="-1">
+                                <div class="feedback-title-area">
+                                    <div class="quote-icon mb-30">
+                                        <img src="assets/images/quote.png" alt="“">
+                                    </div>
+                                    <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
                                 </div>
-                                <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
+                                <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
+                                <div class="divider bg-white rounded-pill mb-20"></div>
+                                <h4 class="client-name mt--2 mb--2">Charlotte</h4>
                             </div>
-                            <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
-                            <div class="divider bg-white rounded-pill mb-20"></div>
-                            <h4 class="client-name mt--2 mb--2">Charlotte</h4>
-                        </div><div class="single-feedback slick-slide slick-cloned" data-slick-index="4" id="" aria-hidden="true" style="width: 754px;" tabindex="-1">
-                            <div class="feedback-title-area">
-                                <div class="quote-icon mb-30">
-                                    <img src="assets/images/quote.png" alt="“">
+                            <div class="single-feedback slick-slide slick-cloned" data-slick-index="4" id="" aria-hidden="true" style="width: 754px;" tabindex="-1">
+                                <div class="feedback-title-area">
+                                    <div class="quote-icon mb-30">
+                                        <img src="assets/images/quote.png" alt="“">
+                                    </div>
+                                    <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
                                 </div>
-                                <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
+                                <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
+                                <div class="divider bg-white rounded-pill mb-20"></div>
+                                <h4 class="client-name mt--2 mb--2">Amelia</h4>
                             </div>
-                            <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
-                            <div class="divider bg-white rounded-pill mb-20"></div>
-                            <h4 class="client-name mt--2 mb--2">Amelia</h4>
-                        </div><div class="single-feedback slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" style="width: 754px;" tabindex="-1">
-                            <div class="feedback-title-area">
-                                <div class="quote-icon mb-30">
-                                    <img src="assets/images/quote.png" alt="“">
+                            <div class="single-feedback slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" style="width: 754px;" tabindex="-1">
+                                <div class="feedback-title-area">
+                                    <div class="quote-icon mb-30">
+                                        <img src="assets/images/quote.png" alt="“">
+                                    </div>
+                                    <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
                                 </div>
-                                <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
+                                <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
+                                <div class="divider bg-white rounded-pill mb-20"></div>
+                                <h4 class="client-name mt--2 mb--2">Benjamee</h4>
                             </div>
-                            <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
-                            <div class="divider bg-white rounded-pill mb-20"></div>
-                            <h4 class="client-name mt--2 mb--2">Benjamee</h4>
-                        </div></div></div>
-                        
-                        
-                    <ul class="slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control10" aria-controls="slick-slide10" aria-label="1 of 3" tabindex="0" aria-selected="true">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control11" aria-controls="slick-slide11" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control12" aria-controls="slick-slide12" aria-label="3 of 3" tabindex="-1">3</button></li></ul></div>
+                        </div>
+                    </div>
+
+
+                    <ul class="slick-dots" style="" role="tablist">
+                        <li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control10" aria-controls="slick-slide10" aria-label="1 of 3" tabindex="0" aria-selected="true">1</button></li>
+                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control11" aria-controls="slick-slide11" aria-label="2 of 3" tabindex="-1">2</button></li>
+                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control12" aria-controls="slick-slide12" aria-label="3 of 3" tabindex="-1">3</button></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+</div>
 <!-- blog begin -->
 <div class="latest-news pb-80 pt-120">
     <div class="container">

@@ -1878,13 +1878,12 @@ textarea:focus::placeholder {
 .ff-special {
   font-family: "Open Sans", sans-serif;
 }
-
 .def-btn {
   /* height: 60px; */
   line-height: 45px;
   /* background: linear-gradient(145deg, #8ecf35, #23cc88); */
-  background-color: #109356;
-  box-shadow: 0px 5px 10px 0px rgba(35, 204, 136, 0.5);
+  background-color: #055530;
+  box-shadow: 0px 5px 10px 0px rgb(5 85 48 / 63%);
   font-size: 16px;
   font-weight: 700;
   color: #fff;
@@ -2677,7 +2676,7 @@ textarea:focus::placeholder {
 ******************************************************* 
 *************************************************************** */
 .about {
-  background: url(../images/about-bg.png) center center no-repeat;
+  background: url(../images/background/bg-admission.jpg) center center no-repeat;
   background-size: cover;
   color: #fff;
 }
@@ -4028,8 +4027,8 @@ p.app-download-txt {
 .footer-input {
   width: 100%;
   height: 60px;
-  background: #6231d6;
-  border: 1px solid #804BFF;
+  background: #10844e;
+  border: 1px solid #10844e;
   color: #fff;
 }
 .footer-input::placeholder {
