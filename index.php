@@ -47,7 +47,6 @@
     </div>
 </div>
 <!-- banner end -->
-
 <div class="feature pt-120 pb-50">
     <div class="container">
         <div class="row align-items-center">
