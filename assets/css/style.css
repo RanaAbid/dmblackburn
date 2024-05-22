@@ -1942,7 +1942,7 @@ textarea:focus::placeholder {
 }
 
 .section-title {
-  font-size: 52px;
+  font-size: 45px;
   line-height: 1.2;
   font-weight: 600;
   color: #00394f;
@@ -1985,19 +1985,19 @@ textarea:focus::placeholder {
 }
 
 .color-4 {
-  color: #ffc000;
+  color: #064929;
 }
 
 .color-5 {
-  color: #e84b3a;
+  color: #71cf4c;
 }
 
 .color-6 {
-  color: #ff723a;
+  color: #29c591;
 }
 
 .color-7 {
-  color: #92278f;
+  color: #67af42;
 }
 
 .color-8 {
@@ -3364,12 +3364,12 @@ p.app-download-txt {
 }
 
 .facility-card.facility-card-one {
-  background: url(../images/facility-img-1.jpg) center center no-repeat;
+  background: url(../images/facilities/facility-img-2.jpg) center center no-repeat;
   background-size: cover;
   background-position: top center;
 }
 .facility-card.facility-card-two {
-  background: url(../images/facility-img-2.jpg) center center no-repeat;
+  background: url(../images/facilities/facility-img-2.jpg) center center no-repeat;
   background-size: cover;
   background-position: top center;
 }
@@ -3378,7 +3378,7 @@ p.app-download-txt {
   box-shadow: 0px 25px 20px 0px rgba(255, 114, 58, 0.3);
 }
 .facility-card.facility-card-three {
-  background: url(../images/facility-img-3.jpg) center center no-repeat;
+  background: url(../images/facilities/facility-img-2.jpg) center center no-repeat;
   background-size: cover;
   background-position: top center;
 }

@@ -82,9 +82,9 @@
         <div class="row align-items-center">
             <div class="col-xl-8 col-lg-8">
                 <div class="part-txt mb-70">
-                    <div class="section-heading mb-70">
-                        <h2 class="section-title mt--8 mb-25">Welcome to dmblackburn</h2>
-                        <p class="heading-sub-txt mt--1 mb--8">Here is what you can expect from a house cleaning from a Handy professional.<br> Download the app to share further cleaning!</p>
+                    <div class="section-heading mb-40">
+                        <h2 class="section-title mt--8 mb-25">Welcome to Darul Madinah Blackburn</h2>
+                        <p class="heading-sub-txt mt--1 mb--8 text-justify">Darul Madinah is more than just a school; it’s a nurturing community where learners, educators, and families join hands to shape the future generation of faithful and knowledgeable leaders. As an OFSTED-regulated institution, we seamlessly blend the Early Years Foundation Stage (EYFS) curriculum with essential Islamic teachings, laying a solid foundation for your child’s holistic development.</p>
                     </div>
                     <div class="row r-gap-40 has-gradient-service mb-30 mb-lg-0">
                         <div class="col-xl-6 col-md-6">
@@ -150,7 +150,7 @@
         <div class="container">
             <div class="row justify-content-end">
                 <div class="col-xl-6 col-lg-7 col-md-8 col-sm-12">
-                    <h2 class="about-title mt--8 mb-25">About Kindergarten School</h2>
+                    <h2 class="about-title mt--8 mb-25">About Admission</h2>
                     <p class="fw-bolds mt--1 mb-16">Enthusastcay deminate competitive oportunities through transparent and Compelngly seize andvirschemas through intermandated.</p>
                     <p class="mb-35">Enthusastcay deminate competitive oportunities through transparent and action Compelngly seize andvirschemas through intermandated creative adiea sources Enthusiasticay plagiarize clientcentered and relationships.</p>
                     <span class="about-list d-block  mb-15"><span class="mr-15"><i class="icofont-check-alt"></i></span>Donec facilisis aliquet ultrices. Cras ut ultricies.</span>
@@ -174,7 +174,7 @@
                     </div>
                     <div class="counter-part-txt text-center p-relative">
                         <h2 class="counter-txt odometer mb-10" data-count="2500">0</h2>
-                        <p class="counter-sub-txt mb-0">Students <br> Enrolled</p>
+                        <p class="counter-sub-txt mb-0">Teachers</p>
                     </div>
                 </div>
             </div>
@@ -185,7 +185,7 @@
                     </div>
                     <div class="counter-part-txt text-center p-relative">
                         <h2 class="counter-txt odometer mb-10" data-count="912">0</h2>
-                        <p class="counter-sub-txt mb-0">Best Awards <br> Won</p>
+                        <p class="counter-sub-txt mb-0">Children</p>
                     </div>
                 </div>
             </div>
@@ -196,7 +196,7 @@
                     </div>
                     <div class="counter-part-txt text-center p-relative">
                         <h2 class="counter-txt odometer mb-10" data-count="370">0</h2>
-                        <p class="counter-sub-txt mb-0">Completed <br> courses</p>
+                        <p class="counter-sub-txt mb-0">Year of Service</p>
                     </div>
                 </div>
             </div>
@@ -207,7 +207,7 @@
                     </div>
                     <div class="counter-part-txt text-center p-relative">
                         <h2 class="counter-txt odometer mb-10" data-count="648">0</h2>
-                        <p class="counter-sub-txt mb-0">Total <br> Courses</p>
+                        <p class="counter-sub-txt mb-0">Campuses</p>
                     </div>
                 </div>
             </div>
@@ -234,13 +234,9 @@
                 <div class="facility-card facility-card-one mb-40">
                     <div class="facility-img-area"></div>
                     <div class="facility-card-txt d-flex flex-column align-items-center text-center p-50 px-50">
-                        <div class="facility-icon facility-icon-minus-top mb-30">
-                            <img src="assets/images/facility-icon-1.png" alt="icon">
-                        </div>
-                        <h3 class="facility-title mt--2 mb-25"><a href="class-details.html">Pre-School Sports</a>
+                        <h3 class="facility-title mt--2 mb-25"><a href="class-details.html">Holistic Development</a>
                         </h3>
-                        <p class="facility-txt mt--4 mb--8">Credibly implement state of the art scenarios with
-                            granular commuities ssertively drive.</p>
+                        <p class="facility-txt mt--4 mb--8">Darul-Madinah offers a well-rounded education that goes beyond conventional academics to include moral, social.</p>
                     </div>
                 </div>
             </div>
@@ -248,12 +244,8 @@
                 <div class="facility-card facility-card-two mb-40">
                     <div class="facility-img-area"></div>
                     <div class="facility-card-txt d-flex flex-column align-items-center text-center p-50 px-50">
-                        <div class="facility-icon facility-icon-minus-top mb-30">
-                            <img src="assets/images/facility-icon-2.png" alt="icon">
-                        </div>
-                        <h3 class="facility-title mt--2 mb-25"><a href="class-details.html">Music Art Class</a></h3>
-                        <p class="facility-txt mt--4 mb--8">Credibly implement state of the art scenarios with
-                            granular commuities ssertively drive.</p>
+                        <h3 class="facility-title mt--2 mb-25"><a href="class-details.html">Shari’ah-Compliant</a></h3>
+                        <p class="facility-txt mt--4 mb--8">Unique in its approach, the school aligns conventional academic studies with Islamic teachings</p>
                     </div>
                 </div>
             </div>
@@ -261,12 +253,8 @@
                 <div class="facility-card facility-card-three mb-40">
                     <div class="facility-img-area"></div>
                     <div class="facility-card-txt d-flex flex-column align-items-center text-center p-50 px-50">
-                        <div class="facility-icon facility-icon-minus-top mb-30">
-                            <img src="assets/images/facility-icon-3.png" alt="icon">
-                        </div>
-                        <h3 class="facility-title mt--2 mb-25"><a href="class-details.html">Healthy Meals</a></h3>
-                        <p class="facility-txt mt--4 mb--8">Credibly implement state of the art scenarios with
-                            granular commuities ssertively drive.</p>
+                        <h3 class="facility-title mt--2 mb-25"><a href="class-details.html">Value-Based Education</a></h3>
+                        <p class="facility-txt mt--4 mb--8">The curriculum is designed to instill essential life skills such as self-discipline commitment, and integrity.</p>
                     </div>
                 </div>
             </div>
@@ -295,10 +283,10 @@
                     <div class="controls d-inline-flex" id="controls">
                         <button class="gallery-filter-btn active color-4 mr-20 pb-17" data-filter="*">Show
                             all</button>
-                        <button class="gallery-filter-btn color-5 mx-20 pb-17" data-filter=".reading">Reading</button>
-                        <button class="gallery-filter-btn color-6 mx-20 pb-17" data-filter=".writing">Writting</button>
-                        <button class="gallery-filter-btn color-7 mx-20 pb-17" data-filter=".painting">Painting</button>
-                        <button class="gallery-filter-btn color-8 ml-20 pb-17" data-filter=".photography">Photography</button>
+                        <button class="gallery-filter-btn color-5 mx-20 pb-17" data-filter=".reading">Nursary</button>
+                        <button class="gallery-filter-btn color-6 mx-20 pb-17" data-filter=".writing">Primary</button>
+                        <button class="gallery-filter-btn color-7 mx-20 pb-17" data-filter=".painting">School</button>
+                        <!-- <button class="gallery-filter-btn color-8 ml-20 pb-17" data-filter=".photography">Photography</button> -->
                     </div>
                 </div>
             </div>
@@ -340,7 +328,7 @@
                     <p class="gallery-sub-title mb--2">By: Smart school psd</p>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 photography">
+            <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 photography">
                 <div class="img">
                     <img src="assets/images/gallery-img-10.jpg" alt="image">
                 </div>
@@ -351,7 +339,7 @@
                     <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">A Sturdy Storage</a></h3>
                     <p class="gallery-sub-title mb--2">By: Smart school psd</p>
                 </div>
-            </div>
+            </div> -->
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 painting reading">
                 <div class="img">
                     <img src="assets/images/gallery-img-11.jpg" alt="image">
@@ -376,7 +364,7 @@
                     <p class="gallery-sub-title mb--2">By: Smart school psd</p>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 photography painting">
+            <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 photography painting">
                 <div class="img">
                     <img src="assets/images/gallery-img-17.jpg" alt="image">
                 </div>
@@ -387,8 +375,8 @@
                     <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Orgain Organic Kids</a></h3>
                     <p class="gallery-sub-title mb--2">By: Smart school psd</p>
                 </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 photography reading">
+            </div> -->
+            <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 photography reading">
                 <div class="img">
                     <img src="assets/images/gallery-img-13.jpg" alt="image">
                 </div>
@@ -399,7 +387,7 @@
                     <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Searching Something</a></h3>
                     <p class="gallery-sub-title mb--2">By: Wow school psd</p>
                 </div>
-            </div>
+            </div> -->
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 writing reading">
                 <div class="img">
                     <img src="assets/images/gallery-img-14.jpg" alt="image">
@@ -424,7 +412,7 @@
                     <p class="gallery-sub-title mb--2">By: Smart school psd</p>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 photography writing">
+            <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 photography writing">
                 <div class="img">
                     <img src="assets/images/gallery-img-16.jpg" alt="image">
                 </div>
@@ -435,8 +423,8 @@
                     <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Globe Introduction</a></h3>
                     <p class="gallery-sub-title mb--2">By: Smart school psd</p>
                 </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 photography painting">
+            </div> -->
+            <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 photography painting">
                 <div class="img">
                     <img src="assets/images/gallery-img-17.jpg" alt="image">
                 </div>
@@ -447,7 +435,7 @@
                     <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Group Studying</a></h3>
                     <p class="gallery-sub-title mb--2">By: Smart school psd</p>
                 </div>
-            </div>
+            </div> -->
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 reading painting writing">
                 <div class="img">
                     <img src="assets/images/gallery-img-18.jpg" alt="image">
@@ -460,7 +448,7 @@
                     <p class="gallery-sub-title mb--2">By: Smart school psd</p>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 photography writing">
+            <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 photography writing">
                 <div class="img">
                     <img src="assets/images/gallery-img-19.jpg" alt="image">
                 </div>
@@ -471,7 +459,7 @@
                     <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Search Courtry</a></h3>
                     <p class="gallery-sub-title mb--2">By: Smart school psd</p>
                 </div>
-            </div>
+            </div> -->
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 reading writing">
                 <div class="img">
                     <img src="assets/images/gallery-img-20.jpg" alt="image">
@@ -597,7 +585,7 @@
         <div class="row justify-content-center">
             <div class="col-xl-7 col-lg-8 col-md-10">
                 <div class="section-heading text-center mb-70">
-                    <h2 class="section-title mt--9 mb-25">Our Latest News</h2>
+                    <h2 class="section-title mt--9 mb-25">CAMPUS ACTIVITIES & EVENTS</h2>
                     <p class="heading-sub-txt mt--1 mb--8">Here is what you can expect from a house cleaning from a
                         Handy professional. Download the app to share further cleaning details and instructions!</p>
                 </div>
@@ -618,10 +606,6 @@
                         <p class="mb--8">Comptely actuaze cent centric coloraton and shang without ainstalled and
                             base awesome smart kid</p>
                     </div>
-                    <div class="blog-bottom-part px-30 d-flex justify-content-between align-items-center">
-                        <span class="blog-single-stat py-20"><img src="assets/images/heart-icon.png" class="mr-10" alt="Heart">23 Like</span>
-                        <span class="blog-single-stat py-20"><img src="assets/images/comment-icon.png" class="mr-10" alt="Comment">22 Comment</span>
-                    </div>
                 </div>
             </div>
             <div class="col-xl-4 col-lg-6 col-md-6">
@@ -638,10 +622,6 @@
                         <p class="mb--8">Comptely actuaze cent centric coloraton and shang without ainstalled and
                             base awesome smart kid</p>
                     </div>
-                    <div class="blog-bottom-part px-30 d-flex justify-content-between align-items-center">
-                        <span class="blog-single-stat py-20"><img src="assets/images/heart-icon.png" class="mr-10" alt="Heart">24 Like</span>
-                        <span class="blog-single-stat py-20"><img src="assets/images/comment-icon.png" class="mr-10" alt="Comment">24 Comment</span>
-                    </div>
                 </div>
             </div>
             <div class="col-xl-4 col-lg-6 col-md-6">
@@ -657,10 +637,6 @@
                         </h3>
                         <p class="mb--8">Comptely actuaze cent centric coloraton and shang without ainstalled and
                             base awesome smart kid</p>
-                    </div>
-                    <div class="blog-bottom-part px-30 d-flex justify-content-between align-items-center">
-                        <span class="blog-single-stat py-20"><img src="assets/images/heart-icon.png" class="mr-10" alt="Heart">24 Like</span>
-                        <span class="blog-single-stat py-20"><img src="assets/images/comment-icon.png" class="mr-10" alt="Comment">24 Comment</span>
                     </div>
                 </div>
             </div>
