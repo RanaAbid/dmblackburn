@@ -2436,9 +2436,9 @@ textarea:focus::placeholder {
   background: url(../images/banner-bg-1.jpg) bottom center no-repeat;
   background-size: cover;
 }
-
+ 
 .breadcrumb-banner {
-  background: url(../images/breadcrumb-bg.jpg) bottom center no-repeat;
+  background: url(../images/about/breadcrumb-bg.jpg) bottom center no-repeat;
   background-size: cover;
 }
 

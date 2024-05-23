@@ -61,4 +61,4 @@ include($root_path . "includes/main.php");
         <div class="mouseCursor cursor-inner"></div>
     </div>
     <!-- mouse-cursor-end -->
-    <?php include("includes/navigation.php"); ?>
+    <?php include("navigation.php"); ?>

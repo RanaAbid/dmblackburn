@@ -7,3 +7,33 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better visibility */
 }
 .text-justify{text-align:justify !important;}
+
+
+
+
+
+
+
+/* Media Queries Start Here */
+@media only screen and (min-width: 1201px) and (max-width: 1440px){
+    /* Styles for extra large devices (large desktops and monitors) */
+  }
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    /* Styles for large devices (desktops and laptops) */
+  }
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Styles for medium devices (landscape tablets and small desktops) */
+  }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Styles for small devices (portrait tablets and large phones) */
+  }
+  @media only screen and (max-width: 480px) {
+    /* Styles for very small devices (phones) */
+
+    .card-staff .face.face1 {
+        left: 13%;
+    }
+    .card-staff .face.face2{
+        left: 13%;
+    }
+  }

@@ -50,7 +50,7 @@
 <div class="feature pt-120 pb-50">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-xl-8 col-lg-8">
+            <div class="col-xl-6 col-lg-6">
                 <div class="part-txt mb-70">
                     <div class="section-heading mb-40">
                         <h2 class="section-title mt--8 mb-25">Welcome to Darul Madinah Blackburn</h2>
@@ -108,10 +108,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4">
-                <div class="feature-img p-relative ml-30 mb-70">
-                    <img src="assets/images/feature-img.jpg" alt="image">
-                </div>
+            <div class="col-xl-6 col-lg-6">
+            <div class="feature-img-2 spacetopbottomxs">
+                        <img src="<?= $app_path ?>assets/images/about/about.jpg" alt="Image">
+                    </div>
             </div>
         </div>
     </div>
