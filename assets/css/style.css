@@ -1944,7 +1944,7 @@ textarea:focus::placeholder {
   font-size: 45px;
   line-height: 1.2;
   font-weight: 600;
-  color: #00394f;
+  color: #055530;
 }
 
 .paragraph-minus-margin {
@@ -2473,9 +2473,9 @@ textarea:focus::placeholder {
 }
 
 .breadcrumb-title {
-  font-size: 72px;
+  font-size: 55px;
   line-height: 1.2;
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
   margin-bottom: 15px;
 }

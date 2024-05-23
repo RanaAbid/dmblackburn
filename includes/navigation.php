@@ -34,7 +34,7 @@
                             <div class="col-lg-12 col-6">
                                 <div class="logo">
                                     <a href="<?= $app_path ?>">
-                                        <img src="assets/images/logo/logo.png" alt="KIDBA">
+                                        <img src="<?= $app_path ?>assets/images/logo/logo.png" alt="KIDBA">
                                     </a>
                                 </div>
                             </div>
@@ -56,11 +56,11 @@
                                         </a>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a href="course.html" id="classDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a href="javascript:void(0)" id="classDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             About
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="classDropdown">
-                                            <li><a href="javascript:void(0)">About Us</a></li>
+                                            <li><a href="<?= $app_path ?>about-us">About Us</a></li>
                                             <li><a href="javascript:void(0)">Ethos and Values</a></li>
                                             <li><a href="javascript:void(0)">Our Staff</a></li>
                                             <li><a href="javascript:void(0)">Gallery</a></li>
