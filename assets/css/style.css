@@ -1950,7 +1950,15 @@ textarea:focus::placeholder {
 .paragraph-minus-margin {
   margin-bottom: -8px;
 }
-
+.bg-green{
+  background-color: #10844e;
+}
+.bg-light-green{
+  background-color: #109356;
+}
+.bg-dark-green{
+  background-color: #055530;
+}
 .bg-danger {
   background-color: #ff4f58 !important;
 }
@@ -11867,7 +11875,7 @@ html .ui-button.ui-state-disabled:active {
   }
 
   .footer-single-info.border-l {
-    border-top: 1px solid #804BFF;
+    border-top: 1px solid #ececec;
     border-left: 0;
   }
 
