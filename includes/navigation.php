@@ -61,9 +61,9 @@
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="classDropdown">
                                             <li><a href="<?= $app_path ?>about-us">About Us</a></li>
-                                            <li><a href="javascript:void(0)">Ethos and Values</a></li>
+                                            <li><a href="<?= $app_path ?>ethos-values">Ethos and Values</a></li>
                                             <li><a href="<?= $app_path ?>our-staff">Our Staff</a></li>
-                                            <li><a href="javascript:void(0)">Gallery</a></li>
+                                            <li><a href="<?= $app_path ?>gallery">Gallery</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
