@@ -48,6 +48,14 @@
                         </ul>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="<?=$app_path?>modules/our-staff/">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="fa fa-group sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Our Staff</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link with-sub" href="javascript:void(0)">
                             <span class="shape1"></span>
                             <span class="shape2"></span>

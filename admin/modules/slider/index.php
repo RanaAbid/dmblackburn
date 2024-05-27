@@ -3,6 +3,8 @@ $page_title = "Home Page Slider";
 include "../../includes/header.php";
 $storeFolder = '../../assets/uploads/hero-section';
 ?>
+
+
 <!-- Page Content-->
 <div class="main-container container-fluid">
     <div class="inner-body">
@@ -77,8 +79,3 @@ $storeFolder = '../../assets/uploads/hero-section';
 <?php
 include "../../includes/footer.php";
 ?>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#datatable').DataTable();
-    });
-</script>

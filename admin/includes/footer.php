@@ -76,6 +76,9 @@
 <script src="<?= $app_path ?>assets/js/custom.js"></script>
 
 <script type="text/javascript">
+    $(document).ready(function() {
+        $('.dataTable').DataTable();
+    });
   tinymce.init({
     selector: '.tiny-mce',
     height: 300,
