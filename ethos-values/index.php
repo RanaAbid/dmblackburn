@@ -26,17 +26,12 @@
             </div>
         </div>
         <div class="row justify-content-between align-items-center">
-            <div class="col-xl-6 col-lg-6 col-md-6">
+            <div class="col-xl-12 col-lg-12 col-md-12">
                 <div class="app-download-txt mb-50 mb-md-0">
                     <h4>Darul Madinah: Nurturing Young Minds and Hearts</h4>
                     <p class="heading-sub-txt mt-3 text-justify">Darul Madinah is an Ofsted-regulated Nursery and Primary School that passionately believes in fostering a collaborative partnership with parents to nurture and guide children towards their full potential. We recognize the immense significance of parental involvement in a child’s development and strive to create a supportive environment where parents and educators work together as a team.</p>
                     <h4>At Darul Madinah Primary School, we offer a holistic educational experience that encompasses</h4>
                     <p class="heading-sub-txt mt-3 text-justify">Daily Hifdh Sessions: Children embark on a journey of memorising Juzz Ammah and embark on memorising other chapters of the Quran.<br> Islamic Studies: Children immerse themselves in the rich tapestry of Islamic knowledge, learning the blessed 99 names of Allah and engaging in daily Islamic studies lessons.<br>lace a strong emphasis on tarbiyah, instilling in children the love and reverence for Allah and His beloved Prophet. We guide them towards following the commandments of Allah and the Sunnah. Fun Fridays: Every Friday, our school comes alive with excitement as children participate in engaging hands-on activities, learn nasheeds, and experience the joy of Jummah Salah.</p>
-                </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6">
-                <div class="part-img pl-30 w_100">
-                    <img src="<?= $app_path ?>assets/images/about/app-download-img.jpg" alt="image">
                 </div>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 mt-35">
