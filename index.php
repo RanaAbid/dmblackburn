@@ -109,9 +109,9 @@
                 </div>
             </div>
             <div class="col-xl-6 col-lg-6">
-            <div class="feature-img-2 spacetopbottomxs">
-                        <img src="<?= $app_path ?>assets/images/about/about.jpg" alt="Image">
-                    </div>
+                <div class="feature-img-2 spacetopbottomxs">
+                    <img src="<?= $app_path ?>assets/images/about/about.jpg" alt="Image">
+                </div>
             </div>
         </div>
     </div>
@@ -134,6 +134,10 @@
 </div>
 
 <!-- counter begin -->
+<?php
+$counters = fetch_data($link, "SELECT * FROM tbl_counters");
+if (sizeof($counters) > 0) {
+?>
 <div class="counter-2 pb-80 pt-120">
     <div class="container">
         <div class="row justify-content-center">
@@ -143,8 +147,8 @@
                         <img src="assets/images/counter-icon-5.png" class="filter-shadow-1" alt="Icon">
                     </div>
                     <div class="counter-part-txt text-center p-relative">
-                        <h2 class="counter-txt odometer mb-10" data-count="2500">0</h2>
-                        <p class="counter-sub-txt mb-0">Teachers</p>
+                        <h2 class="counter-txt odometer mb-10" data-count="<?=$counters[0]['counter_1_num']?>">0</h2>
+                        <p class="counter-sub-txt mb-0"><?=$counters[0]['counter_1_text']?></p>
                     </div>
                 </div>
             </div>
@@ -154,8 +158,8 @@
                         <img src="assets/images/counter-icon-6.png" class="filter-shadow-3" alt="Icon">
                     </div>
                     <div class="counter-part-txt text-center p-relative">
-                        <h2 class="counter-txt odometer mb-10" data-count="912">0</h2>
-                        <p class="counter-sub-txt mb-0">Children</p>
+                        <h2 class="counter-txt odometer mb-10" data-count="<?=$counters[0]['counter_2_num']?>">0</h2>
+                        <p class="counter-sub-txt mb-0"><?=$counters[0]['counter_2_text']?></p>
                     </div>
                 </div>
             </div>
@@ -165,8 +169,8 @@
                         <img src="assets/images/counter-icon-7.png" class="filter-shadow-2" alt="Icon">
                     </div>
                     <div class="counter-part-txt text-center p-relative">
-                        <h2 class="counter-txt odometer mb-10" data-count="370">0</h2>
-                        <p class="counter-sub-txt mb-0">Year of Service</p>
+                        <h2 class="counter-txt odometer mb-10" data-count="<?=$counters[0]['counter_3_num']?>">0</h2>
+                        <p class="counter-sub-txt mb-0"><?=$counters[0]['counter_3_text']?></p>
                     </div>
                 </div>
             </div>
@@ -176,61 +180,50 @@
                         <img src="assets/images/counter-icon-8.png" class="filter-shadow-4" alt="Icon">
                     </div>
                     <div class="counter-part-txt text-center p-relative">
-                        <h2 class="counter-txt odometer mb-10" data-count="648">0</h2>
-                        <p class="counter-sub-txt mb-0">Campuses</p>
+                        <h2 class="counter-txt odometer mb-10" data-count="<?=$counters[0]['counter_4_num']?>">0</h2>
+                        <p class="counter-sub-txt mb-0"><?=$counters[0]['counter_4_text']?></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<?php } ?>
 <!-- counter end -->
 
 <!-- facility begin -->
+<?php
+$facilities = fetch_data($link, "SELECT * FROM tbl_school_facilities WHERE facility_status='1' ORDER BY added_on DESC");
+if (sizeof($facilities) > 0) {
+?>
 <div class="facility pt-120 pb-80">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-7 col-lg-8 col-md-10">
                 <div class="section-heading text-center mb-60">
-                    <h2 class="section-title text-white mt--8 mb-25">School Fecilities</h2>
-                    <p class="heading-sub-txt text-white mt--1 mb--8">Here is what you can expect from a house
-                        cleaning from a Handy professional. Download the app to share further cleaning details and
-                        instructions!</p>
+                    <h2 class="section-title text-white mt--8 mb-25">School Facilities</h2>
+                    <p class="heading-sub-txt text-white mt--1 mb--8">Here is what you can expect from a house cleaning from a Handy professional. Download the app to share further cleaning details and instructions!</p>
                 </div>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                <div class="facility-card facility-card-one mb-40">
-                    <div class="facility-img-area"></div>
-                    <div class="facility-card-txt d-flex flex-column align-items-center text-center p-50 px-50">
-                        <h3 class="facility-title mt--2 mb-25"><a href="class-details.html">Holistic Development</a>
-                        </h3>
-                        <p class="facility-txt mt--4 mb--8">Darul-Madinah offers a well-rounded education that goes beyond conventional academics to include moral, social.</p>
+            <?php foreach ($facilities as $facility) : ?>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="facility-card facility-card-one mb-40" style="background: url(<?=$app_path?>admin/assets/uploads/school-facilities/<?=$facility['facility_img']?>) center center no-repeat;">
+                        <div class="facility-img-area"></div>
+                        <div class="facility-card-txt d-flex flex-column align-items-center text-center p-50 px-50">
+                            <h3 class="facility-title mt--2 mb-25">
+                                <a href="javascript:void(0);"><?=$facility['facility_name']?></a>
+                            </h3>
+                            <p class="facility-txt mt--4 mb--8"><?=$facility['facility_detail']?></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                <div class="facility-card facility-card-two mb-40">
-                    <div class="facility-img-area"></div>
-                    <div class="facility-card-txt d-flex flex-column align-items-center text-center p-50 px-50">
-                        <h3 class="facility-title mt--2 mb-25"><a href="class-details.html">Shari’ah-Compliant</a></h3>
-                        <p class="facility-txt mt--4 mb--8">Unique in its approach, the school aligns conventional academic studies with Islamic teachings</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                <div class="facility-card facility-card-three mb-40">
-                    <div class="facility-img-area"></div>
-                    <div class="facility-card-txt d-flex flex-column align-items-center text-center p-50 px-50">
-                        <h3 class="facility-title mt--2 mb-25"><a href="class-details.html">Value-Based Education</a></h3>
-                        <p class="facility-txt mt--4 mb--8">The curriculum is designed to instill essential life skills such as self-discipline commitment, and integrity.</p>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach;?>
         </div>
     </div>
 </div>
+<?php } ?>
 <!-- facility end -->
 
 <!-- gallery begin -->
@@ -453,187 +446,71 @@
     </div>
 </div>
 <!-- gallery end -->
+<?php
+$feedbacks = fetch_data($link, "SELECT * FROM tbl_parents_feedback WHERE feedback_status='1' ORDER BY added_on DESC");
+if (sizeof($feedbacks) > 0) {
+?>
 <div class="testimonial pt-120 pb-120">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-xl-4 col-lg-5 col-md-6">
-                <div class="clients slick-initialized slick-slider">
-                    <div class="slick-list draggable">
-                        <div class="slick-track" style="opacity: 1; width: 1236px;">
-                            <div class="single-client slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 412px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" tabindex="0">
-                                <img src="assets/images/testimonial-img-1.jpg" alt="Client">
+            <div class="col-xl-12 col-lg-12 col-md-12">
+                <div class="client-feedback pr-70 pl-30">
+                    <?php foreach ($feedbacks as $feedback) : ?>
+                        <div class="single-feedback">
+                            <div class="feedback-title-area">
+                                <div class="quote-icon mb-30">
+                                    <img src="<?=$app_path?>assets/images/quote.png" alt="“">
+                                </div>
+                                <h2 class="feedback-title mt--3 mb-17"><?=$feedback['title']?></h2>
                             </div>
-                            <div class="single-client slick-slide" data-slick-index="1" aria-hidden="true" style="width: 412px; position: relative; left: -412px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1">
-                                <img src="assets/images/testimonial-img-2.jpg" alt="Client">
-                            </div>
-                            <div class="single-client slick-slide" data-slick-index="2" aria-hidden="true" style="width: 412px; position: relative; left: -824px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1">
-                                <img src="assets/images/testimonial-img-3.jpg" alt="Client">
-                            </div>
+                            <p class="feedback-txt mb-25">“<?=strip_tags($feedback['feedback_detail'])?>”</p>
+                            <div class="divider bg-white rounded-pill mb-20"></div>
+                            <h4 class="client-name mt--2 mb--2"><?=$feedback['name']?></h4>
                         </div>
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="col-xl-8 col-lg-7 col-md-6">
-                <div class="client-feedback pr-70 pl-30 slick-initialized slick-slider slick-dotted slick-vertical">
-                    <div class="slick-list draggable" style="height: 294.797px;">
-                        <div class="slick-track" style="opacity: 1; height: 2064px; transform: translate3d(0px, -294px, 0px);">
-                            <div class="single-feedback slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 754px;" tabindex="-1">
-                                <div class="feedback-title-area">
-                                    <div class="quote-icon mb-30">
-                                        <img src="assets/images/quote.png" alt="“">
-                                    </div>
-                                    <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
-                                </div>
-                                <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
-                                <div class="divider bg-white rounded-pill mb-20"></div>
-                                <h4 class="client-name mt--2 mb--2">Benjamee</h4>
-                            </div>
-                            <div class="single-feedback slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 754px;" tabindex="0" role="tabpanel" id="slick-slide10" aria-describedby="slick-slide-control10">
-                                <div class="feedback-title-area">
-                                    <div class="quote-icon mb-30">
-                                        <img src="assets/images/quote.png" alt="“">
-                                    </div>
-                                    <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
-                                </div>
-                                <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
-                                <div class="divider bg-white rounded-pill mb-20"></div>
-                                <h4 class="client-name mt--2 mb--2">Charlotte</h4>
-                            </div>
-                            <div class="single-feedback slick-slide" data-slick-index="1" aria-hidden="true" style="width: 754px;" tabindex="-1" role="tabpanel" id="slick-slide11" aria-describedby="slick-slide-control11">
-                                <div class="feedback-title-area">
-                                    <div class="quote-icon mb-30">
-                                        <img src="assets/images/quote.png" alt="“">
-                                    </div>
-                                    <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
-                                </div>
-                                <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
-                                <div class="divider bg-white rounded-pill mb-20"></div>
-                                <h4 class="client-name mt--2 mb--2">Amelia</h4>
-                            </div>
-                            <div class="single-feedback slick-slide" data-slick-index="2" aria-hidden="true" style="width: 754px;" tabindex="-1" role="tabpanel" id="slick-slide12" aria-describedby="slick-slide-control12">
-                                <div class="feedback-title-area">
-                                    <div class="quote-icon mb-30">
-                                        <img src="assets/images/quote.png" alt="“">
-                                    </div>
-                                    <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
-                                </div>
-                                <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
-                                <div class="divider bg-white rounded-pill mb-20"></div>
-                                <h4 class="client-name mt--2 mb--2">Benjamee</h4>
-                            </div>
-                            <div class="single-feedback slick-slide slick-cloned" data-slick-index="3" id="" aria-hidden="true" style="width: 754px;" tabindex="-1">
-                                <div class="feedback-title-area">
-                                    <div class="quote-icon mb-30">
-                                        <img src="assets/images/quote.png" alt="“">
-                                    </div>
-                                    <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
-                                </div>
-                                <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
-                                <div class="divider bg-white rounded-pill mb-20"></div>
-                                <h4 class="client-name mt--2 mb--2">Charlotte</h4>
-                            </div>
-                            <div class="single-feedback slick-slide slick-cloned" data-slick-index="4" id="" aria-hidden="true" style="width: 754px;" tabindex="-1">
-                                <div class="feedback-title-area">
-                                    <div class="quote-icon mb-30">
-                                        <img src="assets/images/quote.png" alt="“">
-                                    </div>
-                                    <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
-                                </div>
-                                <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
-                                <div class="divider bg-white rounded-pill mb-20"></div>
-                                <h4 class="client-name mt--2 mb--2">Amelia</h4>
-                            </div>
-                            <div class="single-feedback slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" style="width: 754px;" tabindex="-1">
-                                <div class="feedback-title-area">
-                                    <div class="quote-icon mb-30">
-                                        <img src="assets/images/quote.png" alt="“">
-                                    </div>
-                                    <h2 class="feedback-title mt--3 mb-17">Clients Says?</h2>
-                                </div>
-                                <p class="feedback-txt mb-25">“Praesent scelerisque, odio eu ermentum malesuada, nisi arcu volutpat nisl, sit met convallis nunc turpis eget volutpat. Suspendisse potenti.”</p>
-                                <div class="divider bg-white rounded-pill mb-20"></div>
-                                <h4 class="client-name mt--2 mb--2">Benjamee</h4>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <ul class="slick-dots" style="" role="tablist">
-                        <li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control10" aria-controls="slick-slide10" aria-label="1 of 3" tabindex="0" aria-selected="true">1</button></li>
-                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control11" aria-controls="slick-slide11" aria-label="2 of 3" tabindex="-1">2</button></li>
-                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control12" aria-controls="slick-slide12" aria-label="3 of 3" tabindex="-1">3</button></li>
-                    </ul>
+                    <?php endforeach;?>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!-- blog begin -->
-<div class="latest-news pb-80 pt-120">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-7 col-lg-8 col-md-10">
-                <div class="section-heading text-center mb-70">
-                    <h2 class="section-title mt--9 mb-25">CAMPUS ACTIVITIES & EVENTS</h2>
-                    <p class="heading-sub-txt mt--1 mb--8">Here is what you can expect from a house cleaning from a
-                        Handy professional. Download the app to share further cleaning details and instructions!</p>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-xl-4 col-lg-6 col-md-6">
-                <div class="blog-card mb-40">
-                    <div class="part-img w_100">
-                        <a href="blog-details.html"><img src="assets/images/blog-img-1.jpg" alt="Image"></a>
-                        <span class="lv-part-blog-calendar-date">
-                            <i class="icofont-calendar"></i> 23.01.2022
-                        </span>
-                    </div>
-                    <div class="blog-card-txt p-40 px-30">
-                        <h3 class="blog-title mt--2 mb-20"><a href="blog-details.html">Funny lessons for kids...</a>
-                        </h3>
-                        <p class="mb--8">Comptely actuaze cent centric coloraton and shang without ainstalled and
-                            base awesome smart kid</p>
+<?php
+}
+$events = fetch_data($link, "SELECT * FROM tbl_activity_events WHERE event_status='1' ORDER BY event_date DESC");
+if (sizeof($events) > 0) {
+?>
+    <div class="latest-news pb-80 pt-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-10">
+                    <div class="section-heading text-center mb-70">
+                        <h2 class="section-title mt--9 mb-25">CAMPUS ACTIVITIES & EVENTS</h2>
+                        <p class="heading-sub-txt mt--1 mb--8">Here is what you can expect from a house cleaning from a Handy professional. Download the app to share further cleaning details and instructions!</p>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6">
-                <div class="blog-card mb-40">
-                    <div class="part-img w_100">
-                        <a href="blog-details.html"><img src="assets/images/blog-img-2.jpg" alt="Image"></a>
-                        <span class="lv-part-blog-calendar-date">
-                            <i class="icofont-calendar"></i> 22.04.2020
-                        </span>
+            <div class="row justify-content-center">
+                <?php foreach ($events as $event) : ?>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="blog-card mb-40">
+                            <div class="part-img w_100">
+                                <a href="javascript:void(0);"><img src="<?= $app_path ?>/admin/assets/uploads/activity-events/<?= $event['event_img'] ?>" alt="Image"></a>
+                                <span class="lv-part-blog-calendar-date">
+                                    <i class="icofont-calendar"></i> <?= show_date($event['event_date']) ?>
+                                </span>
+                            </div>
+                            <div class="blog-card-txt p-40 px-30">
+                                <h3 class="blog-title mt--2 mb-20"><a href="javascript:void(0);"><?= $event['event_title'] ?></a>
+                                </h3>
+                                <p class="mb--8"><?= $event['short_desc'] ?></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blog-card-txt p-40 px-30">
-                        <h3 class="blog-title mt--2 mb-20"><a href="blog-details.html">Growing Kids with edu...</a>
-                        </h3>
-                        <p class="mb--8">Comptely actuaze cent centric coloraton and shang without ainstalled and
-                            base awesome smart kid</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6">
-                <div class="blog-card mb-40">
-                    <div class="part-img w_100">
-                        <a href="blog-details.html"><img src="assets/images/blog-img-3.jpg" alt="Image"></a>
-                        <span class="lv-part-blog-calendar-date">
-                            <i class="icofont-calendar"></i> 21.05.2022
-                        </span>
-                    </div>
-                    <div class="blog-card-txt p-40 px-30">
-                        <h3 class="blog-title mt--2 mb-20"><a href="blog-details.html">San without anta base...</a>
-                        </h3>
-                        <p class="mb--8">Comptely actuaze cent centric coloraton and shang without ainstalled and
-                            base awesome smart kid</p>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
-</div>
+<?php } ?>
 <!-- blog end -->
 
 <?php include("includes/footer.php"); ?>
