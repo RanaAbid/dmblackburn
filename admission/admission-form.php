@@ -310,7 +310,7 @@
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_doctor_name" class="form-label">Name of Doctor *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_doctor_name" id="txt_doctor_name" placeholder="Name of Doctor" required>
+                                                    <input type="text" class="form-control form-control-lg" id="txt_doctor_name" placeholder="Name of Doctor" required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">

@@ -67,7 +67,7 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="javascript:void(0)">
+                                        <a href="<?= $app_path ?>admission">
                                             Admissions
                                         </a>
                                     </li>

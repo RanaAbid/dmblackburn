@@ -126,7 +126,7 @@
                 <span class="about-list d-block  mb-15"><span class="mr-15"><i class="icofont-check-alt"></i></span>Donec facilisis aliquet ultrices. Cras ut ultricies.</span>
                 <span class="about-list d-block"><span class="mr-15"><i class="icofont-check-alt"></i></span>Fusce euismod at massa eget blandit quisque.</span>
                 <div class="btn-box pt-50">
-                    <button class="def-btn">Admission Now</button>
+                    <a href="<?= $app_path ?>admission/admission-form.php" class="def-btn">Admission Now</a>
                 </div>
             </div>
         </div>
