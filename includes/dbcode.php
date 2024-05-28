@@ -3,7 +3,7 @@
 $hostname="localhost";
 $mysql_login="root";
 $mysql_password="";
-$database="maktaba_inventory";
+$database="dmblackburn";
 
 //Live Database
 // $hostname="localhost";

@@ -425,8 +425,6 @@ function display_number_with_decimal($num){
 
 function validate_ckeditor_data($link,$data) {
 	$data = trim($data);
-	$data = stripslashes($data);
-	$data = htmlspecialchars($data);
 	$data = mysqli_real_escape_string($link,$data);
 	return $data;
 }

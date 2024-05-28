@@ -130,17 +130,17 @@ $(document).ready(function(){
     //=======================================================================
     // Testmonial Slider
     //=======================================================================
-    $('.clients').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.client-feedback',
-    });
+    // $('.clients').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     arrows: false,
+    //     fade: true,
+    //     asNavFor: '.client-feedback',
+    // });
     $('.client-feedback').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        asNavFor: '.clients',
+        // asNavFor: '.clients',
         dots: true,
         arrows: false,
         vertical: true,

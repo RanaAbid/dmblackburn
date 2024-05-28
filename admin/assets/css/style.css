@@ -97,6 +97,7 @@
     --primary-bg-hover: #403fad;
     --primary-transparentcolor: rgba(98, 89, 202, 0.16);
     --primary-bg-border: #6259ca;
+    --light-color:#212529;
     --dark-theme: #0e0e23;
     --dark-body: #24243e;
     --dark-border: rgba(255, 255, 255, 0.15);
@@ -4029,7 +4030,7 @@ fieldset:disabled a.btn {
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #a8afc7;
+    color: var(--light-color) !important;
     background-color: #ffffff;
     background-clip: padding-box;
     border: 1px solid #e8e8f7;
@@ -4283,6 +4284,7 @@ textarea.form-control {
     margin-bottom: 5px;
     color: #8f9cc0;
 }
+.form-control
 
 .file-browser .btn-default {
     border-top-right-radius: 6px !important;
