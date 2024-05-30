@@ -19,11 +19,11 @@ $page_title = "Parents Information";
     </div>
 </div>
 <!-- banner end -->
-<div class="parents pt-120 pb-120">
+<div class="parents pt-60 pb-60">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12">
-                <div class="section-heading text-center mb-70">
+                <div class="section-heading text-center mb-30">
                     <h2 class="section-title mt--8 mb-25">The Power of Parental Partnerships: Nurturing Early Learning at Darul Madinah</h2>
                 </div>
             </div>
@@ -50,11 +50,11 @@ $page_title = "Parents Information";
         </div>
     </div>
 </div>
-<div class="benefits pb-120">
+<div class="benefits pb-60">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12">
-                <div class="section-heading text-center mb-70">
+                <div class="section-heading text-center mb-30">
                     <h2 class="section-title mt--8 mb-25">Ways to Partner with Us for Your Child’s Benefit:</h2>
                 </div>
             </div>
@@ -80,11 +80,11 @@ $page_title = "Parents Information";
         </div>
     </div>
 </div>
-<div class="parentMeeting pb-120">
+<div class="parentMeeting pb-60">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12">
-                <div class="section-heading text-center mb-70">
+                <div class="section-heading text-center mb-30">
                     <h2 class="section-title mt--8 mb-25">Ways to Partner with Us for Your Child’s Benefit:</h2>
                 </div>
             </div>
