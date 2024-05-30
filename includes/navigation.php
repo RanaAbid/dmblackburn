@@ -77,7 +77,7 @@
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="blogDropdown">
                                             <li><a href="<?= $app_path ?>parents-information">Parents information</a></li>
-                                            <li><a href="javascript:void(0)">about-parents</a></li>
+                                            <li><a href="<?= $app_path ?>about-parents">about parents</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
