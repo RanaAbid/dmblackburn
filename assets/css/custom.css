@@ -1,4 +1,8 @@
 /* Generic Css Start */
+.admission-panel {
+  box-shadow: rgb(16 147 86 / 53%) 0px 5px 15px;
+  border: 1px solid #109356;
+}
 .sticky-header {
     position: -webkit-sticky; /* For Safari */
     position: sticky;
@@ -8,6 +12,21 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better visibility */
 }
 .text-justify{text-align:justify !important;}
+
+/* BOOTSTRAP CSS */
+.form-control:focus {
+  color: #055530;
+  background-color: #fff;
+  border-color: #046d3b;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgb(36 197 122 / 51%);
+}
+
+.form-select:focus {
+  border-color: #046d3b;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgb(36 197 122 / 51%);
+}
 /* Our Staff Page Css Start */
 .card-staff .face {
   width: 300px;
