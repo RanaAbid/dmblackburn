@@ -1,4 +1,4 @@
-<?php include("../includes/header.php"); 
+<?php include("../includes/header.php");
 $page_title = "Parents Information";
 ?>
 <!-- banner begin -->
@@ -19,182 +19,95 @@ $page_title = "Parents Information";
     </div>
 </div>
 <!-- banner end -->
-<div class="gallery p-120">
+<div class="parents pt-120 pb-120">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12">
                 <div class="section-heading text-center mb-70">
-                    <h2 class="section-title mt--8 mb-25">Our School Gallery</h2>
+                    <h2 class="section-title mt--8 mb-25">The Power of Parental Partnerships: Nurturing Early Learning at Darul Madinah</h2>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-xl-12 col-lg-12">
-                <div class="control-panel d-flex justify-content-center mb-50 mt--1">
-                    <div class="controls d-inline-flex" id="controls">
-                        <button class="gallery-filter-btn color-4 mr-20 pb-17 active" data-filter="*">Show all</button>
-                        <button class="gallery-filter-btn color-5 mx-20 pb-17" data-filter=".painting">Painting</button>
-                        <button class="gallery-filter-btn color-6 mx-20 pb-17" data-filter=".study">Study</button>
-                        <button class="gallery-filter-btn color-7 mx-20 pb-17" data-filter=".photography">Photography</button>
-                        <button class="gallery-filter-btn color-8 ml-20 pb-17" data-filter=".writing">Writing</button>
-                    </div>
+            <div class="col-xl-7 col-lg-7">
+                <p class="text-justify">At Darul Madinah, we recognise that parents are the first and most influential teachers in a child’s life. The journey of education begins at home and parents play a pivotal role in guiding their children during their formative years, laying a solid foundation for their future learning and success.<br>
+                    The early years of a child’s life represent a period of rapid cognitive development, making regular attendance at nursery and school essential. However, children spend a significant portion of their time outside of these formal educational settings. This is where the home environment and parental involvement play a crucial role in shaping a child’s early learning and development.<br>
+
+                    We firmly believe that fostering a strong partnership with parents is paramount in enhancing and supporting our children’s learning, ensuring that they achieve their full potential. We encourage parents to actively engage with us, sharing insights into their children’s home life, interests, and fascinations. This valuable information allows us to tailor our curriculum and incorporate these aspects into their learning experiences.<br>
+
+                    Your child’s key person or class teacher will maintain an electronic record of their progress on the Famly portal, which serves as a communication hub for parents. Through this platform, we will regularly update you on your child’s development and provide suggestions for extending and enhancing their learning at home.<br>
+
+                    Research has consistently demonstrated that when parents actively engage their children in meaningful activities that stimulate conversation and critical thinking, it can significantly accelerate their development. These everyday interactions provide opportunities to stretch children’s minds, fostering curiosity, problem-solving skills, and a love of learning.<br>
+
+                    At Darul Madinah, we value the power of parental partnerships and are committed to working closely with parents to create a supportive and enriching learning environment for our children. We believe that by nurturing a collaborative approach, we can empower our children to reach their full potential and embark on a lifelong journey of success.
+                </p>
+            </div>
+            <div class="col-xl-5 col-lg-5">
+                <div class="staff-details-img w_100 mb-40">
+                    <img src="http://localhost/projects/dmblackburn/assets/images/about/admission.jpg" alt="image">
                 </div>
             </div>
         </div>
-        <div class="row g-0 gallery-images" style="position: relative; height: 850.188px;">
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 gallery-image painting" style="position: absolute; left: 0px; top: 0px;">
-                <div class="img w_100">
-                    <img src="<?= $app_path ?>assets/images/gallery-img-1.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="<?= $app_path ?>assets/images/gallery-img-1.jpg">
-                        <img src="<?= $app_path ?>assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Tiny Treasures</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 gallery-image writing study" style="position: absolute; left: 432px; top: 0px;">
-                <div class="img w_100">
-                    <img src="<?= $app_path ?>assets/images/gallery-img-2.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="<?= $app_path ?>assets/images/gallery-img-2.jpg">
-                        <img src="<?= $app_path ?>assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Kiddle Place</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 gallery-image painting" style="position: absolute; left: 864px; top: 0px;">
-                <div class="img w_100">
-                    <img src="<?= $app_path ?>assets/images/gallery-img-3.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="<?= $app_path ?>assets/images/gallery-img-3.jpg">
-                        <img src="<?= $app_path ?>assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Toys And Tots </a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 gallery-image writing study" style="position: absolute; left: 0px; top: 425.094px;">
-                <div class="img w_100">
-                    <img src="<?= $app_path ?>assets/images/gallery-img-4.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="<?= $app_path ?>assets/images/gallery-img-4.jpg">
-                        <img src="<?= $app_path ?>assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Perfect Playtime </a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 gallery-image painting" style="position: absolute; left: 432px; top: 425.094px;">
-                <div class="img w_100">
-                    <img src="<?= $app_path ?>assets/images/gallery-img-5.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="<?= $app_path ?>assets/images/gallery-img-5.jpg">
-                        <img src="<?= $app_path ?>assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Cuddles n’ Chuckles</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 gallery-image photography" style="position: absolute; left: 864px; top: 425.094px;">
-                <div class="img w_100">
-                    <img src="<?= $app_path ?>assets/images/gallery-img-6.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="<?= $app_path ?>assets/images/gallery-img-6.jpg">
-                        <img src="<?= $app_path ?>assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Cuddles n’ Chuckles</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 gallery-image study hidden" style="position: absolute; left: 0px; top: 850.188px;">
-                <div class="img w_100">
-                    <img src="<?= $app_path ?>assets/images/gallery-img-1_7.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="<?= $app_path ?>assets/images/gallery-img-1_7.jpg">
-                        <img src="<?= $app_path ?>assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Enjoy Freely</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 gallery-image painting hidden" style="position: absolute; left: 0px; top: 850.188px;">
-                <div class="img w_100">
-                    <img src="<?= $app_path ?>assets/images/gallery-img-1_8.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="<?= $app_path ?>assets/images/gallery-img-1_8.jpg">
-                        <img src="<?= $app_path ?>assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Confident Kid</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 gallery-image photography hidden" style="position: absolute; left: 0px; top: 850.188px;">
-                <div class="img w_100">
-                    <img src="<?= $app_path ?>assets/images/gallery-img-1_9.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="<?= $app_path ?>assets/images/gallery-img-1_9.jpg">
-                        <img src="<?= $app_path ?>assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Globe Info</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 gallery-image writing study hidden" style="position: absolute; left: 0px; top: 850.188px;">
-                <div class="img w_100">
-                    <img src="<?= $app_path ?>assets/images/gallery-img-1_10.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="<?= $app_path ?>assets/images/gallery-img-1_10.jpg">
-                        <img src="<?= $app_path ?>assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Writing Practice</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 gallery-image photography hidden" style="position: absolute; left: 0px; top: 850.188px;">
-                <div class="img w_100">
-                    <img src="<?= $app_path ?>assets/images/gallery-img-1_11.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="<?= $app_path ?>assets/images/gallery-img-1_11.jpg">
-                        <img src="<?= $app_path ?>assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Search Something</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 gallery-image painting study hidden" style="position: absolute; left: 0px; top: 850.188px;">
-                <div class="img w_100">
-                    <img src="<?= $app_path ?>assets/images/gallery-img-1_12.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="<?= $app_path ?>assets/images/gallery-img-1_12.jpg">
-                        <img src="<?= $app_path ?>assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Awesome Reading</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="row">
+    </div>
+</div>
+<div class="benefits pb-120">
+    <div class="container">
+        <div class="row justify-content-center">
             <div class="col-12">
-                <div class="gallery-btn text-center mt-70" id="load-photos" style="">
-                    <button class="def-btn">View All Photos</button>
+                <div class="section-heading text-center mb-70">
+                    <h2 class="section-title mt--8 mb-25">Ways to Partner with Us for Your Child’s Benefit:</h2>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4">
+                <div class="staff-details-img w_100 mb-40">
+                    <img src="http://localhost/projects/dmblackburn/assets/images/about/admission.jpg" alt="image">
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-8">
+                <p class="text-justify">At Darul Madinah, we recognise that parents are the first and most influential teachers in a child’s life. The journey of education begins at home and parents play a pivotal role in guiding their children during their formative years, laying a solid foundation for their future learning and success.<br>
+                    The early years of a child’s life represent a period of rapid cognitive development, making regular attendance at nursery and school essential. However, children spend a significant portion of their time outside of these formal educational settings. This is where the home environment and parental involvement play a crucial role in shaping a child’s early learning and development.<br>
+
+                    We firmly believe that fostering a strong partnership with parents is paramount in enhancing and supporting our children’s learning, ensuring that they achieve their full potential. We encourage parents to actively engage with us, sharing insights into their children’s home life, interests, and fascinations. This valuable information allows us to tailor our curriculum and incorporate these aspects into their learning experiences.<br>
+
+                    Your child’s key person or class teacher will maintain an electronic record of their progress on the Famly portal, which serves as a communication hub for parents. Through this platform, we will regularly update you on your child’s development and provide suggestions for extending and enhancing their learning at home.<br>
+
+                    Research has consistently demonstrated that when parents actively engage their children in meaningful activities that stimulate conversation and critical thinking, it can significantly accelerate their development. These everyday interactions provide opportunities to stretch children’s minds, fostering curiosity, problem-solving skills, and a love of learning.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="parentMeeting pb-120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-heading text-center mb-70">
+                    <h2 class="section-title mt--8 mb-25">Ways to Partner with Us for Your Child’s Benefit:</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-xl-8 col-lg-8">
+                <p class="text-justify">At Darul Madinah, we recognise that parents are the first and most influential teachers in a child’s life. The journey of education begins at home and parents play a pivotal role in guiding their children during their formative years, laying a solid foundation for their future learning and success.<br>
+                    The early years of a child’s life represent a period of rapid cognitive development, making regular attendance at nursery and school essential. However, children spend a significant portion of their time outside of these formal educational settings. This is where the home environment and parental involvement play a crucial role in shaping a child’s early learning and development.<br>
+
+                    We firmly believe that fostering a strong partnership with parents is paramount in enhancing and supporting our children’s learning, ensuring that they achieve their full potential. We encourage parents to actively engage with us, sharing insights into their children’s home life, interests, and fascinations. This valuable information allows us to tailor our curriculum and incorporate these aspects into their learning experiences.<br>
+
+                    Your child’s key person or class teacher will maintain an electronic record of their progress on the Famly portal, which serves as a communication hub for parents. Through this platform, we will regularly update you on your child’s development and provide suggestions for extending and enhancing their learning at home.<br>
+
+                    Research has consistently demonstrated that when parents actively engage their children in meaningful activities that stimulate conversation and critical thinking, it can significantly accelerate their development. These everyday interactions provide opportunities to stretch children’s minds, fostering curiosity, problem-solving skills, and a love of learning.
+                </p>
+            </div>
+            <div class="col-xl-4 col-lg-4">
+                <div class="staff-details-img w_100 mb-40">
+                    <img src="http://localhost/projects/dmblackburn/assets/images/about/admission.jpg" alt="image">
+                </div>
+            </div>
+            
+
         </div>
     </div>
 </div>
