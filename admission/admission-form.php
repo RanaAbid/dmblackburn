@@ -499,7 +499,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row g-sm-3 g-2 align-items-center input-box mb-20">
+                                        <div class="row g-sm-3 g-2 align-items-center input-box">
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_Languages" class="form-label">Languages spoken at home *</label>
@@ -507,7 +507,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
-                                                <div class="mb-3">
+                                                <div>
                                                     <label for="txt_religion" class="form-label">Please state child’s religion/culture * </label>
                                                     <input type="text" class="form-control form-control-lg" id="txt_religion" name="txt_relation1" placeholder="Enter Relationship to child" required>
                                                 </div>
@@ -605,10 +605,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row g-sm-3 g-2 align-items-center input-box mb-20">
+                                        <div class="row g-sm-3 g-2 align-items-center input-box">
                                             <div class="col-sm-12">
                                                 <p>Your child will be placed on the waiting list and contacted when a place becomes available.</p>
-                                                <p>Thank you for telling us about your child, we look forward to your child joining us and enjoying their time at Dar ul Madinah Slough</p>
+                                                <p class="mb-0">Thank you for telling us about your child, we look forward to your child joining us and enjoying their time at Dar ul Madinah Slough</p>
                                             </div>
                                         </div>
                                     </div>
@@ -653,9 +653,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row g-sm-3 g-2 align-items-center input-box mb-20">
+                                        <div class="row g-sm-3 g-2 align-items-center input-box">
                                             <div class="col-sm-12">
-                                                <p>Any information given to the pre-school as part of this application/registration form will be treated with the strictest of confidence. Any Data collected will be, fairly and lawfully processed, for limited purposes, adequate, relevant and not excessive, accurate, not kept longer than is necessary, processed in accordance with the data’s subjects rights, held securely and not transferred to other organizations unless required to do so by Ofsted, health and safety legislation or other legal obligations.</p>
+                                                <p class="mb-0">Any information given to the pre-school as part of this application/registration form will be treated with the strictest of confidence. Any Data collected will be, fairly and lawfully processed, for limited purposes, adequate, relevant and not excessive, accurate, not kept longer than is necessary, processed in accordance with the data’s subjects rights, held securely and not transferred to other organizations unless required to do so by Ofsted, health and safety legislation or other legal obligations.</p>
                                             </div>
                                         </div>
                                     </div>
