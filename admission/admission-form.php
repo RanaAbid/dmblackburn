@@ -1,15 +1,17 @@
-<?php include("../includes/header.php"); ?>
+<?php include("../includes/header.php"); 
+$page_title = "Admission Form";
+?>
 <!-- banner begin -->
 <div class="banner breadcrumb-banner pt-190 pb-200">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="banner-txt">
-                    <h1 class="breadcrumb-title">Admission Form</h1>
+                    <h1 class="breadcrumb-title"><?php echo "$page_title" ?></h1>
                     <div class="breadcrumb-txt">
                         <a href="index.html">Home</a>
                         <span class="dvdr"><i class="icofont-simple-right"></i></span>
-                        <span>Admission Form</span>
+                        <span><?php echo "$page_title" ?></span>
                     </div>
                 </div>
             </div>
@@ -22,7 +24,7 @@
         <div class="row justify-content-center">
             <div class="col-xl-12 col-lg-12 col-md-12">
                 <div class="section-heading text-center mb-30">
-                    <h2 class="section-title mt--8 mb-25">Admission Form</h2>
+                    <h2 class="section-title mt--8 mb-25"><?php echo "$page_title" ?></h2>
                 </div>
             </div>
         </div>
@@ -501,7 +503,7 @@
                                         </div>
                                         <div class="row g-sm-3 g-2 align-items-center input-box">
                                             <div class="col-sm-6">
-                                                <div class="mb-3">
+                                                <div>
                                                     <label for="txt_Languages" class="form-label">Languages spoken at home *</label>
                                                     <input type="text" class="form-control form-control-lg" id="txt_Languages" name="txt_Languages" placeholder="Languages spoken at home" required>
                                                 </div>

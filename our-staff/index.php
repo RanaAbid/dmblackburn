@@ -1,15 +1,17 @@
-<?php include("../includes/header.php"); ?>
+<?php include("../includes/header.php"); 
+$page_title = "Our Staff";
+?>
 <!-- banner begin -->
 <div class="banner breadcrumb-banner pt-190 pb-200">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="banner-txt">
-                    <h1 class="breadcrumb-title">Our Staff</h1>
+                    <h1 class="breadcrumb-title"><?php echo "$page_title" ?></h1>
                     <div class="breadcrumb-txt">
                         <a href="index.html">Home</a>
                         <span class="dvdr"><i class="icofont-simple-right"></i></span>
-                        <span>Our Staff</span>
+                        <span><?php echo "$page_title" ?></span>
                     </div>
                 </div>
             </div>

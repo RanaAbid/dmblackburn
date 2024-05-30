@@ -1,5 +1,5 @@
 <?php include("../includes/header.php"); 
-$page_title = "Gallery";
+$page_title = "Parents Information";
 ?>
 <!-- banner begin -->
 <div class="banner breadcrumb-banner pt-190 pb-200">

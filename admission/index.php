@@ -1,16 +1,6 @@
 <?php include("../includes/header.php");
 $page_title = "Admission";
 ?>
-<style>
-    .box-shadow1{
-
-        box-shadow: rgb(5 85 48) 0px -23px 25px 0px inset, rgb(60 180 126) 0px -36px 30px 0px inset, rgb(49 156 107) 0px -79px 40px 0px inset, rgb(94 126 112) 0px 2px 1px, rgb(59 120 92) 0px 4px 2px, rgb(26 120 77) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    }
-    .box-shadow1:hover{
-        cursor: pointer;
-        box-shadow: rgb(9 156 87) 10px 25px 70px -12px inset, rgb(3 136 74) 0px 0px 86px -15px inset;
-    }
-</style>
 <!-- banner begin -->
 <div class="banner breadcrumb-banner pt-190 pb-200">
     <div class="container">

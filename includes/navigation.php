@@ -72,12 +72,12 @@
                                         </a>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a href="blog.html" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Blog
+                                        <a href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Parents
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="blogDropdown">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                            <li><a href="<?= $app_path ?>parents-information">Parents information</a></li>
+                                            <li><a href="javascript:void(0)">about-parents</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">

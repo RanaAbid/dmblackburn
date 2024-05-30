@@ -1,15 +1,17 @@
-<?php include("../includes/header.php"); ?>
+<?php include("../includes/header.php");
+$page_title = "About Darul Madinah Blackburn";
+?>
 <!-- banner begin -->
 <div class="banner breadcrumb-banner pt-190 pb-200">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="banner-txt">
-                    <h1 class="breadcrumb-title">About Darul Madinah Blackburn</h1>
+                    <h1 class="breadcrumb-title"><?php echo "$page_title" ?></h1>
                     <div class="breadcrumb-txt">
                         <a href="index.html">Home</a>
                         <span class="dvdr"><i class="icofont-simple-right"></i></span>
-                        <span>About</span>
+                        <span><?php echo "$page_title" ?></span>
                     </div>
                 </div>
             </div>
@@ -28,7 +30,7 @@
             </div>
         </div>
         <div class="row align-items-center">
-            <div class="col-xl-8 col-lg-8">
+            <div class="col-xl-6 col-lg-6">
                 <div class="part-txt mb-70">
                     <div class="section-heading mb-70">
                         <h4>Darul Madinah: Nurturing Young Minds and Hearts</h4>
@@ -38,19 +40,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4">
-                <div class="feature-img p-relative ml-30 mb-70">
-                    <img src="<?= $app_path ?>assets/images/about/feature-img.jpg" alt="image">
+            <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="part-img pl-20 w_100">
+                    <img src="<?= $app_path ?>assets/images/about/app-download-img.jpg" alt="image">
                 </div>
             </div>
         </div>
-        <div class="row align-items-center">
-            <div class="col-xl-4 col-lg-4">
-                <div class="feature-img p-relative mr-30">
-                    <img src="<?= $app_path ?>assets/images/about/feature-img.jpg" alt="image">
+        <div class="row align-items-center mt-3">
+            <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="part-img pr-20 w_100">
+                    <img src="<?= $app_path ?>assets/images/about/app-download-img.jpg" alt="image">
                 </div>
             </div>
-            <div class="col-xl-8 col-lg-8">
+            <div class="col-xl-6 col-lg-6">
                 <div class="part-txt mb-70">
                     <div class="section-heading mb-70">
                         <h4>Darul Madinah: Nurturing Young Minds and Hearts</h4>
