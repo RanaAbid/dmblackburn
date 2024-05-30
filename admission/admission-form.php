@@ -21,7 +21,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-12 col-lg-12 col-md-12">
-                <div class="section-heading text-center mb-70">
+                <div class="section-heading text-center mb-30">
                     <h2 class="section-title mt--8 mb-25">Admission Form</h2>
                 </div>
             </div>
