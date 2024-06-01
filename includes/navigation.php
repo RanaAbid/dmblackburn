@@ -14,9 +14,9 @@ if($page_title = "About Parents"){
                     <div class="col-xl-9 col-lg-9">
                         <div class="top-left">
                             <div class="d-sm-flex">
-                                <div class="header-txt pr-30"><i class="icofont-clock-time"></i> 9:30am - 6:30pm Mon - Sun</div>
-                                <div class="header-txt px-30"><a href="tel:+80012345676587"><i class="icofont-phone"></i> +800-123-4567 6587</a></div>
-                                <div class="header-txt pl-30"><i class="icofont-google-map"></i> Anmoore Road Brooklyn, NY 230</div>
+                                <div class="header-txt pr-30"><i class="icofont-clock-time"></i> 9:30am - 6:30pm Mon - Fri</div>
+                                <div class="header-txt px-30"><a href="tel:+07957951765"><i class="icofont-phone"></i> +07957951765</a></div>
+                                <div class="header-txt pl-30"><i class="icofont-google-map"></i> 50 Darvills Lane, Slough, SL1 2PH</div>
                             </div>
                         </div>
                     </div>

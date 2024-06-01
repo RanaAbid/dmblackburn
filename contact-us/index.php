@@ -88,7 +88,7 @@ $page_title = "Contact Us";
                                 <i class="icofont-globe"></i>
                                 <div class="contact-info-content">
                                     <span class="contact-info-content-text">Visit Us</span>
-                                    <a href="#" target="_blank">www.yoursite.com</a>
+                                    <a href="https://dawateislami.co.uk/" target="_blank">www.dawateislami.co.uk</a>
                                 </div>
                                 </li>
                         </ul>
