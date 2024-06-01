@@ -61,7 +61,7 @@ $page_title = "About Parents";
         </div>
         <div class="row">
             <div class="col-xl-12 col-lg-12">
-            <div class="product-details-bottom-part p-50 px-50 mt-40">
+                <div class="product-details-bottom-part p-50 px-50 mt-40">
                     <div class="col-12">
                         <ul class="nav product-details-nav mb-20" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
@@ -79,73 +79,92 @@ $page_title = "About Parents";
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
-                                <p class="product-description lh-30 mb-40">MOVIE STAR - Online Movie Video & TV Show PSD Template is a the best design for 2017. any kinds of online video Template Based on Bootstrap, 12 column Responsive grid Template. "MOVIE STAR" is a smooth and colorful online video PSD Template, perfect suitable for, Businesses or Personal One page Template. It includes everything you need for the website development such as online Movie, Video & TV Show Template.PSD files are well organized also you can customize very easy. we have include 21 psd file for you. Please, don't .</p>
-                                <h4 class="product-description-title color-9 mb-20">Item Features :</h4>
+                                <h4 class="product-description-title color-9 mb-20">Terms Date :</h4>
                                 <div class="mt--1 mb--9">
                                     <ul>
-                                        <li class="product-description-feature d-flex align-items-center fz-16 lh-28"><span class="color-1 mr-10"><i class="icofont-dotted-right"></i></span>Perfect unique design</li>
-                                        <li class="product-description-feature d-flex align-items-center fz-16 lh-28"><span class="color-1 mr-10"><i class="icofont-dotted-right"></i></span>Fully responsive</li>
-                                        <li class="product-description-feature d-flex align-items-center fz-16 lh-28"><span class="color-1 mr-10"><i class="icofont-dotted-right"></i></span>Amazing parallax effects</li>
-                                        <li class="product-description-feature d-flex align-items-center fz-16 lh-28"><span class="color-1 mr-10"><i class="icofont-dotted-right"></i></span>SEO friendly</li>
-                                        <li class="product-description-feature d-flex align-items-center fz-16 lh-28"><span class="color-1 mr-10"><i class="icofont-dotted-right"></i></span>Well organized and valid code</li>
-                                        <li class="product-description-feature d-flex align-items-center fz-16 lh-28"><span class="color-1 mr-10"><i class="icofont-dotted-right"></i></span>Google fonts</li>
-                                        <li class="product-description-feature d-flex align-items-center fz-16 lh-28"><span class="color-1 mr-10"><i class="icofont-dotted-right"></i></span>WPML ready</li>
+                                        <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
+                                            <a href="<?= $app_path ?>/assets/temp/dummy.pdf" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
+                                                <i class="icofont-dotted-right color-1"></i>
+                                                Click Here
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="information" role="tabpanel" aria-labelledby="information-tab">
                                 <div class="product-details-information mb--10">
-                                    <ul>
-                                        <li class="product-information-list mb-2"><span class="product-information-list-subject fw-bold">Weight</span>1.2 kg</li>
-                                        <li class="product-information-list mb-2"><span class="product-information-list-subject fw-bold">Dimensions</span>45 × 12 × 45 cm</li>
-                                        <li class="product-information-list"><span class="product-information-list-subject fw-bold">Material</span>Hardcover</li>
-                                    </ul>
+                                    <h4 class="product-description-title color-9 mb-20">Newsletters :</h4>
+                                    <div class="mt--1 mb--9">
+                                        <ul>
+                                            <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
+                                                <a href="<?= $app_path ?>/assets/temp/dummy.pdf" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
+                                                    <i class="icofont-dotted-right color-1"></i>
+                                                    Autumn Term 2 Edition 7
+                                                </a>
+                                            </li>
+                                            <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
+                                                <a href="<?= $app_path ?>/assets/temp/dummy.pdf" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
+                                                    <i class="icofont-dotted-right color-1"></i>
+                                                    Autumn Term 2 Edition 5
+                                                </a>
+                                            </li>
+                                            <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
+                                                <a href="<?= $app_path ?>/assets/temp/dummy.pdf" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
+                                                    <i class="icofont-dotted-right color-1"></i>
+                                                    Autumn Term 2 Edition 8
+                                                </a>
+                                            </li>
+                                            <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
+                                                <a href="<?= $app_path ?>/assets/temp/dummy.pdf" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
+                                                    <i class="icofont-dotted-right color-1"></i>
+                                                    Autumn Term 2 Edition 4
+                                                </a>
+                                            </li>
+                                            <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
+                                                <a href="<?= $app_path ?>/assets/temp/dummy.pdf" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
+                                                    <i class="icofont-dotted-right color-1"></i>
+                                                    Autumn Term 2 Edition 3
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
-                                <h3 class="class-comment-title mb-30">1 review for Honest Audience</h3>
-
-                                <div class="class-comment mb-35">
-                                    <div class="class-comment-img mr-30">
-                                        <img src="assets/images/class-comment-img-1.jpg" alt="image">
-                                    </div>
-                                    <div class="class-comment-txt">
-                                        <h4 class="class-comment-username mt--1 mb-15">Kosmi Kotalia</h4>
-                                        <p class="class-comment-details mb-15">There are many variations of passages of Lorem Ipsum available, but the majority some form, by injected humour, or randomised words which.</p>
-                                        <div class="class-comment-actions">
-                                            <a href="#" class="class-comment-single-action"><i class="icofont-reply-all"></i> Reply</a>
-                                            <span class="class-comment-single-action"><i class="icofont-clock-time"></i> 39 minits ago</span>
-                                        </div>
-                                    </div>
+                                <h4 class="product-description-title color-9 mb-20">School Ofsted Report :</h4>
+                                <div class="mt--1 mb--9">
+                                    <ul>
+                                        <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
+                                            <a href="<?= $app_path ?>/assets/temp/dummy.pdf" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
+                                                <i class="icofont-dotted-right color-1"></i>
+                                                School Ofsted Report 1
+                                            </a>
+                                        </li>
+                                        <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
+                                            <a href="<?= $app_path ?>/assets/temp/dummy.pdf" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
+                                                <i class="icofont-dotted-right color-1"></i>
+                                                School Ofsted Report 2
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
-
-                                <p class="mb-25"><span class="d-block class-comment-title mb-20">Add a review</span>Your email address will not be published. Required fields are marked *</p>
-                                <form>
-                                    <div class="contact-form">
-                                        <div class="contact-col-6">
-                                            <label for="reviewName" class="mb-8">Your Full Name*</label>
-                                            <input type="text" class="def-form px-30" name="name" id="reviewName" placeholder="Enter Full Name">
-                                        </div>
-                                        <div class="contact-col-6">
-                                            <label for="reviewEmail" class="mb-8">Your Email Address*</label>
-                                            <input type="email" class="def-form px-30" name="email" id="reviewEmail" placeholder="Enter Email Address">
-                                        </div>
-                                        <div class="contact-col">
-                                            <label for="yourReview" class="mb-8">Your Review*</label>
-                                            <textarea class="def-textarea comment-textarea px-30 p-20" rows="10" id="yourReview" placeholder="Leave Your Review"></textarea>
-                                        </div>
-                                        <div class="contact-col">
-                                            <button class="def-btn">Submit Now</button>
-                                        </div>
-                                    </div>
-                                </form>
                             </div>
                             <div class="tab-pane fade" id="community" role="tabpanel" aria-labelledby="information-tab">
-                                <div class="product-details-information mb--10">
+                            <h4 class="product-description-title color-9 mb-20">Community Information :</h4>
+                                <div class="mt--1 mb--9">
                                     <ul>
-                                        <li class="product-information-list mb-2"><span class="product-information-list-subject fw-bold">Weight</span>1.2 kg</li>
-                                        <li class="product-information-list mb-2"><span class="product-information-list-subject fw-bold">Dimensions</span>45 × 12 × 45 cm</li>
-                                        <li class="product-information-list"><span class="product-information-list-subject fw-bold">Material</span>Hardcover</li>
+                                        <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
+                                            <a href="<?= $app_path ?>/assets/temp/dummy.pdf" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
+                                                <i class="icofont-dotted-right color-1"></i>
+                                                Community Information 1
+                                            </a>
+                                        </li>
+                                        <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
+                                            <a href="<?= $app_path ?>/assets/temp/dummy.pdf" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
+                                                <i class="icofont-dotted-right color-1"></i>
+                                                Community Information 2
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -153,8 +172,8 @@ $page_title = "About Parents";
                     </div>
                 </div>
             </div>
-            </div>
         </div>
     </div>
+</div>
 </div>
 <?php include("../includes/footer.php"); ?>

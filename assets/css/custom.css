@@ -7,6 +7,17 @@
   cursor: pointer;
   box-shadow: rgb(9 156 87) 10px 25px 70px -12px inset, rgb(3 136 74) 0px 0px 86px -15px inset;
 }
+.box-shadow2{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.box-shadow2:hover{
+  cursor: pointer;
+  box-shadow: rgb(9 156 87) 10px 25px 70px -12px inset, rgb(3 136 74) 0px 0px 86px -15px inset;
+  color:#fff;
+}
+.box-shadow2:hover > span{
+  color:#fff;
+}
 .admission-panel {
   box-shadow: rgb(16 147 86 / 53%) 0px 5px 15px;
   border: 1px solid #109356;

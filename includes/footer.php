@@ -140,6 +140,37 @@
 <script src="<?= $app_path ?>assets/js/simple-pagination.js"></script>
 <script src="<?= $app_path ?>assets/js/main.js"></script>
 <script src="<?= $app_path ?>assets/js/admin.js"></script>
+<script>
+  $(document).ready(function() {
+    // Page Not Refresh When same page open
+    $(document).on('click', 'a.parents-info', function(e) {
+      var href = $(this).attr('href');
+      if (href.indexOf('#') !== -1) {
+        href = href.split('#')[1];
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: $('.' + href).offset().top
+        }, 1500);
+      }
+    });
+  });
+  var cpURL = $(location).attr('href');
+  if (cpURL.includes("?")) {
+    var cpURLParts = cpURL.split("?tab=");
+    if (cpURLParts.length > 0) {
+      var cSection = cpURLParts[cpURLParts.length - 1];
+      console.log(cSection);
+      if (cSection) {
+        $('html, body').animate({
+          scrollTop: $('#' + cSection).offset().top
+        }, 1500);
+        var someTabTriggerEl = document.querySelector('#' + cSection);
+        var tab = new bootstrap.Tab(someTabTriggerEl);
+        tab.show();
+      }
+    }
+  }
+</script>
 </body>
 
 </html>

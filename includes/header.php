@@ -7,6 +7,7 @@ $app_path = "http://" . $_SERVER['HTTP_HOST'] . "/projects/dmblackburn/";
 $web_dir = "projects/dmblackburn/";
 
 $root_path = $_SERVER['DOCUMENT_ROOT'] . "/" . $web_dir;
+$actual_link = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
 include($root_path . "includes/dbcode.php");
 include($root_path . "includes/main.php");

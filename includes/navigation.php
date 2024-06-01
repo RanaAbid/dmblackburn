@@ -1,3 +1,11 @@
+<?php 
+$parts_url = explode("/", $actual_link);
+$lastPart_url = end($parts_url);
+$defaultURL = $app_path."index.php#";
+if($page_title = "About Parents"){
+    $defaultURL = $app_path."about-parents/index.php?tab=";
+}
+?>
  <!-- header begin -->
  <div class="header header-style-1">
         <div class="top-header">
@@ -78,6 +86,10 @@
                                         <ul class="dropdown-menu" aria-labelledby="blogDropdown">
                                             <li><a href="<?= $app_path ?>parents-information">Parents information</a></li>
                                             <li><a href="<?= $app_path ?>about-parents">about parents</a></li>
+                                            <li><a href="<?= $defaultURL ?>description-tab" class="parents-info">Terms Date</a></li>
+                                            <li><a href="<?= $defaultURL ?>information-tab" class="parents-info">Newsletters</a></li>
+                                            <li><a href="<?= $defaultURL ?>review-tab" class="parents-info">School Ofsted Report</a></li>
+                                            <li><a href="<?= $defaultURL ?>community-information" class="parents-info">Community Information</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
@@ -90,7 +102,7 @@
                     </div>
                     <div class="col-xl-2 col-lg-3 d-lg-block d-none">
                         <div class="nav-btn d-flex justify-content-end">
-                            <a href="signup.html" class="def-btn">admit now</a>
+                            <a href="<?= $app_path ?>admission/admission-form.php" class="def-btn">Apply Now</a>
                         </div>
                     </div>
                 </div>
