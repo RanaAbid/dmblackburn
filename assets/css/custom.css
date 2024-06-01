@@ -15,7 +15,7 @@
   box-shadow: rgb(9 156 87) 10px 25px 70px -12px inset, rgb(3 136 74) 0px 0px 86px -15px inset;
   color:#fff;
 }
-.box-shadow2:hover > span{
+.box-shadow2:hover > i{
   color:#fff;
 }
 .admission-panel {
