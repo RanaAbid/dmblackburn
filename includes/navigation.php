@@ -8,7 +8,7 @@ if ($page_title = "About Parents") {
 ?>
 <!-- header begin -->
 <div class="header header-style-1 sticky-top">
-    <div class="top-header">
+    <div class="top-header d-none-sm">
         <div class="container">
             <div class="row">
                 <div class="col-xl-9 col-lg-9">

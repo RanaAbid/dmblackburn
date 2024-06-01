@@ -183,11 +183,17 @@ textarea:focus::placeholder {
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  .d-none-sm{
+    display: none;
+  }
   #loading-center-absolute {
     width: 50%;
   }
 }
 @media (max-width: 575px) {
+  .d-none-sm{
+    display: none;
+  }
   #loading-center-absolute {
     width: 60%;
   }
@@ -2350,7 +2356,7 @@ textarea:focus::placeholder {
 .navbar-nav li a {
   text-transform: uppercase;
   font-size: 16px;
-  color: #040404;
+  color: #040404 !important;
   padding: 10px 0;
   font-weight: 700;
   transition: 0.4s;
@@ -2358,7 +2364,7 @@ textarea:focus::placeholder {
   display: inline-block;
 }
 .navbar-nav li a:hover {
-  color: #109356;
+  color: #109356 !important;
 }
 .navbar-nav li ul li a {
   padding: 5px 0;
@@ -2371,7 +2377,7 @@ textarea:focus::placeholder {
   font-family: "IcoFont";
 }
 .navbar-nav > li:hover > a {
-  color: #109356;
+  color: #109356 !important;
 }
 
 .navbar-nav li {
@@ -9123,7 +9129,7 @@ html .ui-button.ui-state-disabled:active {
   Header section
   ====================== */
   .logo {
-    width: 100px;
+    width: 170px;
   }
 
   .navbar-toggler {
@@ -9165,7 +9171,7 @@ html .ui-button.ui-state-disabled:active {
 
   .bottom-header {
     background: #fff;
-    padding: 30px 0;
+    padding: 20px 0;
   }
 
   .nav-link:after {
@@ -11386,7 +11392,7 @@ html .ui-button.ui-state-disabled:active {
   Header section
   ====================== */
   .logo {
-    width: 100px;
+    width: 160px;
   }
 
   .navbar-toggler {
@@ -11423,7 +11429,7 @@ html .ui-button.ui-state-disabled:active {
 
   .bottom-header {
     background: #fff;
-    padding: 30px 0;
+    padding: 10px 0;
   }
 
   .nav-link:after {
