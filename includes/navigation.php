@@ -7,7 +7,7 @@ if($page_title = "About Parents"){
 }
 ?>
  <!-- header begin -->
- <div class="header header-style-1">
+ <div class="header header-style-1 sticky-top">
         <div class="top-header">
             <div class="container">
                 <div class="row">
