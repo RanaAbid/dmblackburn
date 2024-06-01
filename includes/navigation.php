@@ -93,7 +93,10 @@ if($page_title = "About Parents"){
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="contact.html">Contact</a>
+                                        <a href="<?= $app_path ?>policies">Policies</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="<?= $app_path ?>contact-us">Contact Us</a>
                                     </li>
                                 </ul>
                             </div>
