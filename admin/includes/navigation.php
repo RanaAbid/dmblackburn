@@ -3,7 +3,7 @@
     <div class="main-menu main-sidebar main-sidebar-sticky side-menu">
         <div class="main-sidebar-header main-container-1 active">
             <div class="sidemenu-logo">
-                <a class="main-logo" href="<?=$app_path?>modules/dashboard">
+                <a class="main-logo" href="<?= $app_path ?>modules/dashboard">
                     DM Admin
                 </a>
             </div>
@@ -12,7 +12,7 @@
                 <ul class="menu-nav nav">
                     <li class="nav-header"><span class="nav-label">Dashboard</span></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?=$app_path?>modules/dashboard">
+                        <a class="nav-link" href="<?= $app_path ?>modules/dashboard/">
                             <span class="shape1"></span>
                             <span class="shape2"></span>
                             <i class="ti-home sidemenu-icon menu-icon "></i>
@@ -20,21 +20,135 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link with-sub" href="javascript:void(0)">
+                        <a class="nav-link" href="<?= $app_path ?>modules/slider/">
                             <span class="shape1"></span>
                             <span class="shape2"></span>
                             <i class="ti-wallet sidemenu-icon menu-icon "></i>
-                            <span class="sidemenu-label">Home
-                                <span class="sidemenu-label2">Page</span>
-                            </span>
-                            <i class="angle fe fe-chevron-right"></i>
+                            <span class="sidemenu-label">Website Slider</span>
                         </a>
-                        <ul class="nav-sub">
-                            <li class="nav-sub-item"> <a class="nav-sub-link" href="<?=$app_path?>modules/slider/index.php">Slider</a></li>
-                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link with-sub" href="<?=$app_path?>modules/about-dmblackburn/about-school/index.php">
+                        <a class="nav-link" href="<?= $app_path ?>modules/admission/">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-wallet sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Admissions</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= $app_path ?>modules/counters/">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-wallet sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Counters</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= $app_path ?>modules/community-info/">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-wallet sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Community Information</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= $app_path ?>modules/ethos-values/">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-wallet sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Ethos & Values</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= $app_path ?>modules/events/">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-wallet sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Events</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= $app_path ?>modules/founder-message/">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-wallet sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Founders Message</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= $app_path ?>modules/newsletters/">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-wallet sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Newsletters</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= $app_path ?>modules/our-gallery/">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-wallet sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Gallery</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= $app_path ?>modules/our-policies/">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-wallet sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Policies</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= $app_path ?>modules/our-staff/">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-wallet sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Staff</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= $app_path ?>modules/parents-info/">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-wallet sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Parents Info</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= $app_path ?>modules/school-facilities/">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-wallet sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">School Facilities</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= $app_path ?>modules/school-ofsted-report/">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-wallet sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">School Ofsted Report</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= $app_path ?>modules/terms-date/">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-wallet sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Terms Dates</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= $app_path ?>modules/welcome-section/">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="ti-wallet sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Welcome Section</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link with-sub" href="<?= $app_path ?>modules/about-dmblackburn/about-school/index.php">
                             <span class="shape1"></span>
                             <span class="shape2"></span>
                             <i class="ti-user sidemenu-icon menu-icon "></i>
@@ -44,11 +158,11 @@
                             <i class="angle fe fe-chevron-right"></i>
                         </a>
                         <ul class="nav-sub">
-                            <li class="nav-sub-item"> <a class="nav-sub-link" href="<?=$app_path?>modules/about-dmblackburn/about-school/index.php">About School Section</a></li>
+                            <li class="nav-sub-item"> <a class="nav-sub-link" href="<?= $app_path ?>modules/about-dmblackburn/about-school/index.php">About School Section</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?=$app_path?>modules/our-staff/">
+                        <a class="nav-link" href="<?= $app_path ?>modules/our-staff/">
                             <span class="shape1"></span>
                             <span class="shape2"></span>
                             <i class="fa fa-group sidemenu-icon menu-icon "></i>

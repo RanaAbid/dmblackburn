@@ -3,119 +3,74 @@
 <div class="kitba-banner-area">
     <div class="slider-active swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide bg_cover" data-background="<?= $app_path ?>assets/images/background/banner-first.jpg">
-                <div class="banner-2">
-                    <div class="single-banner-slide kitba-slide-height">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="banner-txt">
+            <?php 
+                $sliders = fetch_data($link, "SELECT * FROM tbl_media where media_type='hero-image' ORDER by id DESC");
+                foreach ($sliders as $key => $slider) {
+            ?>
+                <div class="swiper-slide bg_cover" data-background="<?= $app_path ?>admin/assets/uploads/hero-section/<?=$slider['media_name']?>">
+                    <div class="banner-2">
+                        <div class="single-banner-slide kitba-slide-height">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="banner-txt">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="swiper-slide bg_cover" data-background="<?= $app_path ?>assets/images/background/banner-first.jpg">
-                <div class="banner-2">
-                    <div class="single-banner-slide kitba-slide-height">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="banner-txt">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide bg_cover" data-background="<?= $app_path ?>assets/images/background/banner-first.jpg">
-                <div class="banner-2">
-                    <div class="single-banner-slide kitba-slide-height">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php } ?>
         </div>
     </div>
 </div>
 <!-- banner end -->
+<?php
+$welcome = fetch_data($link, "SELECT * FROM tbl_welcome_section");
+if (sizeof($welcome) > 0) {
+?>
 <div class="feature pt-120 pb-50">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-xl-6 col-lg-6">
                 <div class="part-txt mb-70">
                     <div class="section-heading mb-40">
-                        <h2 class="section-title mt--8 mb-25">Welcome to Darul Madinah Blackburn</h2>
-                        <p class="heading-sub-txt mt--1 mb--8 text-justify">Darul Madinah is more than just a school; it’s a nurturing community where learners, educators, and families join hands to shape the future generation of faithful and knowledgeable leaders. As an OFSTED-regulated institution, we seamlessly blend the Early Years Foundation Stage (EYFS) curriculum with essential Islamic teachings, laying a solid foundation for your child’s holistic development.</p>
+                        <h2 class="section-title mt--8 mb-25">Welcome to <?=$welcome[0]['org_name']?></h2>
+                        <p class="heading-sub-txt mt--1 mb--8 text-justify"><?=$welcome[0]['short_desc']?></p>
                     </div>
-                    <div class="row r-gap-40 has-gradient-service mb-30 mb-lg-0">
-                        <div class="col-xl-6 col-md-6">
-                            <div class="feature-box d-flex">
-                                <div class="feature-part-icon mr-30">
-                                    <img src="assets/images/feat-icon-1.png" class="filter-shadow-1" alt="Icon">
+                    <?php
+                        $values = fetch_data($link, "SELECT * FROM tbl_core_values ORDER BY sort_order ASC");
+                        if (sizeof($values) > 0) {
+                    ?>
+                        <div class="row r-gap-40 has-gradient-service mb-30 mb-lg-0">
+                            <?php foreach ($values as $value) : ?>
+                                <div class="col-xl-6 col-md-6">
+                                    <div class="feature-box d-flex">
+                                        <div class="feature-part-icon mr-30">
+                                            <img src="<?=$app_path?>admin/assets/uploads/welcome-section/<?=$value['value_icon']?>" class="filter-shadow-1" alt="Icon">
+                                        </div>
+                                        <div class="feature-txt">
+                                            <h3 class="feature-sub-title mt--7 mb--8"><a href="javascript:void(0);"><?=$value['value_title']?></a></h3>
+                                            <div class="divider mt-10 mb-20 bg-gradient-1 rounded-pill"></div>
+                                            <p class="mt--6 mb--8"><?=$value['short_desc']?></p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="feature-txt">
-                                    <h3 class="feature-sub-title mt--7 mb--8"><a href="class-details.html">Active Learning</a></h3>
-                                    <div class="divider mt-10 mb-20 bg-gradient-1 rounded-pill"></div>
-                                    <p class="mt--6 mb--8">Since have been visonary relable sofware engnern partne.</p>
-                                </div>
-                            </div>
+                            <?php endforeach; ?>
                         </div>
-                        <div class="col-xl-6 col-md-6">
-                            <div class="feature-box d-flex">
-                                <div class="feature-part-icon mr-30">
-                                    <img src="assets/images/feat-icon-2.png" class="filter-shadow-2" alt="Icon">
-                                </div>
-                                <div class="feature-txt">
-                                    <h3 class="feature-sub-title mt--7 mb--8"><a href="">Parents Day</a></h3>
-                                    <div class="divider mt-10 mb-20 bg-gradient-2 rounded-pill"></div>
-                                    <p class="mt--6 mb--8">Since have been visonary relable sofware engnern partne.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-md-6">
-                            <div class="feature-box d-flex">
-                                <div class="feature-part-icon mr-30">
-                                    <img src="assets/images/feat-icon-3.png" class="filter-shadow-3" alt="Icon">
-                                </div>
-                                <div class="feature-txt">
-                                    <h3 class="feature-sub-title mt--7 mb--8"><a href="class-details.html">Expert Teachers</a></h3>
-                                    <div class="divider mt-10 mb-20 bg-gradient-3 rounded-pill"></div>
-                                    <p class="mt--6 mb--8">Since have been visonary relable sofware engnern partne.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-md-6">
-                            <div class="feature-box d-flex">
-                                <div class="feature-part-icon mr-30">
-                                    <img src="assets/images/feat-icon-4.png" class="filter-shadow-4" alt="Icon">
-                                </div>
-                                <div class="feature-txt">
-                                    <h3 class="feature-sub-title mt--7 mb--8"><a href="class-details.html">Islamic Lessons</a></h3>
-                                    <div class="divider mt-10 mb-20 bg-gradient-4 rounded-pill"></div>
-                                    <p class="mt--6 mb--8">Since have been visonary relable sofware engnern partne.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php }?>
                 </div>
             </div>
             <div class="col-xl-6 col-lg-6">
                 <div class="feature-img-2 spacetopbottomxs">
-                    <img src="<?= $app_path ?>assets/images/about/about.jpg" alt="Image">
+                    <img src="<?=$app_path?>admin/assets/uploads/welcome-section/<?=$welcome[0]['welcome_img']?>" alt="Image">
                 </div>
             </div>
         </div>
     </div>
 </div>
+<?php } ?>
 <div class="about pt-120 pb-120">
     <div class="container">
         <div class="row justify-content-end">
@@ -226,226 +181,50 @@ if (sizeof($facilities) > 0) {
 <?php } ?>
 <!-- facility end -->
 
-<!-- gallery begin -->
-<div class="gallery p-120">
+<!-- staff begin -->
+<div class="our-staff pt-120 pb-80">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-xl-7 col-lg-8 col-md-10">
-                <div class="section-heading text-center mb-70">
-                    <h2 class="section-title mt--8 mb-25">Our School Gallery</h2>
-                    <p class="heading-sub-txt mt--1 mb--8">Here is what you can expect from a house cleaning from a
-                        Handy professional. Download the app to share further cleaning details and instructions!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="gallery-container m-auto">
-        <div class="row g-0">
             <div class="col-12">
-                <div class="control-panel d-flex justify-content-center mb-50 mt--1">
-                    <div class="controls d-inline-flex" id="controls">
-                        <button class="gallery-filter-btn active color-4 mr-20 pb-17" data-filter="*">Show
-                            all</button>
-                        <button class="gallery-filter-btn color-5 mx-20 pb-17" data-filter=".reading">Nursary</button>
-                        <button class="gallery-filter-btn color-6 mx-20 pb-17" data-filter=".writing">Primary</button>
-                        <button class="gallery-filter-btn color-7 mx-20 pb-17" data-filter=".painting">School</button>
-                        <!-- <button class="gallery-filter-btn color-8 ml-20 pb-17" data-filter=".photography">Photography</button> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row g-0 gallery-images">
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 branding">
-                <div class="img">
-                    <img src="assets/images/gallery-img-7.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="assets/images/gallery-img-7.jpg">
-                        <img src="assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Mind Sensory Fidget </a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 painting reading">
-                <div class="img">
-                    <img src="assets/images/gallery-img-8.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="assets/images/gallery-img-8.jpg">
-                        <img src="assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">CLIF KID ZBAR </a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 writing reading">
-                <div class="img">
-                    <img src="assets/images/gallery-img-9.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="assets/images/gallery-img-9.jpg">
-                        <img src="assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">UNO Family Card</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div>
-            <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 photography">
-                <div class="img">
-                    <img src="assets/images/gallery-img-10.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="assets/images/gallery-img-10.jpg">
-                        <img src="assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">A Sturdy Storage</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div> -->
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 painting reading">
-                <div class="img">
-                    <img src="assets/images/gallery-img-11.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="assets/images/gallery-img-11.jpg">
-                        <img src="assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">SmartyPants Kids</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 painting writing">
-                <div class="img">
-                    <img src="assets/images/gallery-img-12.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="assets/images/gallery-img-12.jpg">
-                        <img src="assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Orgain Organic Kids</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div>
-            <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 photography painting">
-                <div class="img">
-                    <img src="assets/images/gallery-img-17.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="assets/images/gallery-img-17.jpg">
-                        <img src="assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Orgain Organic Kids</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div> -->
-            <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 photography reading">
-                <div class="img">
-                    <img src="assets/images/gallery-img-13.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="assets/images/gallery-img-13.jpg">
-                        <img src="assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Searching Something</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Wow school psd</p>
-                </div>
-            </div> -->
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 writing reading">
-                <div class="img">
-                    <img src="assets/images/gallery-img-14.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="assets/images/gallery-img-14.jpg">
-                        <img src="assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Writing Practice</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 reading writing">
-                <div class="img">
-                    <img src="assets/images/gallery-img-15.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="assets/images/gallery-img-15.jpg">
-                        <img src="assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Learning Kids</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div>
-            <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 photography writing">
-                <div class="img">
-                    <img src="assets/images/gallery-img-16.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="assets/images/gallery-img-16.jpg">
-                        <img src="assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Globe Introduction</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div> -->
-            <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 photography painting">
-                <div class="img">
-                    <img src="assets/images/gallery-img-17.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="assets/images/gallery-img-17.jpg">
-                        <img src="assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Group Studying</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div> -->
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 reading painting writing">
-                <div class="img">
-                    <img src="assets/images/gallery-img-18.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="assets/images/gallery-img-18.jpg">
-                        <img src="assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Book Show Up</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div>
-            <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 photography writing">
-                <div class="img">
-                    <img src="assets/images/gallery-img-19.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="assets/images/gallery-img-19.jpg">
-                        <img src="assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Search Courtry</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
-                </div>
-            </div> -->
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gallery-image gallery-image-2 reading writing">
-                <div class="img">
-                    <img src="assets/images/gallery-img-20.jpg" alt="image">
-                </div>
-                <div class="gallery-txt p-absolute text-center d-flex flex-column align-items-center justify-content-center">
-                    <a class="gallery-popup mb-20" href="assets/images/gallery-img-20.jpg">
-                        <img src="assets/images/expand.png" alt="View">
-                    </a>
-                    <h3 class="gallery-title mt--3 mb-10"><a href="class-details.html">Graduate Child</a></h3>
-                    <p class="gallery-sub-title mb--2">By: Smart school psd</p>
+                <div class="section-heading text-center">
+                    <h2 class="section-title mb-0">Meet Our Staffs</h2>
                 </div>
             </div>
         </div>
         <div class="row">
+            <?php 
+                $staffs = fetch_data($link, "SELECT * FROM tbl_staff WHERE staff_status='1' ORDER BY added_on DESC LIMIT 3");
+                foreach ($staffs as $key => $staff) {
+            ?>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="card-staff">
+                        <div class="face face1">
+                            <div class="content text-center">
+                                <h3><?=$staff['staff_name']?></h3>
+                                <p class="text-white heading-sub-txt"><?=$staff['staff_title']?></p>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <p class="heading-sub-txt"><?=$staff['staff_info']?></p>
+                                <p class="heading-sub-txt"><?=$staff['staff_info_2']?></p>
+                                <p class="heading-sub-txt"><?=$staff['staff_info_3']?></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+        </div>
+        <div class="row">
             <div class="col-12">
-                <div class="gallery-btn text-center pt-70" id="load-photos">
-                    <button class="def-btn">View All Photos</button>
+                <div class="gallery-btn text-center pt-70">
+                    <a href="<?=$app_path?>our-staff/" class="def-btn">View All Staff</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- gallery end -->
+<!-- staff end -->
 <?php
 $feedbacks = fetch_data($link, "SELECT * FROM tbl_parents_feedback WHERE feedback_status='1' ORDER BY added_on DESC");
 if (sizeof($feedbacks) > 0) {

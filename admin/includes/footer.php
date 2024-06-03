@@ -76,9 +76,9 @@
 <script src="<?= $app_path ?>assets/js/custom.js"></script>
 
 <script type="text/javascript">
-    $(document).ready(function() {
-        $('.dataTable').DataTable();
-    });
+  $(document).ready(function() {
+    $('.dataTable').DataTable();
+  });
   tinymce.init({
     selector: '.tiny-mce',
     height: 300,
@@ -121,6 +121,26 @@
         }
       }).showToast();
     }
+  }
+
+  function showToastMsg(toastType, toast_msg) {
+    Toastify({
+      newWindow: !0,
+      text: toast_msg,
+      gravity: "top",
+      position: "center",
+      className: "bg-" + toastType,
+      stopOnFocus: !0,
+      offset: {
+        x: "50 : 0",
+        y: "10 : 0"
+      },
+      duration: "3000",
+      close: "close" == "close",
+      style: {
+        background: toastType == 'danger' ? '#dc3545' : toastType == 'success' ? '#198754' : '',
+      }
+    }).showToast();
   }
 </script>
 <?php

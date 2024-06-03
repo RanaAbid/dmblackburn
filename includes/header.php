@@ -20,10 +20,16 @@ include($root_path . "includes/main.php");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slough - Dar-ul-Madina</title>
+    <title>
+        <?php if (isset($page_title) && $page_title != "") {
+            echo $page_title;
+        } else {
+            echo "Slough - Dar-ul-Madina";
+        } ?>
+    </title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="<?= $app_path ?>assets/images/logo/favicon.ico">
-    
+
     <link rel="stylesheet" href="<?= $app_path ?>assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= $app_path ?>assets/css/animate.min.css">
     <link rel="stylesheet" href="<?= $app_path ?>assets/css/icofont.min.css">
@@ -38,7 +44,7 @@ include($root_path . "includes/main.php");
     <link rel="stylesheet" href="<?= $app_path ?>assets/css/custom.css">
     <link rel="stylesheet" href="<?= $app_path ?>assets/css/style.css">
     <link rel="stylesheet" href="<?= $app_path ?>assets/css/admin.css">
-    
+
 </head>
 
 <body class="dark_mode">

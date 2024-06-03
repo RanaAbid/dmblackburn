@@ -1,4 +1,4 @@
-<?php include("../includes/header.php"); 
+<?php include("../../includes/header.php");
 $page_title = "Admission Form";
 ?>
 <!-- banner begin -->
@@ -597,7 +597,7 @@ $page_title = "Admission Form";
                                         <div class="row g-sm-3 g-2 align-items-center input-box mb-20">
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
-                                                   <p>Any other information you think would be helpful for us to know about your child.</p>
+                                                    <p>Any other information you think would be helpful for us to know about your child.</p>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
@@ -675,4 +675,4 @@ $page_title = "Admission Form";
         </form>
     </div>
 </div>
-<?php include("../includes/footer.php"); ?>
+<?php include("../../includes/footer.php"); ?>

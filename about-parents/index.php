@@ -1,5 +1,10 @@
-<?php include("../includes/header.php");
+<?php
 $page_title = "About Parents";
+include("../includes/header.php");
+$parents_id = isset($_GET['parents_id']) ? $_GET['parents_id'] : '1';
+if ($parents_id > 0) {
+    $row = fetch_data($link, "SELECT * FROM tbl_parents_info WHERE parents_id='$parents_id'");
+}
 ?>
 <!-- banner begin -->
 <div class="banner breadcrumb-banner pt-190 pb-200">
@@ -30,21 +35,11 @@ $page_title = "About Parents";
         </div>
         <div class="row">
             <div class="col-xl-7 col-lg-7">
-                <p class="text-justify">At Darul Madinah, we recognise that parents are the first and most influential teachers in a child’s life. The journey of education begins at home and parents play a pivotal role in guiding their children during their formative years, laying a solid foundation for their future learning and success.<br>
-                    The early years of a child’s life represent a period of rapid cognitive development, making regular attendance at nursery and school essential. However, children spend a significant portion of their time outside of these formal educational settings. This is where the home environment and parental involvement play a crucial role in shaping a child’s early learning and development.<br>
-
-                    We firmly believe that fostering a strong partnership with parents is paramount in enhancing and supporting our children’s learning, ensuring that they achieve their full potential. We encourage parents to actively engage with us, sharing insights into their children’s home life, interests, and fascinations. This valuable information allows us to tailor our curriculum and incorporate these aspects into their learning experiences.<br>
-
-                    Your child’s key person or class teacher will maintain an electronic record of their progress on the Famly portal, which serves as a communication hub for parents. Through this platform, we will regularly update you on your child’s development and provide suggestions for extending and enhancing their learning at home.<br>
-
-                    Research has consistently demonstrated that when parents actively engage their children in meaningful activities that stimulate conversation and critical thinking, it can significantly accelerate their development. These everyday interactions provide opportunities to stretch children’s minds, fostering curiosity, problem-solving skills, and a love of learning.<br>
-
-                    At Darul Madinah, we value the power of parental partnerships and are committed to working closely with parents to create a supportive and enriching learning environment for our children. We believe that by nurturing a collaborative approach, we can empower our children to reach their full potential and embark on a lifelong journey of success.
-                </p>
+                <?= $row[0]['top_desc'] ?>
             </div>
             <div class="col-xl-5 col-lg-5">
                 <div class="staff-details-img w_100 mb-40">
-                    <img src="http://localhost/projects/dmblackburn/assets/images/about/admission.jpg" alt="image">
+                    <img src="<?= $app_path ?>admin/assets/uploads/parents-info/<?= $row[0]['top_img'] ?>" alt="image">
                 </div>
             </div>
         </div>
@@ -65,106 +60,110 @@ $page_title = "About Parents";
                     <div class="col-12">
                         <ul class="nav product-details-nav mb-20" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="product-details-btn active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Terms Date</button>
+                                <button class="product-details-btn active" id="terms_dates-tab" data-bs-toggle="tab" data-bs-target="#terms_dates" type="button" role="tab" aria-controls="Terms Dates" aria-selected="true">Terms Date</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="product-details-btn" id="information-tab" data-bs-toggle="tab" data-bs-target="#information" type="button" role="tab" aria-controls="information" aria-selected="false">Newsletters</button>
+                                <button class="product-details-btn" id="newsletter-tab" data-bs-toggle="tab" data-bs-target="#newsletter" type="button" role="tab" aria-controls="Newsletters" aria-selected="false">Newsletters</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="product-details-btn" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false">School Ofsted Report</button>
+                                <button class="product-details-btn" id="school_ofsted-tab" data-bs-toggle="tab" data-bs-target="#school_ofsted" type="button" role="tab" aria-controls="School Ofsted" aria-selected="false">School Ofsted Report</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="product-details-btn" id="community-information" data-bs-toggle="tab" data-bs-target="#community" type="button" role="tab" aria-controls="community" aria-selected="false">Community Information</button>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                            <div class="tab-pane fade show active" id="terms_dates" role="tabpanel" aria-labelledby="terms_dates-tab">
                                 <h4 class="product-description-title color-9 mb-20">Terms Date :</h4>
                                 <div class="mt--1 mb--9">
                                     <ul>
-                                        <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
-                                            <a href="<?= $app_path ?>/assets/temp/dummy.pdf" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
-                                                <i class="icofont-dotted-right color-1"></i>
-                                                Click Here
-                                            </a>
-                                        </li>
+                                        <?php
+                                        $terms = fetch_data($link, "SELECT * FROM tbl_terms WHERE term_status='1' ORDER BY added_on DESC");
+                                        if (sizeof($terms) > 0) {
+                                            foreach ($terms as $key => $term) {
+                                        ?>
+                                                <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
+                                                    <a href="<?= $app_path ?>/assets/uploads/our-terms-date/<?= $term['term_file'] ?>" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
+                                                        <i class="icofont-dotted-right color-1"></i>
+                                                        <?= $term['term_name'] ?>
+                                                    </a>
+                                                </li>
+                                            <?php }
+                                        } else {
+                                            ?>
+                                            <li class="product-description-feature d-flex align-items-center fz-16 lh-28">No Record Found!</li>
+                                        <?php } ?>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="information" role="tabpanel" aria-labelledby="information-tab">
+                            <div class="tab-pane fade" id="newsletter" role="tabpanel" aria-labelledby="newsletter-tab">
                                 <div class="product-details-information mb--10">
                                     <h4 class="product-description-title color-9 mb-20">Newsletters :</h4>
                                     <div class="mt--1 mb--9">
                                         <ul>
-                                            <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
-                                                <a href="<?= $app_path ?>/assets/temp/dummy.pdf" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
-                                                    <i class="icofont-dotted-right color-1"></i>
-                                                    Autumn Term 2 Edition 7
-                                                </a>
-                                            </li>
-                                            <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
-                                                <a href="<?= $app_path ?>/assets/temp/dummy.pdf" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
-                                                    <i class="icofont-dotted-right color-1"></i>
-                                                    Autumn Term 2 Edition 5
-                                                </a>
-                                            </li>
-                                            <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
-                                                <a href="<?= $app_path ?>/assets/temp/dummy.pdf" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
-                                                    <i class="icofont-dotted-right color-1"></i>
-                                                    Autumn Term 2 Edition 8
-                                                </a>
-                                            </li>
-                                            <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
-                                                <a href="<?= $app_path ?>/assets/temp/dummy.pdf" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
-                                                    <i class="icofont-dotted-right color-1"></i>
-                                                    Autumn Term 2 Edition 4
-                                                </a>
-                                            </li>
-                                            <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
-                                                <a href="<?= $app_path ?>/assets/temp/dummy.pdf" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
-                                                    <i class="icofont-dotted-right color-1"></i>
-                                                    Autumn Term 2 Edition 3
-                                                </a>
-                                            </li>
+                                            <?php
+                                            $news = fetch_data($link, "SELECT * FROM tbl_newsletters WHERE news_status='1' ORDER BY added_on DESC");
+                                            if (sizeof($news) > 0) {
+                                                foreach ($news as $key => $new_) {
+                                            ?>
+                                                    <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
+                                                        <a href="<?= $app_path ?>/assets/uploads/newsletters/<?= $new_['news_file'] ?>" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
+                                                            <i class="icofont-dotted-right color-1"></i>
+                                                            <?= $new_['news_name'] ?>
+                                                        </a>
+                                                    </li>
+                                                <?php }
+                                            } else {
+                                                ?>
+                                                <li class="product-description-feature d-flex align-items-center fz-16 lh-28">No Record Found!</li>
+                                            <?php } ?>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                            <div class="tab-pane fade" id="school_ofsted" role="tabpanel" aria-labelledby="school_ofsted-tab">
                                 <h4 class="product-description-title color-9 mb-20">School Ofsted Report :</h4>
                                 <div class="mt--1 mb--9">
                                     <ul>
-                                        <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
-                                            <a href="<?= $app_path ?>/assets/temp/dummy.pdf" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
-                                                <i class="icofont-dotted-right color-1"></i>
-                                                School Ofsted Report 1
-                                            </a>
-                                        </li>
-                                        <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
-                                            <a href="<?= $app_path ?>/assets/temp/dummy.pdf" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
-                                                <i class="icofont-dotted-right color-1"></i>
-                                                School Ofsted Report 2
-                                            </a>
-                                        </li>
+                                        <?php
+                                        $reports = fetch_data($link, "SELECT * FROM tbl_school_ofsted_report WHERE report_status='1' ORDER BY added_on DESC");
+                                        if (sizeof($reports) > 0) {
+                                            foreach ($reports as $key => $report) {
+                                        ?>
+                                                <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
+                                                    <a href="<?= $app_path ?>/assets/uploads/school-ofsted-report/<?= $report['report_file'] ?>" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
+                                                        <i class="icofont-dotted-right color-1"></i>
+                                                        <?= $report['report_name'] ?>
+                                                    </a>
+                                                </li>
+                                            <?php }
+                                        } else {
+                                            ?>
+                                            <li class="product-description-feature d-flex align-items-center fz-16 lh-28">No Record Found!</li>
+                                        <?php } ?>
                                     </ul>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="community" role="tabpanel" aria-labelledby="information-tab">
-                            <h4 class="product-description-title color-9 mb-20">Community Information :</h4>
+                                <h4 class="product-description-title color-9 mb-20">Community Information :</h4>
                                 <div class="mt--1 mb--9">
                                     <ul>
-                                        <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
-                                            <a href="<?= $app_path ?>/assets/temp/dummy.pdf" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
-                                                <i class="icofont-dotted-right color-1"></i>
-                                                Community Information 1
-                                            </a>
-                                        </li>
-                                        <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
-                                            <a href="<?= $app_path ?>/assets/temp/dummy.pdf" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
-                                                <i class="icofont-dotted-right color-1"></i>
-                                                Community Information 2
-                                            </a>
-                                        </li>
+                                        <?php
+                                        $community_information = fetch_data($link, "SELECT * FROM tbl_community_information WHERE community_status='1' ORDER BY added_on DESC");
+                                        if (sizeof($community_information) > 0) {
+                                            foreach ($community_information as $key => $community) {
+                                        ?>
+                                                <li class="product-description-feature d-flex align-items-center fz-16 lh-28">
+                                                    <a href="<?= $app_path ?>/assets/uploads/community-information/<?= $community['community_file'] ?>" class=" box-shadow2 p-2 mb-3 w-75" target="_blank">
+                                                        <i class="icofont-dotted-right color-1"></i>
+                                                        <?= $community['community_name'] ?>
+                                                    </a>
+                                                </li>
+                                            <?php }
+                                        } else {
+                                            ?>
+                                            <li class="product-description-feature d-flex align-items-center fz-16 lh-28">No Record Found!</li>
+                                        <?php } ?>
                                     </ul>
                                 </div>
                             </div>
