@@ -28,7 +28,7 @@ $page_title = "Admission Form";
                 </div>
             </div>
         </div>
-        <form class="checkout-item-wrapp" action="index.html">
+        <form class="checkout-item-wrapp" action="save.php" method="post">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="panel admission-panel mb-20">
@@ -668,7 +668,7 @@ $page_title = "Admission Form";
                 </div>
                 <div class="col-lg-12">
                     <div class="nav-btn d-flex justify-content-start">
-                        <a href="signup.html" class="def-btn">Submit</a>
+                        <input type="submit" class="def-btn" value="Submit" />
                     </div>
                 </div>
             </div>

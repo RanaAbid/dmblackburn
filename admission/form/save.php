@@ -1,5 +1,5 @@
 <?php
-include("../includes/header-min.php");
+include("../../includes/header-min.php");
 
 // Get form data
 $dob = validate_string($link, $_POST['txt_date']);
@@ -81,12 +81,12 @@ $chk = mysqli_query($link, $sql);
 if ($chk) {
     $_SESSION['toast_type'] = "success";
     $_SESSION['toast_msg'] = "Added Successfully!";
-    header('location:admission-form.php');
+    header('location:index.php');
     exit();
 } else {
     $_SESSION['toast_type'] = "error";
     $_SESSION['toast_msg'] = "Oops! Something Went Wrong, Please try again";
-    header('location:admission-form.php');
+    header('location:index.php');
     exit();
 }
 ?>

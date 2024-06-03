@@ -193,7 +193,7 @@ if (sizeof($facilities) > 0) {
         </div>
         <div class="row">
             <?php 
-                $staffs = fetch_data($link, "SELECT * FROM tbl_staff WHERE staff_status='1' ORDER BY added_on DESC LIMIT 3");
+                $staffs = fetch_data($link, "SELECT * FROM tbl_staff WHERE staff_status='1' ORDER BY added_on DESC LIMIT 4");
                 foreach ($staffs as $key => $staff) {
             ?>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
