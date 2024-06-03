@@ -81,7 +81,7 @@ if (sizeof($welcome) > 0) {
                 <span class="about-list d-block  mb-15"><span class="mr-15"><i class="icofont-check-alt"></i></span>Donec facilisis aliquet ultrices. Cras ut ultricies.</span>
                 <span class="about-list d-block"><span class="mr-15"><i class="icofont-check-alt"></i></span>Fusce euismod at massa eget blandit quisque.</span>
                 <div class="btn-box pt-50">
-                    <a href="<?= $app_path ?>admission/admission-form.php" class="def-btn">Admission Now</a>
+                    <a href="<?= $app_path ?>admission/form/" class="def-btn">Admission Now</a>
                 </div>
             </div>
         </div>
@@ -217,7 +217,7 @@ if (sizeof($facilities) > 0) {
         </div>
         <div class="row">
             <div class="col-12">
-                <div class="gallery-btn text-center pt-70">
+                <div class="gallery-btn text-center">
                     <a href="<?=$app_path?>our-staff/" class="def-btn">View All Staff</a>
                 </div>
             </div>

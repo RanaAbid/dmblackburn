@@ -32,7 +32,7 @@ if ($id > 0) {
                 <div class="card">
                     <div class="card-header">
                         <h4 class="card-title">Add New Banner</h4>
-                        <p class="card-title-desc">File size less than 1MB</p>
+                        <p class="card-title-desc">File size less than 1MB / Dimension 1884px by 682px </p>
                     </div>
                     <div class="card-body">
                         <div>

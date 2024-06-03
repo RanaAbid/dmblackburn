@@ -105,7 +105,7 @@
     <div class="container">
       <div class="row justify-content-between align-items-center">
         <div class="col-xl-4 col-lg-4 order-1 order-lg-0">
-          <p class="mb-0">&copy; 2022 kidba Designed by <a class="branding-theme" target="_blank" href="https://www.dawateislami.co.uk">Dar-ul-Madinah</a></p>
+          <p class="mb-0">&copy; <?php echo date("Y"); ?> Dar-ul-Madinah Designed by <a class="branding-theme" target="_blank" href="https://www.dawateislami.co.uk">Dawat-e-Islami</a></p>
         </div>
         <div class="col-xl-8 col-lg-8 order-0 order-lg-1">
           <div class="footer-social-box d-flex justify-content-end">
