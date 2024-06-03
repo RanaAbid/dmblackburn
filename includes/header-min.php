@@ -16,9 +16,9 @@ $root_path=$_SERVER['DOCUMENT_ROOT'] . "/" . $web_dir;
 
 include($root_path . "includes/dbcode.php");
 include($root_path . "includes/main.php");
-include($root_path . "includes/session.php");
-include_once($root_path . "includes/file-upload.php");
+// include($root_path . "includes/session.php");
+// include_once($root_path . "includes/file-upload.php");
 
 //set global variables
-$user_id = $_SESSION['mktb_user_id'];
+$user_id = $_SESSION['mktb_user_id']??0;
 ?>

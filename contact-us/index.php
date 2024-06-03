@@ -23,35 +23,36 @@ $page_title = "Contact Us";
  <div class="contact-3 pb-50 pt-120">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-6">
                     <div class="contact-form-wrapper mb-70">
                         <span class="contact-subtext">Get In Touch</span>
                         <h4 class="contact-titletext mb-40">Have Any Query?</h4>
-                        <form>
+                        <form action="save.php" method="post">
                             <div class="contact-form">
-                                <div class="contact-col-6">
-                                    <input type="text" placeholder="Name" id="txt_name" name="txt_name">
-                                </div>
-                                <div class="contact-col-6">
-                                    <input type="email" placeholder="Email" id="txt_email" name="txt_email">
+                                <div class="contact-col">
+                                    <input type="text" placeholder="First Name" id="first_name" name="first_name">
                                 </div>
                                 <div class="contact-col">
-                                    <input type="text" placeholder="Phone Number" id="txt_number" name="txt_number">
+                                    <input type="text" placeholder="Last Name" id="last_name" name="last_name">
                                 </div>
                                 <div class="contact-col">
-                                    <input type="text" placeholder="Message Subject" id="txt_msg_sbj" name="txt_msg_sbj">
+                                    <input type="email" placeholder="Email" id="email" name="email">
                                 </div>
                                 <div class="contact-col">
-                                    <textarea placeholder="Leave Messege" id="txt_msg" name="txt_msg"></textarea>
+                                    <input type="number" placeholder="Phone Number" id="phone_number" name="phone_number">
+                                </div>
+                                <div class="contact-col">
+                                    <textarea placeholder="Leave Message" id="message" name="message"></textarea>
                                 </div>
                                 <div class="contact-col">
                                     <button class="def-btn" type="submit">Submit Now</button>
                                 </div>
                             </div>
                         </form>
+
                     </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-6 mt-3">
                     <div class="contact-info-wrapper ml-60 mb-70">
                         <ul>
                             <li>
