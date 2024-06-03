@@ -1,5 +1,7 @@
-<?php include("../../includes/header.php");
+<?php 
 $page_title = "Admission Form";
+include("../../includes/header.php"); 
+
 ?>
 <!-- banner begin -->
 <div class="banner breadcrumb-banner pt-190 pb-200">
@@ -28,7 +30,7 @@ $page_title = "Admission Form";
                 </div>
             </div>
         </div>
-        <form class="checkout-item-wrapp" action="index.html">
+        <form class="checkout-item-wrapp" action="save.php" method="post">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="panel admission-panel mb-20">
@@ -43,14 +45,14 @@ $page_title = "Admission Form";
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_date" class="form-label">Date of Birth *</label>
-                                                    <input type="date" class="form-control form-control-lg" id="txt_date" id="txt_date" placeholder="Date of Birth" required>
+                                                    <input type="date" class="form-control form-control-lg" id="txt_date" name="txt_date" placeholder="Date of Birth" required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="exampleFormControlInput1" class="form-label">Gender *</label>
-                                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
-                                                        <option selected>Select Gender</option>
+                                                    <select class="form-select form-select-lg mb-3" name="gender" aria-label=".form-select-lg example" required>
+                                                        <option selected value="">Select Gender</option>
                                                         <option value="1">Male</option>
                                                         <option value="2">Female</option>
                                                     </select>
@@ -61,13 +63,13 @@ $page_title = "Admission Form";
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_f_name" class="form-label">First Name *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_f_name" id="txt_f_name" placeholder="Enter First Name" required>
+                                                    <input type="text" class="form-control form-control-lg" id="txt_f_name" name="txt_f_name" placeholder="Enter First Name" required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_surname" class="form-label">Surname *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_surname" id="txt_surname" placeholder="Enter Surname" required>
+                                                    <input type="text" class="form-control form-control-lg" id="txt_surname" name="txt_surname" placeholder="Enter Surname" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -75,7 +77,7 @@ $page_title = "Admission Form";
                                             <div class="col-sm-12">
                                                 <div class="mb-3">
                                                     <label for="txt_address" class="form-label">Address *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_address" id="txt_address" placeholder="Enter Address" required>
+                                                    <input type="text" class="form-control form-control-lg" id="txt_address" name="txt_address" placeholder="Enter Address" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -83,13 +85,13 @@ $page_title = "Admission Form";
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_postcode" class="form-label">Postcode *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_postcode" id="txt_postcode" placeholder="Enter PostCode" required>
+                                                    <input type="text" class="form-control form-control-lg" id="txt_postcode" name="txt_postcode" placeholder="Enter PostCode" required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_choice_name" class="form-label">Preferred choice of name if any</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_choice_name" id="txt_choice_name" placeholder="Enter choice of name if any">
+                                                    <input type="text" class="form-control form-control-lg" id="txt_choice_name" name="txt_choice_name" placeholder="Enter choice of name if any">
                                                 </div>
                                             </div>
                                         </div>
@@ -97,8 +99,8 @@ $page_title = "Admission Form";
                                             <div class="col-sm-12">
                                                 <div class="">
                                                     <label for="exampleFormControlInput1" class="form-label">Application For *</label>
-                                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
-                                                        <option selected>Please select standard</option>
+                                                    <select class="form-select form-select-lg mb-3" name="application_for" aria-label=".form-select-lg example" required>
+                                                        <option selected value="">Please select standard</option>
                                                         <option value="1">Nursery</option>
                                                         <option value="2">Year 1</option>
                                                         <option value="1">Nursery</option>
@@ -122,19 +124,19 @@ $page_title = "Admission Form";
                                             <div class="col-sm-4">
                                                 <div class="mb-3">
                                                     <label for="txt_title" class="form-label">Title *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_title" id="txt_title" placeholder="Mr., Mrs. , etc." required>
+                                                    <input type="text" class="form-control form-control-lg" id="txt_title" name="txt_title" placeholder="Mr., Mrs. , etc." required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="mb-3">
                                                     <label for="txt_guardian_name" class="form-label">First Name *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_guardian_name" id="txt_guardian_name" placeholder="Enter Name of First Parent/Guardian" required>
+                                                    <input type="text" class="form-control form-control-lg" id="txt_guardian_name" name="txt_guardian_name" placeholder="Enter Name of First Parent/Guardian" required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="mb-3">
                                                     <label for="txt_guardian_name" class="form-label">Surname *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_guardian_name" id="txt_guardian_name" placeholder="Enter Surname" required>
+                                                    <input type="text" class="form-control form-control-lg" id="txt_guardian_surname" name="txt_guardian_surname" placeholder="Enter Surname" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -142,14 +144,14 @@ $page_title = "Admission Form";
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_relation_child" class="form-label">Relationship to Child *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_relation_child" id="txt_relation_child" placeholder="Relation" required>
+                                                    <input type="text" class="form-control form-control-lg" id="txt_relation_child" name="txt_relation_child" placeholder="Relation" required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="exampleFormControlInput1" class="form-label">Parental Responsibility *</label>
-                                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
-                                                        <option selected>Parental Responsibility</option>
+                                                    <select class="form-select form-select-lg mb-3" name="parental_responsibility" aria-label=".form-select-lg example" required>
+                                                        <option selected value="">Parental Responsibility</option>
                                                         <option value="1">Yes</option>
                                                         <option value="0">No</option>
                                                     </select>
@@ -160,13 +162,13 @@ $page_title = "Admission Form";
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_telephone" class="form-label">Home Telephone Number *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_telephone" id="txt_telephone" placeholder="Enter Home Telephone Number" required>
+                                                    <input type="text" class="form-control form-control-lg" id="txt_telephone" name="txt_telephone" placeholder="Enter Home Telephone Number" required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_mobile" class="form-label">Mobile No.</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_mobile" id="txt_mobile" placeholder="Enter Mobile No." required>
+                                                    <input type="text" class="form-control form-control-lg" id="txt_mobile" name="txt_mobile" placeholder="Enter Mobile No." required>
                                                 </div>
                                             </div>
                                         </div>
@@ -174,13 +176,13 @@ $page_title = "Admission Form";
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_work_email" class="form-label">Email</label>
-                                                    <input type="email" class="form-control form-control-lg" id="txt_work_email" id="txt_work_email" placeholder="Enter Email" required>
+                                                    <input type="email" class="form-control form-control-lg" id="txt_work_email" name="txt_work_email" placeholder="Enter Email" required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_work_telephone" class="form-label">Work Telephone Number *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_work_telephone" id="txt_work_telephone" placeholder="Enter Work Telephone Number" required>
+                                                    <input type="text" class="form-control form-control-lg" id="txt_work_telephone" name="txt_work_telephone" placeholder="Enter Work Telephone Number" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -188,7 +190,7 @@ $page_title = "Admission Form";
                                             <div class="col-sm-12">
                                                 <div class="">
                                                     <label for="txt_work_place" class="form-label">Work Place *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_work_place" id="txt_work_place" placeholder="Enter Work Place" required>
+                                                    <input type="text" class="form-control form-control-lg" id="txt_work_place" name="txt_work_place" placeholder="Enter Work Place" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -207,34 +209,34 @@ $page_title = "Admission Form";
                                             <div class="col-sm-4">
                                                 <div class="mb-3">
                                                     <label for="txt_second_title" class="form-label">Title *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_second_title" id="txt_second_title" placeholder="Mr., Mrs. , etc." required>
+                                                    <input type="text" class="form-control form-control-lg" id="txt_second_title" name="txt_second_title" placeholder="Mr., Mrs. , etc." required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="mb-3">
                                                     <label for="txt_secondParent_name" class="form-label">First Name *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_secondParent_name" id="txt_secondParent_name" placeholder="Enter First Name" required>
+                                                    <input type="text" class="form-control form-control-lg" id="txt_secondParent_name" name="txt_secondParent_name" placeholder="Enter First Name" required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="mb-3">
                                                     <label for="txt_secondParent_surname" class="form-label">Surname *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_secondParent_surname" id="txt_secondParent_surname" placeholder="Enter Surname" required>
+                                                    <input type="text" class="form-control form-control-lg" id="txt_secondParent_surname" name="txt_secondParent_surname" placeholder="Enter Surname" required>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row g-sm-3 g-2 align-items-center input-box mb-20">
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
-                                                    <label for="txt_secondParentrelation_child" class="form-label">Relationship to Child *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_secondParentrelation_child" id="txt_secondParentrelation_child" placeholder="Relation" required>
+                                                    <label for="txt_second_parent_relation_child" class="form-label">Relationship to Child *</label>
+                                                    <input type="text" class="form-control form-control-lg" id="txt_second_parent_relation_child" name="txt_second_parent_relation_child" placeholder="Relation" required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="exampleFormControlInput1" class="form-label">Parental Responsibility? *</label>
-                                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
-                                                        <option selected>Parental Responsibility</option>
+                                                    <select class="form-select form-select-lg mb-3" name="parental_responsibility2" aria-label=".form-select-lg example" required>
+                                                        <option selected value="">Parental Responsibility</option>
                                                         <option value="1">Yes</option>
                                                         <option value="0">No</option>
                                                     </select>
@@ -245,13 +247,13 @@ $page_title = "Admission Form";
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_second_mobile" class="form-label">Mobile Phone Number</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_second_mobile" id="txt_second_mobile" placeholder="Enter Mobile Number">
+                                                    <input type="text" class="form-control form-control-lg" id="txt_second_mobile" name="txt_second_mobile" placeholder="Enter Mobile Number">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_second_telephone" class="form-label">Work Telephone Number</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_second_telephone" id="txt_second_telephone" placeholder="Enter Telephone Number">
+                                                    <input type="text" class="form-control form-control-lg" id="txt_second_telephone" name="txt_second_telephone" placeholder="Enter Telephone Number">
                                                 </div>
                                             </div>
                                         </div>
@@ -259,13 +261,13 @@ $page_title = "Admission Form";
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_second_work" class="form-label">Work Place</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_second_work" id="txt_work_email" placeholder="Enter Work Place">
+                                                    <input type="text" class="form-control form-control-lg" id="txt_second_work" name="txt_second_work" placeholder="Enter Work Place">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_second_address" class="form-label">Address (if different)</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_second_address" id="txt_second_address" placeholder="Enter Address (if different)">
+                                                    <input type="text" class="form-control form-control-lg" id="txt_second_address" name="txt_second_address" placeholder="Enter Address (if different)">
                                                 </div>
                                             </div>
                                         </div>
@@ -292,7 +294,7 @@ $page_title = "Admission Form";
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_doctor_name" class="form-label">Name of Doctor *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_doctor_name" placeholder="Name of Doctor" required>
+                                                    <input type="text" class="form-control form-control-lg" id="txt_doctor_name" name="txt_doctor_name" placeholder="Name of Doctor" required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
@@ -397,8 +399,8 @@ $page_title = "Admission Form";
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_doctor_name" class="form-label">Has your child had any serious illnesses or injuries? *</label>
-                                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
-                                                        <option selected>Please Select</option>
+                                                    <select class="form-select form-select-lg mb-3" name="illnesses" aria-label=".form-select-lg example" required>
+                                                        <option selected value="">Please Select</option>
                                                         <option value="1">Yes</option>
                                                         <option value="0">No</option>
                                                     </select>
@@ -407,7 +409,7 @@ $page_title = "Admission Form";
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_illnesses" class="form-label">If yes - Please details</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_illnesses" name="txt_illnesses" placeholder="Enter Details">
+                                                    <input type="text" class="form-control form-control-lg" id="illnesses_details" name="illnesses_details" placeholder="Enter Details">
                                                 </div>
                                             </div>
                                         </div>
@@ -415,8 +417,8 @@ $page_title = "Admission Form";
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_immunization" class="form-label">Has your child completed an immunization program to date? *</label>
-                                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
-                                                        <option selected>Please Select</option>
+                                                    <select class="form-select form-select-lg mb-3" name="immunization" aria-label=".form-select-lg example" required>
+                                                        <option selected value="">Please Select</option>
                                                         <option value="1">Yes</option>
                                                         <option value="0">No</option>
                                                     </select>
@@ -425,7 +427,7 @@ $page_title = "Admission Form";
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_immunization" class="form-label">If yes - Please details</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_immunization" id="txt_immunization" placeholder="Enter Details">
+                                                    <input type="text" class="form-control form-control-lg" id="immunization_details" name="immunization_details" placeholder="Enter Details">
                                                 </div>
                                             </div>
                                         </div>
@@ -433,8 +435,8 @@ $page_title = "Admission Form";
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_allergies" class="form-label">Has your child any known allergies and medical conditions? *</label>
-                                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
-                                                        <option selected>Please Select</option>
+                                                    <select class="form-select form-select-lg mb-3" name="allergies" aria-label=".form-select-lg example" required>
+                                                        <option selected value="">Please Select</option>
                                                         <option value="1">Yes</option>
                                                         <option value="0">No</option>
                                                     </select>
@@ -443,7 +445,7 @@ $page_title = "Admission Form";
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_allergies" class="form-label">If yes - Please details</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_allergies" name="txt_allergies" placeholder="Enter Details">
+                                                    <input type="text" class="form-control form-control-lg" id="allergies_details" name="allergies_details" placeholder="Enter Details">
                                                 </div>
                                             </div>
                                         </div>
@@ -451,8 +453,8 @@ $page_title = "Admission Form";
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_special_needs" class="form-label">Does your child have any particular or special needs *</label>
-                                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
-                                                        <option selected>Please Select</option>
+                                                    <select class="form-select form-select-lg mb-3" name="special_needs" aria-label=".form-select-lg example" required>
+                                                        <option selected value="">Please Select</option>
                                                         <option value="1">Yes</option>
                                                         <option value="0">No</option>
                                                     </select>
@@ -460,8 +462,8 @@ $page_title = "Admission Form";
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
-                                                    <label for="txt_special_needs" class="form-label">If yes - Please details</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_special_needs" name="txt_special_needs" placeholder="Enter Details">
+                                                    <label for="special_needs_details" class="form-label">If yes - Please details</label>
+                                                    <input type="text" class="form-control form-control-lg" id="special_needs_details" name="special_needs_details" placeholder="Enter Details">
                                                 </div>
                                             </div>
                                         </div>
@@ -469,8 +471,8 @@ $page_title = "Admission Form";
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_fears" class="form-label">Does your child have any fears? *</label>
-                                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
-                                                        <option selected>Please Select</option>
+                                                    <select class="form-select form-select-lg mb-3" name="fears" aria-label=".form-select-lg example" required>
+                                                        <option selected value="">Please Select</option>
                                                         <option value="1">Yes</option>
                                                         <option value="2">No</option>
                                                     </select>
@@ -478,8 +480,8 @@ $page_title = "Admission Form";
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
-                                                    <label for="txt_fears" class="form-label">If yes - Please details</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_fears" name="txt_fears" placeholder="Enter Details">
+                                                    <label for="fears_details" class="form-label">If yes - Please details</label>
+                                                    <input type="text" class="form-control form-control-lg" id="fears_details" name="fears_details" placeholder="Enter Details">
                                                 </div>
                                             </div>
                                         </div>
@@ -487,8 +489,8 @@ $page_title = "Admission Form";
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_drink" class="form-label">Does your child drink milk/eat dairy product? *</label>
-                                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
-                                                        <option selected>Please Select</option>
+                                                    <select class="form-select form-select-lg mb-3" name="drink" aria-label=".form-select-lg example" required>
+                                                        <option selected value="">Please Select</option>
                                                         <option value="1">Yes</option>
                                                         <option value="2">No</option>
                                                     </select>
@@ -496,22 +498,22 @@ $page_title = "Admission Form";
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
-                                                    <label for="txt_drink" class="form-label">If yes - Please details</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_drink" name="txt_drink" placeholder="Enter Details">
+                                                    <label for="drink_details" class="form-label">If yes - Please details</label>
+                                                    <input type="text" class="form-control form-control-lg" id="drink_details" name="drink_details" placeholder="Enter Details">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row g-sm-3 g-2 align-items-center input-box">
                                             <div class="col-sm-6">
                                                 <div>
-                                                    <label for="txt_Languages" class="form-label">Languages spoken at home *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_Languages" name="txt_Languages" placeholder="Languages spoken at home" required>
+                                                    <label for="languages" class="form-label">Languages spoken at home *</label>
+                                                    <input type="text" class="form-control form-control-lg" id="languages" name="languages" placeholder="Languages spoken at home" required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div>
-                                                    <label for="txt_religion" class="form-label">Please state child’s religion/culture * </label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_religion" name="txt_relation1" placeholder="Enter Relationship to child" required>
+                                                    <label for="religion" class="form-label">Please state child’s religion/culture * </label>
+                                                    <input type="text" class="form-control form-control-lg" id="religion" name="religion" placeholder="Enter Relationship to child" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -532,14 +534,14 @@ $page_title = "Admission Form";
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="mb-3">
-                                                    <label for="txt_signature1" class="form-label">Signature *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_signature1" name="txt_signature1" placeholder="Enter Signature" required>
+                                                    <label for="signature1" class="form-label">Signature *</label>
+                                                    <input type="text" class="form-control form-control-lg" id="signature1" name="signature1" placeholder="Enter Signature" required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="mb-3">
-                                                    <label for="txt_date1" class="form-label">Date *</label>
-                                                    <input type="date" class="form-control form-control-lg" id="txt_date1" name="txt_date1" placeholder="Enter Date" required>
+                                                    <label for="date1" class="form-label">Date *</label>
+                                                    <input type="date" class="form-control form-control-lg" id="date1" name="date1" placeholder="Enter Date" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -549,14 +551,14 @@ $page_title = "Admission Form";
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="mb-3">
-                                                    <label for="txt_signature2" class="form-label">Signature *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_signature2" name="txt_signature2" placeholder="Enter Signature" required>
+                                                    <label for="signature2" class="form-label">Signature *</label>
+                                                    <input type="text" class="form-control form-control-lg" id="signature2" name="signature2" placeholder="Enter Signature" required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="mb-3">
-                                                    <label for="txt_date2" class="form-label">Date *</label>
-                                                    <input type="date" class="form-control form-control-lg" id="txt_date2" name="txt_date2" placeholder="Enter Date" required>
+                                                    <label for="date2" class="form-label">Date *</label>
+                                                    <input type="date" class="form-control form-control-lg" id="date2" name="date2" placeholder="Enter Date" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -566,14 +568,14 @@ $page_title = "Admission Form";
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="mb-3">
-                                                    <label for="txt_signature3" class="form-label">Signature *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_signature3" name="txt_signature3" placeholder="Enter Signature" required>
+                                                    <label for="signature3" class="form-label">Signature *</label>
+                                                    <input type="text" class="form-control form-control-lg" id="signature3" name="signature3" placeholder="Enter Signature" required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="mb-3">
-                                                    <label for="txt_date3" class="form-label">Date *</label>
-                                                    <input type="date" class="form-control form-control-lg" id="txt_date3" name="txt_date3" placeholder="Enter Date" required>
+                                                    <label for="date3" class="form-label">Date *</label>
+                                                    <input type="date" class="form-control form-control-lg" id="date3" name="date3" placeholder="Enter Date" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -583,27 +585,27 @@ $page_title = "Admission Form";
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="mb-3">
-                                                    <label for="txt_signature4" class="form-label">Signature *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_signature4" name="txt_signature4" placeholder="Enter Signature" required>
+                                                    <label for="signature4" class="form-label">Signature *</label>
+                                                    <input type="text" class="form-control form-control-lg" id="signature4" name="signature4" placeholder="Enter Signature" required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="mb-3">
-                                                    <label for="txt_date4" class="form-label">Date *</label>
-                                                    <input type="date" class="form-control form-control-lg" id="txt_date4" name="txt_date4" placeholder="Enter Date" required>
+                                                    <label for="date4" class="form-label">Date *</label>
+                                                    <input type="date" class="form-control form-control-lg" id="date4" name="date4" placeholder="Enter Date" required>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row g-sm-3 g-2 align-items-center input-box mb-20">
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
-                                                    <p>Any other information you think would be helpful for us to know about your child.</p>
+                                                   <p>Any other information you think would be helpful for us to know about your child.</p>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
-                                                    <label for="txt_helpful_information" class="form-label">Other helpful information</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_helpful_information" name="txt_helpful_information" placeholder="Enter Details">
+                                                    <label for="helpful_information" class="form-label">Other helpful information</label>
+                                                    <input type="text" class="form-control form-control-lg" id="helpful_information" name="helpful_information" placeholder="Enter Details">
                                                 </div>
                                             </div>
                                         </div>
@@ -630,28 +632,28 @@ $page_title = "Admission Form";
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="mb-3">
-                                                    <label for="txt_sign" class="form-label">Sign *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_sign" name="txt_sign" placeholder="Enter Sign" required>
+                                                    <label for="sign" class="form-label">Sign *</label>
+                                                    <input type="text" class="form-control form-control-lg" id="sign" name="sign" placeholder="Enter Sign" required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="mb-3">
-                                                    <label for="txt_date5" class="form-label">Date *</label>
-                                                    <input type="date" class="form-control form-control-lg" id="txt_date5" name="txt_date5" placeholder="Enter Date" required>
+                                                    <label for="date5" class="form-label">Date *</label>
+                                                    <input type="date" class="form-control form-control-lg" id="date5" name="date5" placeholder="Enter Date" required>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row g-sm-3 g-2 align-items-center input-box mb-20">
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
-                                                    <label for="txt_print_name" class="form-label">Print Name *</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_print_name" name="txt_print_name" placeholder="Enter Print Name" required>
+                                                    <label for="print_name" class="form-label">Print Name *</label>
+                                                    <input type="text" class="form-control form-control-lg" id="print_name" name="print_name" placeholder="Enter Print Name" required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
-                                                    <label for="txt_parent_career" class="form-label">Parent/Career</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_parent_career" name="txt_parent_career" placeholder="Enter Parent/Career" required>
+                                                    <label for="parent_career" class="form-label">Parent/Career</label>
+                                                    <input type="text" class="form-control form-control-lg" id="parent_career" name="parent_career" placeholder="Enter Parent/Career" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -668,7 +670,7 @@ $page_title = "Admission Form";
                 </div>
                 <div class="col-lg-12">
                     <div class="nav-btn d-flex justify-content-start">
-                        <a href="signup.html" class="def-btn">Submit</a>
+                        <input type="submit"  class="def-btn" value="Submit" />
                     </div>
                 </div>
             </div>
