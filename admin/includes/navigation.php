@@ -4,7 +4,7 @@
         <div class="main-sidebar-header main-container-1 active">
             <div class="sidemenu-logo">
                 <a class="main-logo" href="<?= $app_path ?>modules/dashboard">
-                    DM Admin
+                    DM
                 </a>
             </div>
             <div class="main-sidebar-body main-body-1">
@@ -33,6 +33,14 @@
                             <span class="shape2"></span>
                             <i class="fas fa-school sidemenu-icon menu-icon "></i>
                             <span class="sidemenu-label">Admissions</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= $app_path ?>modules/admission-form/">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="fab fa-wpforms sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Admissions Form</span>
                         </a>
                     </li>
                     <li class="nav-item">
