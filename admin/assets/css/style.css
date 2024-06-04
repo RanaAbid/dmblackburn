@@ -97,10 +97,10 @@
     --primary-bg-hover: #403fad;
     --primary-transparentcolor: rgba(98, 89, 202, 0.16);
     --primary-bg-border: #6259ca;
-    --light-color:#212529;
-    --dark-theme: #0e0e23;
-    --dark-body: #24243e;
-    --dark-border: rgba(255, 255, 255, 0.15);
+    --light-color:#109356;
+    --dark-theme: #055530;
+    --dark-body: #7FA795;
+    --dark-border: #109356;
     --dark-color: #d0d0e2;
     --dark-primary: #6259ca;
     --indigo: $indigo;
