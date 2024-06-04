@@ -24,7 +24,7 @@ include($root_path . "includes/main.php");
         <?php if (isset($page_title) && $page_title != "") {
             echo $page_title;
         } else {
-            echo "Slough - Dar-ul-Madina";
+            echo "Dar-ul-Madinah - Blackburn";
         } ?>
     </title>
     <!-- Favicon -->

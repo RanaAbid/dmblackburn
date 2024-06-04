@@ -105,7 +105,7 @@ if ($page_title = "About Parents") {
                 </div>
                 <div class="col-xl-2 col-lg-3 d-lg-block d-none">
                     <div class="nav-btn d-flex justify-content-end">
-                        <a href="<?= $app_path ?>admission/admission-form.php" class="def-btn">Apply Now</a>
+                        <a href="<?= $app_path ?>admission/form/" class="def-btn">Apply Now</a>
                     </div>
                 </div>
             </div>

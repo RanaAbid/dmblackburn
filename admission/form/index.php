@@ -670,7 +670,7 @@ include("../../includes/header.php");
                 </div>
                 <div class="col-lg-12">
                     <div class="nav-btn d-flex justify-content-start">
-                        <input type="submit"  class="def-btn" value="Submit" />
+                        <a href="signup.html" class="def-btn">Submit</a>
                     </div>
                 </div>
             </div>
