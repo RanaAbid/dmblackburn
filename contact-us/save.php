@@ -9,8 +9,8 @@ $message_subject = $_POST['message_subject'];
 $message = $_POST['message'];
 
 // Insert data into database
-$sql = "INSERT INTO tbl_contacts (first_name, last_name, email, phone_number, message_subject, `message`) 
-        VALUES ('$first_name', '$last_name', '$email', '$phone_number', '$message_subject', '$message')";
+$sql = "INSERT INTO tbl_contacts (first_name, last_name, email, phone_number, `message`) 
+        VALUES ('$first_name', '$last_name', '$email', '$phone_number', '$message')";
 
 $chk = mysqli_query($link, $sql);
 if ($chk) {

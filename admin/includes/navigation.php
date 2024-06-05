@@ -140,6 +140,14 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="<?= $app_path ?>modules/contact-us/">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="far fa-address-card sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">Contact Us</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="<?= $app_path ?>modules/terms-date/">
                             <span class="shape1"></span>
                             <span class="shape2"></span>

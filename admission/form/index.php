@@ -166,7 +166,7 @@ include("../../includes/header.php");
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <label for="txt_mobile" class="form-label">Mobile No.</label>
-                                                    <input type="text" class="form-control form-control-lg" id="txt_mobile" name="txt_mobile" placeholder="Enter Mobile No." required>
+                                                    <input type="number" class="form-control form-control-lg" id="txt_mobile" name="txt_mobile" placeholder="Enter Mobile No." required>
                                                 </div>
                                             </div>
                                         </div>
