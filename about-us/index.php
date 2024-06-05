@@ -1,5 +1,10 @@
-<?php include("../includes/header.php");
+<?php
 $page_title = "About Darul Madinah Blackburn";
+include("../includes/header.php");
+$school_id = isset($_GET['school_id']) ? $_GET['school_id'] : '1';
+if ($school_id > 0) {
+    $row = fetch_data($link, "SELECT * FROM tbl_about_school WHERE school_id='$school_id'");
+}
 ?>
 <!-- banner begin -->
 <div class="banner breadcrumb-banner pt-190 pb-200">
@@ -33,57 +38,63 @@ $page_title = "About Darul Madinah Blackburn";
             <div class="col-xl-6 col-lg-6">
                 <div class="part-txt mb-70">
                     <div class="section-heading mb-70">
-                        <h4>Darul Madinah: Nurturing Young Minds and Hearts</h4>
-                        <p class="heading-sub-txt mt-3 text-justify">Darul Madinah is an Ofsted-regulated Nursery and Primary School that passionately believes in fostering a collaborative partnership with parents to nurture and guide children towards their full potential. We recognize the immense significance of parental involvement in a child’s development and strive to create a supportive environment where parents and educators work together as a team.</p>
-                        <h4>At Darul Madinah Primary School, we offer a holistic educational experience that encompasses</h4>
-                        <p class="heading-sub-txt mt-3 text-justify">Daily Hifdh Sessions: Children embark on a journey of memorising Juzz Ammah and embark on memorising other chapters of the Quran.<br> Islamic Studies: Children immerse themselves in the rich tapestry of Islamic knowledge, learning the blessed 99 names of Allah and engaging in daily Islamic studies lessons.<br>lace a strong emphasis on tarbiyah, instilling in children the love and reverence for Allah and His beloved Prophet. We guide them towards following the commandments of Allah and the Sunnah. Fun Fridays: Every Friday, our school comes alive with excitement as children participate in engaging hands-on activities, learn nasheeds, and experience the joy of Jummah Salah.</p>
+                        <?= $row[0]['top_desc'] ?>
                     </div>
                 </div>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6">
                 <div class="part-img pl-20 w_100">
-                    <img src="<?= $app_path ?>assets/images/about/app-download-img.jpg" alt="image">
+                    <img src="<?= $app_path ?>admin/assets/uploads/about-school/<?= $row[0]['top_img'] ?>" alt="image">
                 </div>
             </div>
         </div>
         <div class="row align-items-center mt-3">
             <div class="col-xl-6 col-lg-6 col-md-6">
                 <div class="part-img pr-20 w_100">
-                    <img src="<?= $app_path ?>assets/images/about/app-download-img.jpg" alt="image">
+                    <img src="<?= $app_path ?>admin/assets/uploads/about-school/<?= $row[0]['end_img'] ?>" alt="image">
                 </div>
             </div>
             <div class="col-xl-6 col-lg-6">
                 <div class="part-txt mb-70">
                     <div class="section-heading mb-70">
-                        <h4>Darul Madinah: Nurturing Young Minds and Hearts</h4>
-                        <p class="heading-sub-txt mt-3 text-justify">Darul Madinah is an Ofsted-regulated Nursery and Primary School that passionately believes in fostering a collaborative partnership with parents to nurture and guide children towards their full potential. We recognize the immense significance of parental involvement in a child’s development and strive to create a supportive environment where parents and educators work together as a team.</p>
-                        <h4>At Darul Madinah Primary School, we offer a holistic educational experience that encompasses</h4>
-                        <p class="heading-sub-txt mt-3 text-justify">Daily Hifdh Sessions: Children embark on a journey of memorising Juzz Ammah and embark on memorising other chapters of the Quran.<br> Islamic Studies: Children immerse themselves in the rich tapestry of Islamic knowledge, learning the blessed 99 names of Allah and engaging in daily Islamic studies lessons.<br>lace a strong emphasis on tarbiyah, instilling in children the love and reverence for Allah and His beloved Prophet. We guide them towards following the commandments of Allah and the Sunnah. Fun Fridays: Every Friday, our school comes alive with excitement as children participate in engaging hands-on activities, learn nasheeds, and experience the joy of Jummah Salah.</p>
+                        <?= $row[0]['end_desc'] ?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="testimonial p-150">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-xl-12 col-lg-12 col-md-12">
-                <div class="single-feedback">
-                    <div class="feedback-title-area">
-                        <div class="quote-icon mb-30">
-                            <img src="<?= $app_path ?>assets/images/quote.png" alt="“">
-                        </div>
-                        <h2 class="feedback-title mt--3 mb-17">Message from Ameer-e-Ahle Sunnat</h2>
+<?php
+$feedbacks = fetch_data($link, "SELECT * FROM tbl_parents_feedback WHERE feedback_status='1' ORDER BY added_on DESC");
+if (sizeof($feedbacks) > 0) {
+?>
+    <div class="testimonial pt-120 pb-120">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                    <div class="client-feedback pr-70 pl-30">
+                        <?php foreach ($feedbacks as $feedback) : ?>
+                            <div class="single-feedback">
+                                <div class="feedback-title-area">
+                                    <div class="quote-icon mb-30">
+                                        <img src="<?= $app_path ?>assets/images/quote.png" alt="“">
+                                    </div>
+                                    <h2 class="feedback-title mt--3 mb-17"><?= $feedback['title'] ?></h2>
+                                </div>
+                                <p class="feedback-txt mb-25">“<?= strip_tags($feedback['feedback_detail']) ?>”</p>
+                                <div class="divider bg-white rounded-pill mb-20"></div>
+                                <h4 class="client-name mt--2 mb--2"><?= $feedback['name'] ?></h4>
+                            </div>
+                        <?php endforeach; ?>
                     </div>
-                    <p class="feedback-txt mb-25">“Allama Maulana Abu Bilal MUHAMMAD ILYAS Attar Qadri Razavi دامت برکاتھم العالیہ Students are the most valuable asset for a country and the future leaders of the nation. If they are trained in accordance with the Shari’ah and Sunnah, divine fear and devotion to the Holy Prophet صَلَّى اللهُ تَعَالٰى عَلَيْهِ وَاٰلِهٖ وَسَلَّمَ will prevail everywhere in society.”</p>
-                    <div class="divider bg-white rounded-pill mb-20"></div>
-                    <h4 class="client-name mt--2 mb--2">Muhammad Ilyas Attar Qadri Razavi (دامت برکاتھم العالیہ)</h4>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <!-- blog begin -->
+<?php
+}
+?>
 <div class="our-staff pt-120 pb-80">
     <div class="container">
         <div class="row justify-content-center">
@@ -94,79 +105,33 @@ $page_title = "About Darul Madinah Blackburn";
             </div>
         </div>
         <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                <div class="card-staff">
-                    <div class="face face1">
-                        <div class="content text-center">
-                            <h3>Waqas Choudhery</h3>
-                            <p class="text-white heading-sub-txt">Director</p>
+            <?php
+            $staffs = fetch_data($link, "SELECT * FROM tbl_staff WHERE staff_status='1' ORDER BY added_on DESC LIMIT 4");
+            foreach ($staffs as $key => $staff) {
+            ?>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="card-staff">
+                        <div class="face face1">
+                            <div class="content text-center">
+                                <h3><?= $staff['staff_name'] ?></h3>
+                                <p class="text-white heading-sub-txt"><?= $staff['staff_title'] ?></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="face face2">
-                        <div class="content">
-                            <p class="heading-sub-txt">Level 3 Safeguarding trained</p>
-                            <p class="heading-sub-txt">FGM trained</p>
-                            <p class="heading-sub-txt">Trained in Safer Recruitment</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                <div class="card-staff">
-                    <div class="face face1">
-                        <div class="content text-center">
-                            <h3>Waqas Choudhery</h3>
-                            <p class="text-white heading-sub-txt">Director</p>
-                        </div>
-                    </div>
-                    <div class="face face2">
-                        <div class="content">
-                            <p class="heading-sub-txt">Level 3 Safeguarding trained</p>
-                            <p class="heading-sub-txt">FGM trained</p>
-                            <p class="heading-sub-txt">Trained in Safer Recruitment</p>
+                        <div class="face face2">
+                            <div class="content">
+                                <p class="heading-sub-txt"><?= $staff['staff_info'] ?></p>
+                                <p class="heading-sub-txt"><?= $staff['staff_info_2'] ?></p>
+                                <p class="heading-sub-txt"><?= $staff['staff_info_3'] ?></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                <div class="card-staff">
-                    <div class="face face1">
-                        <div class="content text-center">
-                            <h3>Waqas Choudhery</h3>
-                            <p class="text-white heading-sub-txt">Director</p>
-                        </div>
-                    </div>
-                    <div class="face face2">
-                        <div class="content">
-                            <p class="heading-sub-txt">Level 3 Safeguarding trained</p>
-                            <p class="heading-sub-txt">FGM trained</p>
-                            <p class="heading-sub-txt">Trained in Safer Recruitment</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                <div class="card-staff">
-                    <div class="face face1">
-                        <div class="content text-center">
-                            <h3>Waqas Choudhery</h3>
-                            <p class="text-white heading-sub-txt">Director</p>
-                        </div>
-                    </div>
-                    <div class="face face2">
-                        <div class="content">
-                            <p class="heading-sub-txt">Level 3 Safeguarding trained</p>
-                            <p class="heading-sub-txt">FGM trained</p>
-                            <p class="heading-sub-txt">Trained in Safer Recruitment</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php } ?>
         </div>
         <div class="row">
             <div class="col-12">
-                <div class="gallery-btn text-center" id="load-photos">
-                    <a href="javascript:void(0)" class="def-btn">View All Staffs</a>
+                <div class="gallery-btn text-center">
+                    <a href="<?= $app_path ?>our-staff/" class="def-btn">View All Staff</a>
                 </div>
             </div>
         </div>
