@@ -22,7 +22,7 @@ include("../../includes/header.php");
 </div>
 <!-- banner end -->
 <div class="checkout pt-120 pb-70">
-    <div class="container">
+    <div class="container"> 
         <div class="row justify-content-center">
             <div class="col-xl-12 col-lg-12 col-md-12">
                 <div class="section-heading text-center mb-30">

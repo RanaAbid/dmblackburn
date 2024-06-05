@@ -129,124 +129,41 @@ include "../../includes/header.php";
                                                 <div class="tab-pane" id="tab22">
                                                     <div class="row justify-content-center">
                                                         <div class="col-12">
-                                                        <div class="kitba-checkout-form-main-space">
-                                                            <div class="row g-sm-3 g-2 align-items-center input-box mb-20">
-                                                                <div class="col-sm-4">
-                                                                    <div class="mb-3">
-                                                                        <label for="txt_title" class="form-label">Title *</label>
-                                                                        <input type="text" class="form-control form-control-lg" id="txt_title" name="txt_title" placeholder="Mr., Mrs. , etc." value="<?=$form_data[0]['guardian_title']?>" required>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-4">
-                                                                    <div class="mb-3">
-                                                                        <label for="txt_guardian_name" class="form-label">First Name *</label>
-                                                                        <input type="text" class="form-control form-control-lg" id="txt_guardian_name" name="txt_guardian_name" placeholder="Enter Name of First Parent/Guardian" value="<?=$form_data[0]['guardian_first_name']?>" required>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-4">
-                                                                    <div class="mb-3">
-                                                                        <label for="txt_guardian_surname" class="form-label">Surname *</label>
-                                                                        <input type="text" class="form-control form-control-lg" id="txt_guardian_surname" name="txt_guardian_surname" placeholder="Enter Surname" value="<?=$form_data[0]['guardian_surname']?>" required>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row g-sm-3 g-2 align-items-center input-box mb-20">
-                                                                <div class="col-sm-6">
-                                                                    <div class="mb-3">
-                                                                        <label for="txt_relation_child" class="form-label">Relationship to Child *</label>
-                                                                        <input type="text" class="form-control form-control-lg" id="txt_relation_child" name="txt_relation_child" placeholder="Relation" value="<?=$form_data[0]['relation_to_child']?>" required>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-6">
-                                                                    <div class="mb-3">
-                                                                        <label for="exampleFormControlInput1" class="form-label">Parental Responsibility *</label>
-                                                                        <select class="form-select form-select-lg mb-3" name="parental_responsibility" aria-label=".form-select-lg example" required>
-                                                                            <option value="">Parental Responsibility</option>
-                                                                            <option value="1" <?=$form_data[0]['parental_responsibility']==1?"selected":""?>>Yes</option>
-                                                                            <option value="0" <?=$form_data[0]['parental_responsibility']==0?"selected":""?>>No</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row g-sm-3 g-2 align-items-center input-box mb-20">
-                                                                <div class="col-sm-6">
-                                                                    <div class="mb-3">
-                                                                        <label for="txt_telephone" class="form-label">Home Telephone Number *</label>
-                                                                        <input type="text" class="form-control form-control-lg" id="txt_telephone" name="txt_telephone" placeholder="Enter Home Telephone Number" value="<?=$form_data[0]['home_telephone']?>" required>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-6">
-                                                                    <div class="mb-3">
-                                                                        <label for="txt_mobile" class="form-label">Mobile No.</label>
-                                                                        <input type="text" class="form-control form-control-lg" id="txt_mobile" name="txt_mobile" placeholder="Enter Mobile No." value="<?=$form_data[0]['mobile_number']?>" required>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row g-sm-3 g-2 align-items-center input-box mb-20">
-                                                                <div class="col-sm-6">
-                                                                    <div class="mb-3">
-                                                                        <label for="txt_work_email" class="form-label">Email</label>
-                                                                        <input type="email" class="form-control form-control-lg" id="txt_work_email" name="txt_work_email" placeholder="Enter Email" value="<?=$form_data[0]['email']?>" required>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-6">
-                                                                    <div class="mb-3">
-                                                                        <label for="txt_work_telephone" class="form-label">Work Telephone Number *</label>
-                                                                        <input type="text" class="form-control form-control-lg" id="txt_work_telephone" name="txt_work_telephone" placeholder="Enter Work Telephone Number" value="<?=$form_data[0]['work_telephone']?>" required>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row g-sm-3 g-2 align-items-center input-box">
-                                                                <div class="col-sm-12">
-                                                                    <div class="">
-                                                                        <label for="txt_work_place" class="form-label">Work Place *</label>
-                                                                        <input type="text" class="form-control form-control-lg" id="txt_work_place" name="txt_work_place" placeholder="Enter Work Place" value="<?=$form_data[0]['work_place']?>" required>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane" id="tab23">
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-12">
                                                             <div class="kitba-checkout-form-main-space">
                                                                 <div class="row g-sm-3 g-2 align-items-center input-box mb-20">
                                                                     <div class="col-sm-4">
                                                                         <div class="mb-3">
-                                                                            <label for="txt_second_title" class="form-label">Title *</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_second_title" name="txt_second_title" placeholder="Mr., Mrs. , etc." readonly>
+                                                                            <label for="txt_title" class="form-label">Title *</label>
+                                                                            <input type="text" class="form-control form-control-lg" id="txt_title" name="txt_title" placeholder="Mr., Mrs. , etc." value="<?= $form_data[0]['guardian_title'] ?>" required>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-sm-4">
                                                                         <div class="mb-3">
-                                                                            <label for="txt_secondParent_name" class="form-label">First Name *</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_secondParent_name" name="txt_secondParent_name" placeholder="Enter First Name" readonly>
+                                                                            <label for="txt_guardian_name" class="form-label">First Name *</label>
+                                                                            <input type="text" class="form-control form-control-lg" id="txt_guardian_name" name="txt_guardian_name" placeholder="Enter Name of First Parent/Guardian" value="<?= $form_data[0]['guardian_first_name'] ?>" required>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-sm-4">
                                                                         <div class="mb-3">
-                                                                            <label for="txt_secondParent_surname" class="form-label">Surname *</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_secondParent_surname" name="txt_secondParent_surname" placeholder="Enter Surname" readonly>
+                                                                            <label for="txt_guardian_surname" class="form-label">Surname *</label>
+                                                                            <input type="text" class="form-control form-control-lg" id="txt_guardian_surname" name="txt_guardian_surname" placeholder="Enter Surname" value="<?= $form_data[0]['guardian_surname'] ?>" required>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row g-sm-3 g-2 align-items-center input-box mb-20">
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
-                                                                            <label for="txt_second_parent_relation_child" class="form-label">Relationship to Child *</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_second_parent_relation_child" name="txt_second_parent_relation_child" placeholder="Relation" readonly>
+                                                                            <label for="txt_relation_child" class="form-label">Relationship to Child *</label>
+                                                                            <input type="text" class="form-control form-control-lg" id="txt_relation_child" name="txt_relation_child" placeholder="Relation" value="<?= $form_data[0]['relation_to_child'] ?>" required>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
-                                                                            <label for="exampleFormControlInput1" class="form-label">Parental Responsibility? *</label>
-                                                                            <select class="form-select form-select-lg mb-3" name="parental_responsibility2" aria-label=".form-select-lg example" readonly>
-                                                                                <option selected value="">Parental Responsibility</option>
-                                                                                <option value="1">Yes</option>
-                                                                                <option value="0">No</option>
+                                                                            <label for="exampleFormControlInput1" class="form-label">Parental Responsibility *</label>
+                                                                            <select class="form-select form-select-lg mb-3" name="parental_responsibility" aria-label=".form-select-lg example" required>
+                                                                                <option value="">Parental Responsibility</option>
+                                                                                <option value="1" <?= $form_data[0]['parental_responsibility'] == 1 ? "selected" : "" ?>>Yes</option>
+                                                                                <option value="0" <?= $form_data[0]['parental_responsibility'] == 0 ? "selected" : "" ?>>No</option>
                                                                             </select>
                                                                         </div>
                                                                     </div>
@@ -254,42 +171,122 @@ include "../../includes/header.php";
                                                                 <div class="row g-sm-3 g-2 align-items-center input-box mb-20">
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
-                                                                            <label for="txt_second_mobile" class="form-label">Mobile Phone Number</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_second_mobile" name="txt_second_mobile" placeholder="Enter Mobile Number">
+                                                                            <label for="txt_telephone" class="form-label">Home Telephone Number *</label>
+                                                                            <input type="text" class="form-control form-control-lg" id="txt_telephone" name="txt_telephone" placeholder="Enter Home Telephone Number" value="<?= $form_data[0]['home_telephone'] ?>" required>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
-                                                                            <label for="txt_second_telephone" class="form-label">Work Telephone Number</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_second_telephone" name="txt_second_telephone" placeholder="Enter Telephone Number">
+                                                                            <label for="txt_mobile" class="form-label">Mobile No.</label>
+                                                                            <input type="text" class="form-control form-control-lg" id="txt_mobile" name="txt_mobile" placeholder="Enter Mobile No." value="<?= $form_data[0]['mobile_number'] ?>" required>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row g-sm-3 g-2 align-items-center input-box mb-20">
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
-                                                                            <label for="txt_second_work" class="form-label">Work Place</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_second_work" name="txt_second_work" placeholder="Enter Work Place">
+                                                                            <label for="txt_work_email" class="form-label">Email</label>
+                                                                            <input type="email" class="form-control form-control-lg" id="txt_work_email" name="txt_work_email" placeholder="Enter Email" value="<?= $form_data[0]['email'] ?>" required>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
-                                                                            <label for="txt_second_address" class="form-label">Address (if different)</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_second_address" name="txt_second_address" placeholder="Enter Address (if different)">
+                                                                            <label for="txt_work_telephone" class="form-label">Work Telephone Number *</label>
+                                                                            <input type="text" class="form-control form-control-lg" id="txt_work_telephone" name="txt_work_telephone" placeholder="Enter Work Telephone Number" value="<?= $form_data[0]['work_telephone'] ?>" required>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row g-sm-3 g-2 align-items-center input-box">
                                                                     <div class="col-sm-12">
                                                                         <div class="">
-                                                                            <label for="txt_work_place" class="form-label">Other children in the family name(s) and date of birth</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_work_place" id="txt_work_place" placeholder="Enter Detail">
+                                                                            <label for="txt_work_place" class="form-label">Work Place *</label>
+                                                                            <input type="text" class="form-control form-control-lg" id="txt_work_place" name="txt_work_place" placeholder="Enter Work Place" value="<?= $form_data[0]['work_place'] ?>" required>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
+
                                                         </div>
                                                     </div>
+                                                </div>
+                                                <div class="tab-pane" id="tab23">
+                                                    <div class="kitba-checkout-form-main-space">
+                                                        <div class="row g-sm-3 g-2 align-items-center input-box mb-20">
+                                                            <div class="col-sm-4">
+                                                                <div class="mb-3">
+                                                                    <label for="txt_second_title" class="form-label">Title *</label>
+                                                                    <input type="text" class="form-control form-control-lg" id="txt_second_title" name="txt_second_title" placeholder="Mr., Mrs. , etc." value="<?= $form_data[0]['second_title']; ?>" readonly>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="mb-3">
+                                                                    <label for="txt_secondParent_name" class="form-label">First Name *</label>
+                                                                    <input type="text" class="form-control form-control-lg" id="txt_secondParent_name" name="txt_secondParent_name" placeholder="Enter First Name" value="<?= $form_data[0]['secondParent_name']; ?>" readonly>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="mb-3">
+                                                                    <label for="txt_secondParent_surname" class="form-label">Surname *</label>
+                                                                    <input type="text" class="form-control form-control-lg" id="txt_secondParent_surname" name="txt_secondParent_surname" placeholder="Enter Surname" value="<?= $form_data[0]['secondParent_surname']; ?>" readonly>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row g-sm-3 g-2 align-items-center input-box mb-20">
+                                                            <div class="col-sm-6">
+                                                                <div class="mb-3">
+                                                                    <label for="txt_second_parent_relation_child" class="form-label">Relationship to Child *</label>
+                                                                    <input type="text" class="form-control form-control-lg" id="txt_second_parent_relation_child" name="txt_second_parent_relation_child" placeholder="Relation" value="<?= $form_data[0]['txt_second_parent_relation_child']; ?>" readonly>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="mb-3">
+                                                                    <label for="exampleFormControlInput1" class="form-label">Parental Responsibility? *</label>
+                                                                    <select class="form-select form-select-lg mb-3" name="parental_responsibility2" aria-label=".form-select-lg example" readonly>
+                                                                        <option value="">Parental Responsibility</option>
+                                                                        <option value="1" <?= $form_data[0]['parental_responsibility2'] == 1 ? 'selected' : ''; ?>>Yes</option>
+                                                                        <option value="0" <?= $form_data[0]['parental_responsibility2'] == 0 ? 'selected' : ''; ?>>No</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row g-sm-3 g-2 align-items-center input-box mb-20">
+                                                            <div class="col-sm-6">
+                                                                <div class="mb-3">
+                                                                    <label for="txt_second_mobile" class="form-label">Mobile Phone Number</label>
+                                                                    <input type="text" class="form-control form-control-lg" id="txt_second_mobile" name="txt_second_mobile" placeholder="Enter Mobile Number" value="<?= $form_data[0]['second_mobile']; ?>">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="mb-3">
+                                                                    <label for="txt_second_telephone" class="form-label">Work Telephone Number</label>
+                                                                    <input type="text" class="form-control form-control-lg" id="txt_second_telephone" name="txt_second_telephone" placeholder="Enter Telephone Number" value="<?= $form_data[0]['second_telephone']; ?>">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row g-sm-3 g-2 align-items-center input-box mb-20">
+                                                            <div class="col-sm-6">
+                                                                <div class="mb-3">
+                                                                    <label for="txt_second_work" class="form-label">Work Place</label>
+                                                                    <input type="text" class="form-control form-control-lg" id="txt_second_work" name="txt_second_work" placeholder="Enter Work Place" value="<?= $form_data[0]['second_work']; ?>">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="mb-3">
+                                                                    <label for="txt_second_address" class="form-label">Address (if different)</label>
+                                                                    <input type="text" class="form-control form-control-lg" id="txt_second_address" name="txt_second_address" placeholder="Enter Address (if different)" value="<?= $form_data[0]['second_address']; ?>">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row g-sm-3 g-2 align-items-center input-box">
+                                                            <div class="col-sm-12">
+                                                                <div class="">
+                                                                    <label for="txt_work_place" class="form-label">Other children in the family name(s) and date of birth</label>
+                                                                    <input type="text" class="form-control form-control-lg" id="txt_work_place" name="txt_work_place" placeholder="Enter Detail" value="<?= $form_data[0]['work_place']; ?>">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                                 <div class="tab-pane" id="tab24">
                                                     <div class="row justify-content-center">
@@ -299,13 +296,13 @@ include "../../includes/header.php";
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
                                                                             <label for="txt_doctor_name" class="form-label">Name of Doctor *</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_doctor_name" name="txt_doctor_name" placeholder="Name of Doctor" readonly>
+                                                                            <input type="text" class="form-control form-control-lg" id="txt_doctor_name" name="txt_doctor_name" placeholder="Name of Doctor" readonly value="<?php echo $form_data[0]['doctor_name']; ?>">
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
                                                                             <label for="txt_doctor_number" class="form-label">Telephone Number *</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_doctor_number" name="txt_doctor_number" placeholder="Enter Telephone Number" readonly>
+                                                                            <input type="text" class="form-control form-control-lg" id="txt_doctor_number" name="txt_doctor_number" placeholder="Enter Telephone Number" readonly value="<?php echo $form_data[0]['doctor_number']; ?>">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -313,13 +310,13 @@ include "../../includes/header.php";
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
                                                                             <label for="txt_emergency_address" class="form-label">Practice address *</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_emergency_address" name="txt_emergency_address" placeholder="Practice address" readonly>
+                                                                            <input type="text" class="form-control form-control-lg" id="txt_emergency_address" name="txt_emergency_address" placeholder="Practice address" readonly value="<?php echo $form_data[0]['emergency_address']; ?>">
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
                                                                             <label for="txt_emergency_PostCode" class="form-label">Post Code *</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_emergency_PostCode" name="txt_emergency_PostCode" placeholder="Post Code" readonly>
+                                                                            <input type="text" class="form-control form-control-lg" id="txt_emergency_PostCode" name="txt_emergency_PostCode" placeholder="Post Code" readonly value="<?php echo $form_data[0]['emergency_PostCode']; ?>">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -327,14 +324,14 @@ include "../../includes/header.php";
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
                                                                             <label for="txt_emergency_name" class="form-label">Name(s) *</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_emergency_name" name="txt_emergency_name" placeholder="Enter Name(s)" readonly>
+                                                                            <input type="text" class="form-control form-control-lg" id="txt_emergency_name" name="txt_emergency_name" placeholder="Enter Name(s)" readonly value="<?php echo $form_data[0]['emergency_name']; ?>">
                                                                             <small>Other local contacts in case of emergency or illness at school</small>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
                                                                             <label for="txt_emergency_no" class="form-label">Telephone Number</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_emergency_no" name="txt_emergency_no" placeholder="Enter Telephone Number" readonly>
+                                                                            <input type="text" class="form-control form-control-lg" id="txt_emergency_no" name="txt_emergency_no" placeholder="Enter Telephone Number" readonly value="<?php echo $form_data[0]['emergency_no']; ?>">
                                                                             <small>Telephone Number</small>
                                                                         </div>
                                                                     </div>
@@ -343,7 +340,7 @@ include "../../includes/header.php";
                                                                     <div class="col-sm-12">
                                                                         <div class="mb-3">
                                                                             <label for="txt_password" class="form-label">Emergency Password *</label>
-                                                                            <input type="password" class="form-control form-control-lg" id="txt_password" name="txt_password" placeholder="Enter Password" readonly>
+                                                                            <input type="password" class="form-control form-control-lg" id="txt_password" name="txt_password" placeholder="Enter Password" readonly value="<?php echo $form_data[0]['emergency_password']; ?>">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -351,13 +348,13 @@ include "../../includes/header.php";
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
                                                                             <label for="txt_person1" class="form-label">Person 1 *</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_person1" name="txt_person1" placeholder="Enter Name of Authorized person" readonly>
+                                                                            <input type="text" class="form-control form-control-lg" id="txt_person1" name="txt_person1" placeholder="Enter Name of Authorized person" readonly value="<?php echo $form_data[0]['person1']; ?>">
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
                                                                             <label for="txt_relation1" class="form-label">Person 1 *</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_relation1" name="txt_relation1" placeholder="Enter Relationship to child" readonly>
+                                                                            <input type="text" class="form-control form-control-lg" id="txt_relation1" name="txt_relation1" placeholder="Enter Relationship to child" readonly value="<?php echo $form_data[0]['relation1']; ?>">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -365,13 +362,13 @@ include "../../includes/header.php";
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
                                                                             <label for="txt_person2" class="form-label">Person 2</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_person2" name="txt_person2" placeholder="Enter Name of Authorized person" readonly>
+                                                                            <input type="text" class="form-control form-control-lg" id="txt_person2" name="txt_person2" placeholder="Enter Name of Authorized person" readonly value="<?php echo $form_data[0]['person2']; ?>">
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
                                                                             <label for="txt_relation2" class="form-label">Person 2</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_relation2" name="txt_relation2" placeholder="Enter Relationship to child" readonly>
+                                                                            <input type="text" class="form-control form-control-lg" id="txt_relation2" name="txt_relation2" placeholder="Enter Relationship to child" readonly value="<?php echo $form_data[0]['relation2']; ?>">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -379,13 +376,13 @@ include "../../includes/header.php";
                                                                     <div class="col-sm-6">
                                                                         <div class="">
                                                                             <label for="txt_person3" class="form-label">Person 3</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_person3" name="txt_person3" placeholder="Enter Name of Authorized person" readonly>
+                                                                            <input type="text" class="form-control form-control-lg" id="txt_person3" name="txt_person3" placeholder="Enter Name of Authorized person" readonly value="<?php echo $form_data[0]['person3']; ?>">
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-sm-6">
                                                                         <div class="">
                                                                             <label for="txt_relation3" class="form-label">Person 3</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="txt_relation3" name="txt_relation3" placeholder="Enter Relationship to child" readonly>
+                                                                            <input type="text" class="form-control form-control-lg" id="txt_relation3" name="txt_relation3" placeholder="Enter Relationship to child" readonly value="<?php echo $form_data[0]['relation3']; ?>">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -400,18 +397,17 @@ include "../../includes/header.php";
                                                                 <div class="row g-sm-3 g-2 align-items-center input-box mb-20">
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
-                                                                            <label for="txt_doctor_name" class="form-label">Has your child had any serious illnesses or injuries? *</label>
+                                                                            <label for="txt_illnesses" class="form-label">Has your child had any serious illnesses or injuries? *</label>
                                                                             <select class="form-select form-select-lg mb-3" name="illnesses" aria-label=".form-select-lg example" readonly>
-                                                                                <option selected value="">Please Select</option>
-                                                                                <option value="1">Yes</option>
-                                                                                <option value="0">No</option>
+                                                                                <option value="1" <?= isset($form_data[0]['illnesses']) && $form_data[0]['illnesses'] == 1 ? 'selected' : ''; ?>>Yes</option>
+                                                                                <option value="0" <?= isset($form_data[0]['illnesses']) && $form_data[0]['illnesses'] == 0 ? 'selected' : ''; ?>>No</option>
                                                                             </select>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
-                                                                            <label for="txt_illnesses" class="form-label">If yes - Please details</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="illnesses_details" name="illnesses_details" placeholder="Enter Details">
+                                                                            <label for="illnesses_details" class="form-label">If yes - Please details</label>
+                                                                            <input type="text" class="form-control form-control-lg" id="illnesses_details" name="illnesses_details" placeholder="Enter Details" value="<?= $form_data[0]['illnesses_details']; ?>">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -420,16 +416,15 @@ include "../../includes/header.php";
                                                                         <div class="mb-3">
                                                                             <label for="txt_immunization" class="form-label">Has your child completed an immunization program to date? *</label>
                                                                             <select class="form-select form-select-lg mb-3" name="immunization" aria-label=".form-select-lg example" readonly>
-                                                                                <option selected value="">Please Select</option>
-                                                                                <option value="1">Yes</option>
-                                                                                <option value="0">No</option>
+                                                                                <option value="1" <?= isset($form_data[0]['immunization']) && $form_data[0]['immunization'] == 1 ? 'selected' : ''; ?>>Yes</option>
+                                                                                <option value="0" <?= isset($form_data[0]['immunization']) && $form_data[0]['immunization'] == 0 ? 'selected' : ''; ?>>No</option>
                                                                             </select>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
-                                                                            <label for="txt_immunization" class="form-label">If yes - Please details</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="immunization_details" name="immunization_details" placeholder="Enter Details">
+                                                                            <label for="immunization_details" class="form-label">If yes - Please details</label>
+                                                                            <input type="text" class="form-control form-control-lg" id="immunization_details" name="immunization_details" placeholder="Enter Details" value="<?= $form_data[0]['immunization_details']; ?>">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -438,16 +433,15 @@ include "../../includes/header.php";
                                                                         <div class="mb-3">
                                                                             <label for="txt_allergies" class="form-label">Has your child any known allergies and medical conditions? *</label>
                                                                             <select class="form-select form-select-lg mb-3" name="allergies" aria-label=".form-select-lg example" readonly>
-                                                                                <option selected value="">Please Select</option>
-                                                                                <option value="1">Yes</option>
-                                                                                <option value="0">No</option>
+                                                                                <option value="1" <?= isset($form_data[0]['allergies']) && $form_data[0]['allergies'] == 1 ? 'selected' : ''; ?>>Yes</option>
+                                                                                <option value="0" <?= isset($form_data[0]['allergies']) && $form_data[0]['allergies'] == 0 ? 'selected' : ''; ?>>No</option>
                                                                             </select>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
-                                                                            <label for="txt_allergies" class="form-label">If yes - Please details</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="allergies_details" name="allergies_details" placeholder="Enter Details">
+                                                                            <label for="allergies_details" class="form-label">If yes - Please details</label>
+                                                                            <input type="text" class="form-control form-control-lg" id="allergies_details" name="allergies_details" placeholder="Enter Details" value="<?= $form_data[0]['allergies_details']; ?>">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -456,16 +450,15 @@ include "../../includes/header.php";
                                                                         <div class="mb-3">
                                                                             <label for="txt_special_needs" class="form-label">Does your child have any particular or special needs *</label>
                                                                             <select class="form-select form-select-lg mb-3" name="special_needs" aria-label=".form-select-lg example" readonly>
-                                                                                <option selected value="">Please Select</option>
-                                                                                <option value="1">Yes</option>
-                                                                                <option value="0">No</option>
+                                                                                <option value="1" <?= isset($form_data[0]['special_needs']) && $form_data[0]['special_needs'] == 1 ? 'selected' : ''; ?>>Yes</option>
+                                                                                <option value="0" <?= isset($form_data[0]['special_needs']) && $form_data[0]['special_needs'] == 0 ? 'selected' : ''; ?>>No</option>
                                                                             </select>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
                                                                             <label for="special_needs_details" class="form-label">If yes - Please details</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="special_needs_details" name="special_needs_details" placeholder="Enter Details">
+                                                                            <input type="text" class="form-control form-control-lg" id="special_needs_details" name="special_needs_details" placeholder="Enter Details" value="<?= $form_data[0]['special_needs_details']; ?>">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -474,16 +467,15 @@ include "../../includes/header.php";
                                                                         <div class="mb-3">
                                                                             <label for="txt_fears" class="form-label">Does your child have any fears? *</label>
                                                                             <select class="form-select form-select-lg mb-3" name="fears" aria-label=".form-select-lg example" readonly>
-                                                                                <option selected value="">Please Select</option>
-                                                                                <option value="1">Yes</option>
-                                                                                <option value="2">No</option>
+                                                                                <option value="1" <?= isset($form_data[0]['fears']) && $form_data[0]['fears'] == 1 ? 'selected' : ''; ?>>Yes</option>
+                                                                                <option value="0" <?= isset($form_data[0]['fears']) && $form_data[0]['fears'] == 0 ? 'selected' : ''; ?>>No</option>
                                                                             </select>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
                                                                             <label for="fears_details" class="form-label">If yes - Please details</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="fears_details" name="fears_details" placeholder="Enter Details">
+                                                                            <input type="text" class="form-control form-control-lg" id="fears_details" name="fears_details" placeholder="Enter Details" value="<?= $form_data[0]['fears_details']; ?>">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -492,16 +484,15 @@ include "../../includes/header.php";
                                                                         <div class="mb-3">
                                                                             <label for="txt_drink" class="form-label">Does your child drink milk/eat dairy product? *</label>
                                                                             <select class="form-select form-select-lg mb-3" name="drink" aria-label=".form-select-lg example" readonly>
-                                                                                <option selected value="">Please Select</option>
-                                                                                <option value="1">Yes</option>
-                                                                                <option value="2">No</option>
+                                                                                <option value="1" <?= isset($form_data[0]['drink']) && $form_data[0]['drink'] == 1 ? 'selected' : ''; ?>>Yes</option>
+                                                                                <option value="0" <?= isset($form_data[0]['drink']) && $form_data[0]['drink'] == 0 ? 'selected' : ''; ?>>No</option>
                                                                             </select>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-sm-6">
                                                                         <div class="mb-3">
                                                                             <label for="drink_details" class="form-label">If yes - Please details</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="drink_details" name="drink_details" placeholder="Enter Details">
+                                                                            <input type="text" class="form-control form-control-lg" id="drink_details" name="drink_details" placeholder="Enter Details" value="<?= $form_data[0]['drink_details']; ?>">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -509,13 +500,13 @@ include "../../includes/header.php";
                                                                     <div class="col-sm-6">
                                                                         <div>
                                                                             <label for="languages" class="form-label">Languages spoken at home *</label>
-                                                                            <input type="text" class="form-control form-control-lg" id="languages" name="languages" placeholder="Languages spoken at home" readonly>
+                                                                            <input type="text" class="form-control form-control-lg" id="languages" name="languages" placeholder="Languages spoken at home" value="<?= $form_data[0]['languages']; ?>" readonly>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-sm-6">
                                                                         <div>
-                                                                            <label for="religion" class="form-label">Please state child’s religion/culture * </label>
-                                                                            <input type="text" class="form-control form-control-lg" id="religion" name="religion" placeholder="Enter Relationship to child" readonly>
+                                                                            <label for="religion" class="form-label">Please state child’s religion/culture *</label>
+                                                                            <input type="text" class="form-control form-control-lg" id="religion" name="religion" placeholder="Enter Religion" value="<?= $form_data[0]['religion']; ?>" readonly>
                                                                         </div>
                                                                     </div>
                                                                 </div>
