@@ -18,7 +18,7 @@ $storeFolder = '../../assets/uploads/gallery';
             </div>
             <div class="d-flex">
                 <div class="justify-content-center">
-                    <a href="create.php" class="btn btn-primary waves-effect waves-light">Add New</a>
+                    <a href="create.php" class="btn btn-success waves-effect waves-light">Add New</a>
                 </div>
 
             </div>

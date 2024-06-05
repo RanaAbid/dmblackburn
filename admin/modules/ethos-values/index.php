@@ -57,7 +57,7 @@ if ($ethos_id > 0) {
                                 <div class="row mt-4">
                                     <div class="col-12 text-end">
                                         <input type="hidden" name="add_edit">
-                                        <button type="submit" id="dzSubmit" class="btn btn-primary w-md"><?= $ethos_id > 0 ? 'Update' : 'Save' ?></button>
+                                        <button type="submit" id="dzSubmit" class="btn btn-success w-md"><?= $ethos_id > 0 ? 'Update' : 'Save' ?></button>
                                     </div>
                                 </div>
                             </form>

@@ -19,7 +19,7 @@ if ($community_id > 0) {
             </div>
             <div class="d-flex">
                 <div class="justify-content-center">
-                    <a href="index.php" class="btn btn-primary waves-effect waves-light">Back</a>
+                    <a href="index.php" class="btn btn-success waves-effect waves-light">Back</a>
                 </div>
 
             </div>
@@ -53,7 +53,7 @@ if ($community_id > 0) {
                                 <div class="row mt-4">
                                     <div class="col-12 text-end">
                                         <input type="hidden" name="add_edit">
-                                        <button type="submit" id="dzSubmit" class="btn btn-primary w-md"><?= $community_id > 0 ? 'Update' : 'Save' ?></button>
+                                        <button type="submit" id="dzSubmit" class="btn btn-success w-md"><?= $community_id > 0 ? 'Update' : 'Save' ?></button>
                                     </div>
                                 </div>
                             </form>

@@ -57,7 +57,7 @@ if ($welcome_id > 0) {
                                 <div class="row mt-4">
                                     <div class="col-12 text-end">
                                         <input type="hidden" name="add_edit">
-                                        <button type="submit" id="dzSubmit" class="btn btn-primary w-md"><?= $welcome_id > 0 ? 'Update' : 'Save' ?></button>
+                                        <button type="submit" id="dzSubmit" class="btn btn-success w-md"><?= $welcome_id > 0 ? 'Update' : 'Save' ?></button>
                                     </div>
                                 </div>
                             </form>
@@ -73,7 +73,7 @@ if ($welcome_id > 0) {
                     <div class="card-header d-flex justify-content-between">
                         <h4 class="card-title">Our Core Values</h4>
                         <div class="text-end mb-2">
-                            <a onclick="addCoreModal()" class="btn ripple btn-secondary btn-sm text-white">Add New</a>
+                            <a onclick="addCoreModal()" class="btn ripple btn-success btn-sm text-white">Add New</a>
                         </div>
                     </div>
                     <div class="card-body bg-light">

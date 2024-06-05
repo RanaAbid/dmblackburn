@@ -89,7 +89,7 @@ $row = fetch_data($link, "SELECT * FROM tbl_counters WHERE counter_id = '$counte
                                 <div class="row mt-4">
                                     <div class="col-12 text-end">
                                         <input type="hidden" name="add_edit">
-                                        <button type="submit" id="dzSubmit" class="btn btn-primary w-md"><?= $counter_id > 0 ? 'Update' : 'Save' ?></button>
+                                        <button type="submit" id="dzSubmit" class="btn btn-success w-md"><?= $counter_id > 0 ? 'Update' : 'Save' ?></button>
                                     </div>
                                 </div>
                             </form>

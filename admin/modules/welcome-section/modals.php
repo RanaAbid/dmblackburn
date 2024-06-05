@@ -31,8 +31,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button id="save_button" class="btn ripple btn-primary" type="button">Save</button>
-                    <button class="btn ripple btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+                    <button id="save_button" class="btn ripple btn-success" type="button">Save</button>
+                    <button class="btn ripple btn-warning" data-bs-dismiss="modal" type="button">Close</button>
                 </div>
             </form>
         </div>
