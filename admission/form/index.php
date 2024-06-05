@@ -103,8 +103,6 @@ include("../../includes/header.php");
                                                         <option selected value="">Please select standard</option>
                                                         <option value="1">Nursery</option>
                                                         <option value="2">Year 1</option>
-                                                        <option value="1">Nursery</option>
-                                                        <option value="2">Year 1</option>
                                                     </select>
                                                 </div>
                                             </div>
