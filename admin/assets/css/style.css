@@ -7725,14 +7725,14 @@ body {
 
 .btn-main-primary {
     color: #ffffff;
-    background-color: var(--primary-bg-color);
-    border-color: var(--primary-bg-color);
+    background: linear-gradient(145deg, #8ecf35, #23cc88);
+    border-color:#23cc88;
 }
 
 .btn-main-primary:hover {
     color: #ffffff;
-    background-color: var(--primary-bg-hover);
-    border-color: var(--primary-bg-hover);
+    background: linear-gradient(145deg, #23cc88, #8ecf35);
+    border-color: #23cc88;
 }
 
 .btn-main-primary:focus,
@@ -8511,7 +8511,7 @@ body.dark-theme {
 .dark-theme .form-control {
     color: var(--dark-color);
     background-color: var(--dark-theme);
-    border-color: var(--dark-border);
+    border-color: var(--dark-color);
 }
 
 .dark-theme .form-control:focus {
@@ -12586,7 +12586,7 @@ body.dark-theme {
 .dark-theme .form-select {
     color: var(--gray-300);
     background-color: var(--dark-body);
-    border-color: var(--dark-border);
+    border-color: var(--dark-color);
 }
 
 .dark-theme .ff_fileupload_wrap .ff_fileupload_dropzone:hover,
@@ -35346,7 +35346,7 @@ textarea.parsley-success:focus {
     content: "";
     height: 100%;
     width: 100%;
-    background: var(--primary-bg-color);
+    background: #109356;
     position: absolute;
     left: 0;
     z-index: 0;
