@@ -3372,7 +3372,7 @@ p.app-download-txt {
 ******************************************************* 
 *************************************************************** */
 .facility {
-  background: url(../images/facility-bg.jpg) center center no-repeat;
+  background: url(../temp/webbanner4.jpg) center center no-repeat;
   background-size: cover;
 }
 
@@ -3549,8 +3549,9 @@ p.app-download-txt {
 ******************************************************* 
 *************************************************************** */
 .testimonial {
-  background: url(../images/testimonial-bg.jpg) center center no-repeat;
+  /* background: url(../images/testimonial-bg.jpg) center center no-repeat; */
   background-size: cover;
+  background-color: #244842;
 }
 
 .feedback-title {
@@ -3599,7 +3600,7 @@ p.app-download-txt {
 }
 .slick-dots > *.slick-active {
   opacity: 1;
-  background: linear-gradient(145deg, #8ecf35, #23cc88);
+  background: linear-gradient(145deg, #02894a, #04723e);
 }
 .slick-dots > * button {
   font-size: 0;
