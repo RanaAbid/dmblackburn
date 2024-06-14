@@ -27,7 +27,7 @@ if ($ethos_id > 0) {
         <div class="row justify-content-center">
             <div class="col-xl-7 col-lg-8 col-md-10">
                 <div class="section-heading text-center mb-70">
-                    <h2 class="section-title mt--8 mb-25">Ethos Values</h2>
+                    <h2 class="section-title mt--8 mb-25">Ethos & Values</h2>
                 </div>
             </div>
         </div>
