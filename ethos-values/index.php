@@ -42,7 +42,7 @@ if ($ethos_id > 0) {
                     <img src="<?=$app_path.'admin/assets/uploads/ethos-values/'.$row[0]['left_img']?>" alt="image">
                 </div>
             </div>
-            <div class="col-xl-7 col-lg-7 col-md-7 mt-35">
+            <div class="col-xl-7 col-lg-7 col-md-7">
                 <div class="app-download-txt mb-50 mb-md-0">
                     <?=$row[0]['right_desc']?>
                 </div>
