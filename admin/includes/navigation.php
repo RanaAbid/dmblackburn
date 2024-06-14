@@ -124,6 +124,14 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="<?= $app_path ?>modules/about-school/">
+                            <span class="shape1"></span>
+                            <span class="shape2"></span>
+                            <i class="fas fa-school sidemenu-icon menu-icon "></i>
+                            <span class="sidemenu-label">About School</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="<?= $app_path ?>modules/school-facilities/">
                             <span class="shape1"></span>
                             <span class="shape2"></span>
