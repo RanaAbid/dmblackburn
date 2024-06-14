@@ -31,7 +31,7 @@ if ($ethos_id > 0) {
                 </div>
             </div>
         </div>
-        <div class="row justify-content-between">
+        <div class="row justify-content-between align-items-center">
             <div class="col-xl-12 col-lg-12 col-md-12 mb-3">
                 <div class="app-download-txt mb-50 mb-md-0">
                     <?=$row[0]['first_desc']?>
