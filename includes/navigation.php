@@ -6,6 +6,14 @@ if ($page_title = "About Parents") {
     $defaultURL = $app_path . "about-parents/index.php?tab=";
 }
 ?>
+<?php 
+$parts_url = explode("/", $actual_link);
+$lastPart_url = end($parts_url);
+$defaultURL = $app_path."index.php#";
+if($currenPage=="contact"){
+    $defaultURL = $app_path."index.php?tab=";
+}
+?>
 <!-- header begin -->
 <div class="header header-style-1 sticky-top">
     <div class="top-header d-none-sm">
